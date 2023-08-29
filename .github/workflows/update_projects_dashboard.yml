@@ -1,0 +1,33 @@
+name: Update dashboard if needed
+
+on:
+  schedule:
+    - cron: '0 */1 * * *'
+  workflow_dispatch: # To authorize manual run
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Update permissions
+        working-directory: .
+        run: chmod +x ./.github/scripts/*.sh
+
+      - name: Update projects dashboard data
+        id: update
+        working-directory: .
+        run: ./.github/scripts/dashboard_update.sh ${{ github.repository_owner }} ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Update gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./calypsonet-terminal-api-website
+          enable_jekyll: true
+        if: steps.update.outcome == 'success'
