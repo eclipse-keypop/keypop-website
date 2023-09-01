@@ -15,10 +15,6 @@ main:
     parent: Community
     url: '/community/contributing/'
     weight: 10
-  - name: Roadmap
-    parent: Community
-    url: '/community/roadmap/'
-    weight: 20
   - name: Changelog
     parent: Community
     url: '/community/changelog/'
@@ -31,7 +27,7 @@ main:
     parent: Community
     url: 'https://sonarcloud.io/organizations/eclipse/projects?search=keypop&sort=-analysis_date'
     weight: 40
-  - name: Eclipse Foundation Keyple page
+  - name: Eclipse Foundation Keypop page
     parent: Community
     url: 'https://projects.eclipse.org/projects/iot.keypop/'
     weight: 50
