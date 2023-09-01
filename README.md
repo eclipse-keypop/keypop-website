@@ -1,8 +1,8 @@
-# Eclipse Keyple website  
+# Eclipse Keypop website  
 
-Repository to the www.keyple.org website of the 'Eclipse Keyple' project.
+Repository to the www.keypop.org website of the 'Eclipse Keypop' project.
 
-The Eclipse Keyple website is generated with Hugo.
+The Eclipse Keypop website is generated with Hugo.
 
 ## Getting started
 

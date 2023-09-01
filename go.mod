@@ -1,4 +1,4 @@
-module github.com/calypsonet/keyple-website
+module github.com/eclipse-keypop/keypop-website
 
 go 1.15
 

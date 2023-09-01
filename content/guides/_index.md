@@ -13,7 +13,7 @@ toc: true
    - Check the consistency of the version.
 3. Check `build.gradle.kts` file:
    - Use only released dependencies.
-   - Upgrade Keyple dependencies to their latest released versions.
+   - Upgrade Keypop dependencies to their latest released versions.
 4. Update `CHANGELOG.md` file:
    - Verify the consistency of the `Unreleased` section.
    - Move content of `Unreleased` section to a new "release" section.
