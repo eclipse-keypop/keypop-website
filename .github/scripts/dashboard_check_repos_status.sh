@@ -5,51 +5,31 @@
 
 token=$1
 
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-card-uml-api
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-reader-java-api
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-reader-uml-api
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-card-java-api
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-calypso-uml-api
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-calypso-card-java-api
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-calypso-crypto-legacysam-uml-api
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-calypso-crypto-legacysam-java-api
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-card-java-api
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-calypso-crypto-symmetric-java-api
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-reader-java-api
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-calypso-crypto-asymmetric-java-api
 if [ $? -eq 0 ]; then
   exit 0
 fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-calypso-java-api
-if [ $? -eq 0 ]; then
-  exit 0
-fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-calypso-crypto-legacysam-java-api
-if [ $? -eq 0 ]; then
-  exit 0
-fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-card-cpp-api
-if [ $? -eq 0 ]; then
-  exit 0
-fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-reader-cpp-api
-if [ $? -eq 0 ]; then
-  exit 0
-fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-calypso-cpp-api
-if [ $? -eq 0 ]; then
-  exit 0
-fi
-./.github/scripts/dashboard_check_repos_status_curl.sh $token calypsonet-terminal-api-website
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-website
 if [ $? -eq 0 ]; then
   exit 0
 fi

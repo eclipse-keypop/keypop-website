@@ -5,17 +5,17 @@
 
 # Appearance
 
-theme: calypsonet-theme
+theme: keypop-theme
 day_night: false
-font: 'calypsonet-font'
+font: 'keypop-font'
 font_size: M
 
 # SEO
 
-site_type: Person
+site_type: Project
 local_business_type: ''
-org_name: ''
-description: ''
+org_name: 'Eclipse'
+description: 'Eclipse Keypop® accelerates the development through a universal, open and modular platform that provides high-level APIs and ensures application reliability and compliance.'
 twitter: ''
 
 # Contact (edit or remove options as required)
@@ -83,6 +83,7 @@ highlight_languages:
   - cpp
   - gradle
   - ini
+  - make
 highlight_style: darcula
 
 math: false
@@ -154,7 +155,7 @@ map:
   zoom: 15
 marketing:
   google_analytics: ''
-  google_tag_manager: ''
+  google_tag_manager: 'GTM-5WLCZXC'
   google_site_verification: ''
   baidu_site_verification: ''
   baidu_tongji: ''
@@ -167,11 +168,11 @@ icon:
 
 # custom variables
 cna_api_version:
-  calypsonet_terminal_reader_java_api: '1.3.0'
-  calypsonet_terminal_card_java_api: '1.0.0'
-  calypsonet_terminal_calypso_java_api: '1.8.0'
-  calypsonet_terminal_calypso_crypto_legacysam_java_api: '0.2.0'
+  keypop_reader_java_api: '1.3.0'
+  keypop_card_java_api: '1.0.0'
+  keypop_calypso_card_java_api: '1.8.0'
+  keypop_calypso_crypto_legacysam_java_api: '0.2.0'
 
-  calypsonet_terminal_reader_cpp_api: '1.0.0'
-  calypsonet_terminal_card_cpp_api: '1.0.0'
-  calypsonet_terminal_calypso_cpp_api: '1.1.0'
+  keypop_reader_cpp_api: '1.0.0'
+  keypop_card_cpp_api: '1.0.0'
+  keypop_calypso_card_cpp_api: '1.1.0'

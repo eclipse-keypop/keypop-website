@@ -7,20 +7,42 @@ main:
   - name: APIs
     url: '/apis/'
     weight: 10
+
   - name: Community
+    url: '/community/'
     weight: 20
-  - name: Dashboard
+  - name: Contributing
     parent: Community
-    url: '/projects-dashboard/'
+    url: '/community/contributing/'
     weight: 10
   - name: Roadmap
     parent: Community
-    url: '/roadmap/'
+    url: '/community/roadmap/'
     weight: 20
-  - name: Draft
+  - name: Changelog
     parent: Community
-    url: '/draft/'
+    url: '/community/changelog/'
+    weight: 25
+  - name: Project dashboard
+    parent: Community
+    url: '/project-dashboard/'
     weight: 30
+  - name: Code quality dashboard
+    parent: Community
+    url: 'https://sonarcloud.io/organizations/eclipse/projects?search=keypop&sort=-analysis_date'
+    weight: 40
+  - name: Eclipse Foundation Keyple page
+    parent: Community
+    url: 'https://projects.eclipse.org/projects/iot.keypop/'
+    weight: 50
+  - name: Mailing list
+    parent: Community
+    url: 'https://accounts.eclipse.org/mailing-list/keypop-dev/'
+    weight: 60
+  - name: GitHub home repository
+    parent: Community
+    url: 'https://github.com/eclipse-keypop/'
+    weight: 70
 
 
 # Link to a PDF of your resume/CV from the menu.

@@ -1,8 +1,8 @@
-# Calypsonet Terminal API website  
+# Eclipse Keyple website  
 
-Repository of the **Calypsonet Terminal APIs** website project.
+Repository to the www.keyple.org website of the 'Eclipse Keyple' project.
 
-The Calypsonet Terminal API website is generated with Hugo.
+The Eclipse Keyple website is generated with Hugo.
 
 ## Getting started
 

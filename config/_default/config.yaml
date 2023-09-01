@@ -3,9 +3,9 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Calypso Networks Association Terminal APIs # Website name
-baseurl: 'https://terminal-api.calypsonet.org/' # Website URL
-copyright: '&copy; {year} Calypso Networks Association. All Rights Reserved.'
+title: Eclipse Keypop # Website name
+baseurl: 'https://keypop.org/' # Website URL
+copyright: '&copy; 2023-{year} The Eclipse Keypop® project. All Rights Reserved.'
 relativeURLs: true
 canonifyURLs: true
 
@@ -43,11 +43,9 @@ permalinks:
   tags: '/tag/:slug/'
   categories: '/category/:slug/'
   publication_types: '/publication-type/:slug/'
-disableAliases: true
+disableAliases: false
 outputs:
-#  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
-  home: [HTML, RSS, JSON, WebAppManifest]
-
+  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
@@ -77,4 +75,4 @@ security:
   funcs:
     getenv:
       - ^HUGO_
-      - WC_POST_CSS
+      - ^WC_

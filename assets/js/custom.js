@@ -36,12 +36,12 @@ copyCodeContentToClipboard = function(codeId, button) {
 }
 
 // Load the projects dashboard table content
-loadProjectsDashboard = async function() {
+loadProjectDashboard = async function() {
 
     let rootUrl = window.location.href + "../";
 
     if (rootUrl.includes("localhost")) {
-        rootUrl = "https://terminal-api.calypsonet.org/";
+        rootUrl = "https://keypop.org/";
     }
 
     async function getJson(fileName) {
@@ -85,7 +85,7 @@ loadProjectsDashboard = async function() {
             cell.appendChild(space);
             a.innerHTML = "<i class=\"fas fa-book\"></i>";
             a.title = "API documentation for " + json.name;
-            a.href = "https://calypsonet.github.io/" + json.name;
+            a.href = "https://eclipse-keypop.github.io/" + json.name;
             a.target = "_blank";
             cell.appendChild(a);
         }
@@ -104,6 +104,12 @@ loadProjectsDashboard = async function() {
         // column release date
         cell = row.insertCell(-1);
         cell.setAttribute("id", "release-date-" + rowIndex);
+        cell.setAttribute("class", "text-center");
+        cell.appendChild(document.createTextNode(""));
+
+        // column latest tag
+        cell = row.insertCell(-1);
+        cell.setAttribute("id", "latest-tag-" + rowIndex);
         cell.setAttribute("class", "text-center");
         cell.appendChild(document.createTextNode(""));
 
@@ -153,6 +159,7 @@ loadProjectsDashboard = async function() {
         await getPullData(rowIndex, owner, project[0]);
         await getLatestRelease(rowIndex, owner, project[0]);
         await getReleaseDate(rowIndex, owner, project[0]);
+        await getLatestTag(rowIndex, owner, project[0]);
         if (project[2] === true) {
             await getStatus(rowIndex, owner, project[0]);
         }
@@ -201,13 +208,24 @@ loadProjectsDashboard = async function() {
         }
     }
 
+    async function getLatestTag(rowIndex, owner, repos) {
+        let cell = document.getElementById("latest-tag-" + rowIndex);
+        try {
+            const json = await getJsonRepositoryData(repos, "_tags");
+            cell.innerHTML = json[0].name;
+        } catch (err) {
+        }
+    }
+
     async function getStatus(rowIndex, owner, repos) {
 
         let cell = document.getElementById("repos-status-" + rowIndex);
         let json;
+        let branch;
 
         try {
-            json = await getJsonRepositoryData(repos, "_check_runs");
+            json = await getJsonRepositoryData(repos, "_commits_status");
+            branch = "main";
         } catch (err) {
         }
 
@@ -215,27 +233,23 @@ loadProjectsDashboard = async function() {
         const linkText = document.createTextNode("\u2b24");
         a.appendChild(linkText);
         a.title = "CI status page";
-        a.href = "https://github.com/" + owner + "/" + repos + "/actions";
+        a.href = "https://ci.eclipse.org/keypop/job/Keypop/job/" + repos + "/job/" + branch + "/";
         a.target = "_blank";
 
-        if(json.check_runs[0] != null && json.check_runs[0].status === "completed") {
-            switch (json.check_runs[0].conclusion) {
-                case "failure":
-                case "action_required":
-                case "cancelled":
-                case "skipped":
-                case "timed-out":
-                    a.style.color = "red";
-                    break;
-                case "neutral":
-                    a.style.color = "lightgreen";
-                    break;
-                case "success":
-                    a.style.color = "green";
-                    break;
-            }
-        } else {
-            a.style.color = "orange";
+        switch (json.state) {
+            case "error":
+            case "failure":
+                a.style.color = "red";
+                a.title += ": failure";
+                break;
+            case "pending":
+                a.style.color = "orange";
+                a.title += ": pending";
+                break;
+            case "success":
+                a.style.color = "green";
+                a.title += ": success";
+                break;
         }
         cell.appendChild(a);
     }
@@ -267,7 +281,7 @@ loadProjectsDashboard = async function() {
         return '<span data-toggle="tooltip" title="' + date + ' ' + time + '">' + date + '</span>';
     }
 
-    let owner = "calypsonet";
+    let owner = "eclipse";
 
     const lastUpdate = await getJson('datetime');
     const date = new Date(lastUpdate.datetime);
@@ -276,12 +290,12 @@ loadProjectsDashboard = async function() {
     const isoLocalDate = new Date(date.getTime() - (offset*60*1000));
 
     const dateOptions = {hour: '2-digit', minute:'2-digit', hour12: false, timeZoneName: 'short'};
-    $("#projects-dashboard-datetime")[0].innerHTML = isoLocalDate.toISOString().split('T')[0] + ", " + date.toLocaleTimeString('en-EN', dateOptions);
+    $("#project-dashboard-datetime")[0].innerHTML = isoLocalDate.toISOString().split('T')[0] + ", " + date.toLocaleTimeString('en-EN', dateOptions);
 
     let projects = await getJson('repository_list');
 
     // create promises
-    const body = document.getElementById("projects-dashboard-content");
+    const body = document.getElementById("project-dashboard-content");
     let promises = [];
     for (let i = 0; i < projects.length; i++) {
         let promise = getReposData((i + 1).toString(), owner, projects[i])
@@ -291,14 +305,15 @@ loadProjectsDashboard = async function() {
     await (async () => {
         await Promise.all(promises)
             .finally(function () {
-                $('#projects-dashboard-table').DataTable({
+                $('#project-dashboard-table').DataTable({
                     "lengthMenu": [25, 50, 75, 100],
-                    "order": [[10, 'desc']],
+                    "pageLength": 50,
+                    "order": [[11, 'desc']],
                     "oLanguage": {"sSearch": "Filter:"}
                 });
                 $('.dataTables_length').addClass('bs-select');
                 // update the container's width with the real table size
-                $('.universal-wrapper').width($('#projects-dashboard-table')[0].scrollWidth);
+                $('.universal-wrapper').width($('#project-dashboard-table')[0].scrollWidth);
             });
     })();
 }

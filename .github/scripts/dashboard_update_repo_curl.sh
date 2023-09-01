@@ -6,6 +6,6 @@ resource=$3
 file_suffix=$4
 
 curl --request GET \
-          --url https://api.github.com/repos/calypsonet/$repository_name$resource \
+          --url https://api.github.com/repos/eclipse-keypop/$repository_name$resource \
           --header "authorization: Bearer $token" \
           --header "content-type: application/json" > "dashboard/"$repository_name"_"$file_suffix".json"

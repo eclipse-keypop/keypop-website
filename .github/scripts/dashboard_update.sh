@@ -1,9 +1,9 @@
 #!/bin/sh
 
-echo "Update the projects dashboard content..."
+echo "Update the project dashboard content if needed..."
 
 repository_owner=$1
-repository_name="calypsonet-terminal-api-website"
+repository_name="keypop-website"
 token=$2
 
 echo "Check if the dashboard needs to be updated..."

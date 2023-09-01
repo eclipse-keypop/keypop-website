@@ -8,7 +8,7 @@ repository_name=$2
 
 filter_website_repository=""
 
-if [ "$repository_name" = "calypsonet-terminal-api-website" ]; then
+if [ "$repository_name" = "keypop-website" ]; then
   filter_website_repository=" -e \"pushed_at\""
 fi
 
@@ -16,16 +16,16 @@ echo "Checking repository "$repository_name"..."
 
 # Compare hash value of the API result by excluding these fields:
 # - "size": Unknown reason of size changing.
-# - "pushed_at": Cyclic commit when gh-pages branch is update (calypsonet-terminal-api-website).
+# - "pushed_at": Cyclic commit when gh-pages branch is update (keypop-website).
 
 github_json=`curl --request GET \
-          --url https://api.github.com/repos/calypsonet/$repository_name \
+          --url https://api.github.com/repos/eclipse-keypop/$repository_name \
           --header "authorization: Bearer $token" \
           --header "content-type: application/json" | grep -v -e "size"$filter_website_repository`
 github_hash=`echo $github_json | md5sum | cut -d ' ' -f 1`
 
 dashboard_json=`curl --request GET \
-          --url https://terminal-api.calypsonet.org/dashboard/$repository_name"_.json" \
+          --url https://keypop.org/dashboard/$repository_name"_.json" \
           --header "content-type: application/json" | grep -v -e "size"$filter_website_repository`
 dashboard_hash=`echo $dashboard_json | md5sum | cut -d ' ' -f 1`
 
