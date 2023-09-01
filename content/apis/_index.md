@@ -1,20 +1,22 @@
 ---
-title: Terminal architecture - APIs & software layers
+title: Keypop architecture - APIs & software layers
 linktitle: Overview
-summary: General presentation of the dependencies between the different Terminal APIs.
+summary: General presentation of the dependencies between the different Keypop APIs.
 type: book
 toc: false
 ---
 
 ---
-The diagram below shows the dependencies between the client application, the certifiable framework components and the 
-terminal APIs:
+Keypop offers a set of interfaces based on the specifications from the **Calypso Networks Association**, for the 
+creation of software components dedicated to the management of smart card readers and smart card applications.
+
+The diagram below shows the dependencies between the client application, the Keypop APIs and their implementations:
 
 {{< figure src="/media/uml/apis_dependencies_overview.drawio.svg" caption="" numbered="" >}}
 
-Here are the most important things to remember:
-* Each API has its **own life cycle**.
-* The APIs contain **only interfaces**.
-* The "Reader API", the "Calypso API" and the "Calypso Legacy SAM API" are **public** and can be used by the developer 
-  of the client application.
-* The "Card API" is **internal** and is intended for the developer of the certifiable framework components only.
+Key points:
+* **Independent Lifecycle:** Each API follows its own distinct lifecycle.
+* **Interface-Exclusive:** APIs exclusively consist of interfaces.
+* **Public APIs:** Some APIs are intended to be used by application developers.
+* **Internal Usage:** Some APIs are dedicated to internal use, and intended to developers of Keypop-based 
+implementations.
