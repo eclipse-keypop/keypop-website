@@ -1,6 +1,7 @@
 name: Build and deploy site
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -8,6 +9,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
