@@ -25,7 +25,7 @@ main:
     weight: 30
   - name: Code quality dashboard
     parent: Community
-    url: 'https://sonarcloud.io/organizations/eclipse/projects?search=keypop&sort=-analysis_date'
+    url: 'https://sonarcloud.io/organizations/eclipse-keypop/projects?search=keypop&sort=-analysis_date'
     weight: 40
   - name: Eclipse Foundation Keypop page
     parent: Community
