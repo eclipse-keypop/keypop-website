@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Eclipse Keypop</title><link>https://keypop.org/</link><atom:link href="https://keypop.org/index.xml" rel="self" type="application/rss+xml"/><description>Eclipse Keypop</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023-2023 The Eclipse Keypop® project. All Rights Reserved.</copyright><image><url>https://keypop.org/media/logo.svg</url><title>Eclipse Keypop</title><link>https://keypop.org/</link></image><item><title>Keypop Reader API</title><link>https://keypop.org/apis/keypop-reader-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/keypop-reader-api/</guid><description>&lt;hr>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Eclipse Keypop</title><link>https://eclipse-keypop.github.io/keypop-website/</link><atom:link href="https://eclipse-keypop.github.io/keypop-website/index.xml" rel="self" type="application/rss+xml"/><description>Eclipse Keypop</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023-2023 The Eclipse Keypop® project. All Rights Reserved.</copyright><image><url>https://eclipse-keypop.github.io/keypop-website/media/logo.svg</url><title>Eclipse Keypop</title><link>https://eclipse-keypop.github.io/keypop-website/</link></image><item><title>Keypop Reader API</title><link>https://eclipse-keypop.github.io/keypop-website/apis/keypop-reader-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eclipse-keypop.github.io/keypop-website/apis/keypop-reader-api/</guid><description>&lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>As part of the &lt;strong>Reader Layer&lt;/strong>, the &lt;strong>Reader API&lt;/strong> provides high-level functionality for identifying, monitoring,
 configuring readers and process card selection scenarios.&lt;/p>
@@ -76,7 +76,7 @@ id="tabs-1-2" role="tabpanel" aria-labelled-by="tabs-1-2-tab">
 The third version number (x.y.&lt;strong>z&lt;/strong>) only concerns updates of the javadoc because this component does not contain any
 implementation, but only an API.
 &lt;/div>
-&lt;/div></description></item><item><title>Keypop Card API</title><link>https://keypop.org/apis/keypop-card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/keypop-card-api/</guid><description>&lt;hr>
+&lt;/div></description></item><item><title>Keypop Card API</title><link>https://eclipse-keypop.github.io/keypop-website/apis/keypop-card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eclipse-keypop.github.io/keypop-website/apis/keypop-card-api/</guid><description>&lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>The &lt;strong>Card API&lt;/strong> is the communication interface between the &lt;strong>Reader Layer&lt;/strong> and the &lt;strong>Card Layer&lt;/strong> (e.g. Calypso Card API).&lt;/p>
 &lt;p>The documentation for the specification produced by the &lt;strong>Calypso Networks Association&lt;/strong>, on which this API is based,
@@ -153,7 +153,7 @@ id="tabs-1-2" role="tabpanel" aria-labelled-by="tabs-1-2-tab">
 The third version number (x.y.&lt;strong>z&lt;/strong>) only concerns updates of the javadoc because this component does not contain any
 implementation, but only an API.
 &lt;/div>
-&lt;/div></description></item><item><title>Keypop Calypso Card API</title><link>https://keypop.org/apis/keypop-calypso-card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/keypop-calypso-card-api/</guid><description>&lt;hr>
+&lt;/div></description></item><item><title>Keypop Calypso Card API</title><link>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-card-api/</guid><description>&lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>As part of the &lt;strong>Card Layer&lt;/strong>, the &lt;strong>Calypso Card API&lt;/strong> provides high-level functionality for selecting and performing
 transactions with Calypso cards.&lt;/p>
@@ -231,7 +231,7 @@ id="tabs-1-2" role="tabpanel" aria-labelled-by="tabs-1-2-tab">
 The third version number (x.y.&lt;strong>z&lt;/strong>) only concerns updates of the javadoc because this component does not contain any
 implementation, but only an API.
 &lt;/div>
-&lt;/div></description></item><item><title>Keypop Calypso Crypto Legacy SAM API</title><link>https://keypop.org/apis/keypop-calypso-crypto-legacysam-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/keypop-calypso-crypto-legacysam-api/</guid><description>&lt;hr>
+&lt;/div></description></item><item><title>Keypop Calypso Crypto Legacy SAM API</title><link>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-crypto-legacysam-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-crypto-legacysam-api/</guid><description>&lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>As part of the &lt;strong>Card Layer&lt;/strong>, the &lt;strong>Calypso Crypto Legacy SAM API&lt;/strong> provides high-level functionality for selecting
 and performing transactions with Calypso Legacy SAMs and can also be coupled with the Calypso API to handle the
