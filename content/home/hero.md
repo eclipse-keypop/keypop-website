@@ -6,7 +6,6 @@ weight = 10
 
 title = "Eclipse Keypop®"
 hero_media = "hero-image.svg"
-description = "Unlocking the Future of Ticketing Terminals"
 
 [design.background] 
   image = "hero-background.jpg"  
