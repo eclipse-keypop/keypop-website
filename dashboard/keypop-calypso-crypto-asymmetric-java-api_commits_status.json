@@ -1,20 +1,20 @@
 {
-  "state": "success",
+  "state": "failure",
   "statuses": [
     {
-      "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/statuses/8b253b240a198e709e6d521c3f7e2c93543b98dd",
+      "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/statuses/84f51cf25bd4f998a26fead84ac803ff3e58bfa4",
       "avatar_url": "https://avatars.githubusercontent.com/u/141153929?v=4",
-      "id": 26065849348,
-      "node_id": "SC_kwDOJ930288AAAAGEaVMBA",
-      "state": "success",
-      "description": "This commit looks good",
-      "target_url": "https://ci.eclipse.org/keypop/job/Keypop/job/keypop-calypso-crypto-asymmetric-java-api/job/main/4/display/redirect",
+      "id": 26138951459,
+      "node_id": "SC_kwDOJ930288AAAAGFgC_Iw",
+      "state": "error",
+      "description": "This commit cannot be built",
+      "target_url": "https://ci.eclipse.org/keypop/job/Keypop/job/keypop-calypso-crypto-asymmetric-java-api/job/main/5/display/redirect",
       "context": "continuous-integration/jenkins/branch",
-      "created_at": "2023-11-13T12:26:31Z",
-      "updated_at": "2023-11-13T12:26:31Z"
+      "created_at": "2023-11-16T15:53:30Z",
+      "updated_at": "2023-11-16T15:53:30Z"
     }
   ],
-  "sha": "8b253b240a198e709e6d521c3f7e2c93543b98dd",
+  "sha": "84f51cf25bd4f998a26fead84ac803ff3e58bfa4",
   "total_count": 1,
   "repository": {
     "id": 668857563,
@@ -83,6 +83,6 @@
     "releases_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/releases{/id}",
     "deployments_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/deployments"
   },
-  "commit_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/commits/8b253b240a198e709e6d521c3f7e2c93543b98dd",
-  "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/commits/8b253b240a198e709e6d521c3f7e2c93543b98dd/status"
+  "commit_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/commits/84f51cf25bd4f998a26fead84ac803ff3e58bfa4",
+  "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/commits/84f51cf25bd4f998a26fead84ac803ff3e58bfa4/status"
 }
