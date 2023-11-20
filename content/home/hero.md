@@ -25,4 +25,4 @@ icon = "eye"
 Eclipse Keypop offers Java and C++ interfaces facilitating the standardization of modular and interoperable software
 solutions providing high-level access to card readers and card transactions.
 
-These APIs are in compliance with the "Terminal" specifications developed by the [Calypso Networks Association](https://terminal-api.calypsonet.org).
+These APIs are in compliance with the "Terminal" specifications developed by the [Calypso Networks Association] TODO link to calypsonet.org page.
