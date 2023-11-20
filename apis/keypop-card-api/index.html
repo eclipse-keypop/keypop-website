@@ -14,7 +14,7 @@
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin=anonymous media=print onload="this.media='all'">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/darcula.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/darcula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
-<link rel=stylesheet href=../../css/wowchemy.5723d8969286e1d3a6c09f0af418f32e.css>
+<link rel=stylesheet href=../../css/wowchemy.603bcd97e1c79dfc4b50bf69f30c2e2f.css>
 <script>(function(b,d,e,a,g){b[a]=b[a]||[],b[a].push({'gtm.start':(new Date).getTime(),event:'gtm.js'});var f=d.getElementsByTagName(e)[0],c=d.createElement(e),h=a!='dataLayer'?'&l='+a:'';c.async=!0,c.src='https://www.googletagmanager.com/gtm.js?id='+g+h,f.parentNode.insertBefore(c,f)})(window,document,'script','dataLayer','GTM-5WLCZXC')</script>
 <link rel=manifest href=../../manifest.webmanifest>
 <link rel=icon type=image/png href=../../media/icon_hud74138e609d088f38a98e3b6f867fd39_3697_32x32_fill_lanczos_center_3.png>
@@ -26,7 +26,7 @@
 <meta property="og:title" content="Keypop Card API | Eclipse Keypop">
 <meta property="og:description" content="Internal API which defines the elements shared between the reader layer and the card layer."><meta property="og:image" content="https://eclipse-keypop.github.io/keypop-website/media/logo.svg">
 <meta property="twitter:image" content="https://eclipse-keypop.github.io/keypop-website/media/logo.svg"><meta property="og:locale" content="en-us">
-<meta property="article:modified_time" content="2023-09-01T17:13:29+02:00">
+<meta property="article:modified_time" content="2023-11-20T16:59:38+01:00">
 <title>Keypop Card API | Eclipse Keypop</title>
 </head>
 <body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=99dbf5149b87168d4a1e8e272647badc>
@@ -128,8 +128,16 @@ Overview
 <nav id=TableOfContents>
 <ul>
 <li><a href=#overview>Overview</a></li>
+<li><a href=#interfaces>Interfaces</a></li>
+<li><a href=#limitations--constraints>Limitations & constraints</a></li>
+</ul>
+<ul>
+<li><a href=#implementations--api-documentation>Implementations & API Documentation</a>
+<ul>
 <li><a href=#java-implementation>Java implementation</a></li>
 <li><a href=#c-implementation>C++ implementation</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>
@@ -142,9 +150,34 @@ Overview
 <h2 id=overview>Overview</h2>
 <p>The <strong>Card API</strong> is the communication interface between the <strong>Reader Layer</strong> and the <strong>Card Layer</strong> (e.g. Calypso Card API).</p>
 <p>The documentation for the specification produced by the <strong>Calypso Networks Association</strong>, on which this API is based,
-is available <a href=https://terminal-api.calypsonet.org/apis/calypsonet-terminal-card-api/ target=_blank rel=noopener>here</a>.</p>
+is available [here] FIXME link to calypsonet.org page.</p>
 <hr>
-<h2 id=java-implementation>Java implementation</h2>
+<h2 id=interfaces>Interfaces</h2>
+<p>
+<figure>
+<div class="d-flex justify-content-center">
+<div class=w-100><img src=https://calypsonet.github.io/calypsonet-terminal-card-uml-api/1.0.0/api_class_diagram.svg alt="Card API - class diagram" loading=lazy data-zoomable></div>
+</div></figure>
+</p>
+<hr>
+<h2 id=limitations--constraints>Limitations & constraints</h2>
+<p>The <strong>Card API</strong> doesn&rsquo;t allow to request the transmission to a card of the APDU commands &ldquo;Select Application by DF Name&rdquo;
+or &ldquo;Get Response&rdquo;:</p>
+<ul>
+<li>the selection of a specific card application could be managed only through a Card Selection Request.</li>
+<li>the APDU response status words 61XYh & 6CXYh are automatically handled by the reader layer library by issuing a
+Get Response or by re-issuing the previous command with the expected &lsquo;Le&rsquo; field.</li>
+</ul>
+<hr>
+<h1 id=heading></h1>
+<h2 id=implementations--api-documentation>Implementations & API Documentation</h2>
+<div class="alert alert-note">
+<div>
+The third version number (x.y.<strong>z</strong>) only concerns updates of the javadoc because this component does not contain any
+implementation, but only an API.
+</div>
+</div>
+<h3 id=java-implementation>Java implementation</h3>
 <div class="alert alert-note">
 <div>
 <strong><code>1.0.0</code></strong>
@@ -159,27 +192,27 @@ is available <a href=https://terminal-api.calypsonet.org/apis/calypsonet-termina
 </div>
 </div>
 <p>All deliverables are available directly from the <a href="https://central.sonatype.com/search?q=keypop-card-java-api" target=_blank rel=noopener>Maven Central Repository</a> or by using one of the project resource managers below:</p>
-<ul class="nav nav-tabs" id=tabs-1 role=tablist><li class=nav-item>
-<a class="nav-link active tab-Gradle-Groovy" id=tabs-1-0-tab data-toggle=tab href=#tabs-1-0 role=tab onclick='handleClick("Gradle-Groovy")' aria-controls=tabs-1-0 aria-selected=true>
+<ul class="nav nav-tabs" id=tabs-3 role=tablist><li class=nav-item>
+<a class="nav-link active tab-Gradle-Groovy" id=tabs-3-0-tab data-toggle=tab href=#tabs-3-0 role=tab onclick='handleClick("Gradle-Groovy")' aria-controls=tabs-3-0 aria-selected=true>
 Gradle Groovy
 </a>
 </li><li class=nav-item>
-<a class="nav-link tab-Gradle-Kotlin" id=tabs-1-1-tab data-toggle=tab href=#tabs-1-1 role=tab onclick='handleClick("Gradle-Kotlin")' aria-controls=tabs-1-1 aria-selected=false>
+<a class="nav-link tab-Gradle-Kotlin" id=tabs-3-1-tab data-toggle=tab href=#tabs-3-1 role=tab onclick='handleClick("Gradle-Kotlin")' aria-controls=tabs-3-1 aria-selected=false>
 Gradle Kotlin
 </a>
 </li><li class=nav-item>
-<a class="nav-link tab-Maven" id=tabs-1-2-tab data-toggle=tab href=#tabs-1-2 role=tab onclick='handleClick("Maven")' aria-controls=tabs-1-2 aria-selected=false>
+<a class="nav-link tab-Maven" id=tabs-3-2-tab data-toggle=tab href=#tabs-3-2 role=tab onclick='handleClick("Maven")' aria-controls=tabs-3-2 aria-selected=false>
 Maven
 </a>
 </li></ul>
-<div class=bd-clipboard><button type=button class="btn btn-clipboard btn-outline-light" title="Copy to clipboard" onclick="copyTabContentToClipboard('tabs-1',this)">Copy</button></div>
-<div class=tab-content id=tabs-1-content><div class="tab-pane fade show active" id=tabs-1-0 role=tabpanel aria-labelled-by=tabs-1-0-tab>
+<div class=bd-clipboard><button type=button class="btn btn-clipboard btn-outline-light" title="Copy to clipboard" onclick="copyTabContentToClipboard('tabs-3',this)">Copy</button></div>
+<div class=tab-content id=tabs-3-content><div class="tab-pane fade show active" id=tabs-3-0 role=tabpanel aria-labelled-by=tabs-3-0-tab>
 <pre><code class=language-gradle>implementation &#39;org.eclipse.keypop:keypop-card-java-api:1.0.0&#39;</code></pre>
 </div>
-<div class="tab-pane fade" id=tabs-1-1 role=tabpanel aria-labelled-by=tabs-1-1-tab>
+<div class="tab-pane fade" id=tabs-3-1 role=tabpanel aria-labelled-by=tabs-3-1-tab>
 <pre><code class=language-kotlin>implementation(&#34;org.eclipse.keypop:keypop-card-java-api:1.0.0&#34;)</code></pre>
 </div>
-<div class="tab-pane fade" id=tabs-1-2 role=tabpanel aria-labelled-by=tabs-1-2-tab>
+<div class="tab-pane fade" id=tabs-3-2 role=tabpanel aria-labelled-by=tabs-3-2-tab>
 <pre><code class=language-xml>&lt;dependency&gt;
 &lt;groupId&gt;org.eclipse.keypop&lt;/groupId&gt;
 &lt;artifactId&gt;keypop-card-java-api&lt;/artifactId&gt;
@@ -188,7 +221,7 @@ Maven
 </div>
 </div>
 <br>
-<h2 id=c-implementation>C++ implementation</h2>
+<h3 id=c-implementation>C++ implementation</h3>
 <div class="alert alert-note">
 <div>
 <strong><code>1.0.0</code></strong>
@@ -198,13 +231,6 @@ Maven
 <i class="fas fa-project-diagram pr-1 fa-fw"></i> <a href=https://calypsonet.github.io/calypsonet-terminal-card-uml-api/>UML</a></span>
 <span class=component-metadata>
 <i class="fab fa-github pr-1 fa-fw"></i> <a href=https://github.com/eclipse-keypop/keypop-card-cpp-api/>GitHub repository</a></span>
-</div>
-</div>
-<br>
-<div class="alert alert-note">
-<div>
-The third version number (x.y.<strong>z</strong>) only concerns updates of the javadoc because this component does not contain any
-implementation, but only an API.
 </div>
 </div>
 </div>
@@ -222,7 +248,7 @@ implementation, but only an API.
 </div>
 </div>
 <div class=body-footer>
-<p>Last updated on 2023-09-01</p>
+<p>Last updated on 2023-11-20</p>
 </div>
 </article>
 <footer class=site-footer>
