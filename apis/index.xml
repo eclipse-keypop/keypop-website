@@ -3,7 +3,7 @@
 &lt;p>As part of the &lt;strong>Reader Layer&lt;/strong>, the &lt;strong>Reader API&lt;/strong> provides high-level functionality for identifying, monitoring,
 configuring readers and process card selection scenarios.&lt;/p>
 &lt;p>The documentation for the specification produced by the &lt;strong>Calypso Networks Association&lt;/strong>, on which this API is based,
-is available [here] FIXME link to calypsonet.org page.&lt;/p>
+is available &lt;a href="https://calypsonet.org/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;hr>
 &lt;h2 id="interfaces">Interfaces&lt;/h2>
 &lt;p>The &lt;strong>Reader API&lt;/strong> is a high-level interface used by terminal applications to operate smart card readers, it:&lt;/p>
@@ -210,7 +210,7 @@ id="tabs-5-2" role="tabpanel" aria-labelled-by="tabs-5-2-tab">
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>The &lt;strong>Card API&lt;/strong> is the communication interface between the &lt;strong>Reader Layer&lt;/strong> and the &lt;strong>Card Layer&lt;/strong> (e.g. Calypso Card API).&lt;/p>
 &lt;p>The documentation for the specification produced by the &lt;strong>Calypso Networks Association&lt;/strong>, on which this API is based,
-is available [here] FIXME link to calypsonet.org page.&lt;/p>
+is available &lt;a href="https://calypsonet.org/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;hr>
 &lt;h2 id="interfaces">Interfaces&lt;/h2>
 &lt;p>
@@ -306,7 +306,7 @@ id="tabs-3-2" role="tabpanel" aria-labelled-by="tabs-3-2-tab">
 &lt;p>As part of the &lt;strong>Card Layer&lt;/strong>, the &lt;strong>Calypso Card API&lt;/strong> provides high-level functionality for selecting and performing
 transactions with Calypso cards.&lt;/p>
 &lt;p>The documentation for the specification produced by the &lt;strong>Calypso Networks Association&lt;/strong>, on which this API is based,
-is available [here] FIXME link to calypsonet.org page.&lt;/p>
+is available &lt;a href="https://calypsonet.org/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;hr>
 &lt;h2 id="interfaces">Interfaces&lt;/h2>
 &lt;p>The &lt;strong>Calypso Card API&lt;/strong> provides the means to select a target card and then perform a transaction with the selected card.&lt;/p>
@@ -509,7 +509,7 @@ id="tabs-13-2" role="tabpanel" aria-labelled-by="tabs-13-2-tab">
 and performing transactions with Calypso Legacy SAMs and can also be coupled with the &lt;strong>Calypso Card API&lt;/strong> to handle the
 cryptographic calculations required for Calypso card transactions secured by symmetric keys.&lt;/p>
 &lt;p>The documentation for the specification produced by the &lt;strong>Calypso Networks Association&lt;/strong>, on which this API is based,
-is available [here] FIXME link to calypsonet.org page.&lt;/p>
+is available &lt;a href="https://calypsonet.org/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;hr>
 &lt;h2 id="interfaces">Interfaces&lt;/h2>
 &lt;p>The &lt;strong>Calypso Crypto Legacy SAM API&lt;/strong> provides the means to select a target or control SAM and then perform a transaction with the selected target.&lt;/p>
