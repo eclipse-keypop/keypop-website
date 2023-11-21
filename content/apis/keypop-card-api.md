@@ -13,7 +13,7 @@ toc: true
 The **Card API** is the communication interface between the **Reader Layer** and the **Card Layer** (e.g. Calypso Card API).
 
 The documentation for the specification produced by the **Calypso Networks Association**, on which this API is based,
-is available [here] FIXME link to calypsonet.org page.
+is available [here](https://calypsonet.org/).
 
 ---
 ## Interfaces

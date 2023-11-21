@@ -15,7 +15,7 @@ and performing transactions with Calypso Legacy SAMs and can also be coupled wit
 cryptographic calculations required for Calypso card transactions secured by symmetric keys.
 
 The documentation for the specification produced by the **Calypso Networks Association**, on which this API is based,
-is available [here] FIXME link to calypsonet.org page.
+is available [here](https://calypsonet.org/).
 
 ---
 ## Interfaces

@@ -14,7 +14,7 @@ As part of the **Card Layer**, the **Calypso Card API** provides high-level func
 transactions with Calypso cards.
 
 The documentation for the specification produced by the **Calypso Networks Association**, on which this API is based,
-is available [here] FIXME link to calypsonet.org page.
+is available [here](https://calypsonet.org/).
 
 ---
 ## Interfaces
