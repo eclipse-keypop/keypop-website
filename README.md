@@ -69,6 +69,6 @@ hugo mod vendor
 
 ## Related projects
 
-### [Wowchemy](https://github.com/wowchemy/wowchemy-hugo-modules)
+### [HugoBlox](https://github.com/HugoBlox/hugo-blox-builder)
 
-[Wowchemy theme](https://wowchemy.com/) for [Hugo](https://gohugo.io/).
+[HugoBlox site builder](https://hugoblox.com/) based on [Hugo](https://gohugo.io/).

@@ -1,4 +1,4 @@
-module github.com/wowchemy/starter-hugo-research-group
+module keypop-website
 
 go 1.15
 
