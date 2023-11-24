@@ -26,3 +26,5 @@ Eclipse Keypop offers Java and C++ interfaces facilitating the standardization o
 solutions providing high-level access to card readers and card transactions.
 
 These APIs are in compliance with the "Terminal" specifications developed by the [Calypso Networks Association](https://calypsonet.org/).
+<br>
+&nbsp;
