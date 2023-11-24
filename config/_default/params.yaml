@@ -60,10 +60,11 @@ locale:
   address_format: en-us
 
 # Site features
-
 features:
   syntax_highlighter:
-    enable: false
+    enable: true
+    theme_light: dracula
+    theme_dark: dracula
     extra_languages:
       - java
       - groovy

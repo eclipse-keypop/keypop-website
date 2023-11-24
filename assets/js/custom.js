@@ -5,36 +5,6 @@ pageFooterContainer.removeClass("container");
 pageFooterContainer.css("padding-left", "0");
 pageFooterContainer.css("padding-right", "0");
 
-// Copy to clipboard
-updateClipboard = function(newClip, button) {
-    navigator.permissions.query({name: "clipboard-write"}).then(result => {
-        if (result.state == "granted" || result.state == "prompt") {
-            /* write to the clipboard now */
-            navigator.clipboard.writeText(newClip).then(function() {
-                /* clipboard successfully set */
-                button.innerHTML = "Copied";
-                setTimeout(function() {
-                    button.innerHTML = "Copy";
-                }, 2000);
-            }, function() {
-                /* clipboard write failed */
-                alert("Error during the copy to clipboard process!");
-            });
-        } else {
-            alert("Unable to copy to clipboard because your browser does not have the permissions to use the \"clipboard-write\" API!");
-        }
-    });
-}
-copyTabContentToClipboard = function(tabpaneId, button) {
-    let tabId = $("#"+tabpaneId+" a.active")[0].getAttribute("aria-controls");
-    let content = $("#"+tabId+" code")[0].innerText;
-    updateClipboard(content, button);
-}
-copyCodeContentToClipboard = function(codeId, button) {
-    let content = $("#code-"+codeId)[0].innerText;
-    updateClipboard(content, button);
-}
-
 // Load the projects dashboard table content
 loadProjectDashboard = async function() {
 

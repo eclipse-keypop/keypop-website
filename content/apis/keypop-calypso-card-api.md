@@ -140,18 +140,24 @@ implementation, but only an API.
 All deliverables are available directly from the [Maven Central Repository](https://central.sonatype.com/search?q=keypop-calypso-card-java-api) or by using one of the project resource managers below:
 
 {{< tabpane >}}
-{{< tab header="Gradle Groovy" lang="gradle" >}}
+{{< tab header="Gradle Groovy" >}}
+{{< code lang="gradle" copy="true">}}
 implementation 'org.eclipse.keypop:keypop-calypso-card-java-api:{{% keypop-calypso-card-java-api-version %}}'
+{{< /code>}}
 {{< /tab >}}
 {{< tab header="Gradle Kotlin" lang="kotlin" >}}
+{{< code lang="kotlin" copy="true">}}
 implementation("org.eclipse.keypop:keypop-calypso-card-java-api:{{% keypop-calypso-card-java-api-version %}}")
+{{< /code>}}
 {{< /tab >}}
-{{< tab header="Maven" lang="xml" >}}
+{{< tab header="Maven" >}}
+{{< code lang="xml" copy="true">}}
 <dependency>
 <groupId>org.eclipse.keypop</groupId>
 <artifactId>keypop-calypso-card-java-api</artifactId>
 <version>{{% keypop-calypso-card-java-api-version %}}</version>
 </dependency>
+{{< /code>}}
 {{< /tab >}}
 {{< /tabpane >}}
 
