@@ -153,9 +153,9 @@ implementation("org.eclipse.keypop:keypop-calypso-card-java-api:{{% keypop-calyp
 {{< tab header="Maven" >}}
 {{< code lang="xml" copy="true">}}
 <dependency>
-<groupId>org.eclipse.keypop</groupId>
-<artifactId>keypop-calypso-card-java-api</artifactId>
-<version>{{% keypop-calypso-card-java-api-version %}}</version>
+    <groupId>org.eclipse.keypop</groupId>
+    <artifactId>keypop-calypso-card-java-api</artifactId>
+    <version>{{% keypop-calypso-card-java-api-version %}}</version>
 </dependency>
 {{< /code>}}
 {{< /tab >}}

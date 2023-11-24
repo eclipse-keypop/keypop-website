@@ -63,8 +63,8 @@ locale:
 features:
   syntax_highlighter:
     enable: true
-    theme_light: dracula
-    theme_dark: dracula
+    theme_light: github-dark
+    theme_dark: github-dark
     extra_languages:
       - java
       - groovy

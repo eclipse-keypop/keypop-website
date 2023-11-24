@@ -67,9 +67,9 @@ implementation("org.eclipse.keypop:keypop-calypso-crypto-legacysam-java-api:{{% 
 {{< tab header="Maven" >}}
 {{< code lang="xml" copy="true">}}
 <dependency>
-<groupId>org.eclipse.keypop</groupId>
-<artifactId>keypop-calypso-crypto-legacysam-java-api</artifactId>
-<version>{{% keypop-calypso-crypto-legacysam-java-api-version %}}</version>
+    <groupId>org.eclipse.keypop</groupId>
+    <artifactId>keypop-calypso-crypto-legacysam-java-api</artifactId>
+    <version>{{% keypop-calypso-crypto-legacysam-java-api-version %}}</version>
 </dependency>
 {{< /code>}}
 {{< /tab >}}

@@ -356,3 +356,8 @@ table#datatable-dependency-check {
 .article-style aside a, div.alert a {
   color: #eb6608;
 }
+
+// remove padding
+code {
+  padding: 0
+}

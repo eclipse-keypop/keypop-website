@@ -164,9 +164,9 @@ implementation("org.eclipse.keypop:keypop-reader-java-api:{{% keypop-reader-java
 {{< tab header="Maven" >}}
 {{< code lang="xml" copy="true">}}
 <dependency>
-  <groupId>org.eclipse.keypop</groupId>
-  <artifactId>keypop-reader-java-api</artifactId>
-  <version>{{% keypop-reader-java-api-version %}}</version>
+    <groupId>org.eclipse.keypop</groupId>
+    <artifactId>keypop-reader-java-api</artifactId>
+    <version>{{% keypop-reader-java-api-version %}}</version>
 </dependency>
 {{< /code>}}
 {{< /tab >}}
