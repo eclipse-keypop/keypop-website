@@ -117,7 +117,10 @@ extensions:
   academicons:
     enable: true
 
-# custom variables
+# Custom JS extension
+plugins_js: ['custom']
+
+# Custom variables
 cna_api_version:
   keypop_reader_java_api: '1.3.0'
   keypop_card_java_api: '1.0.0'
