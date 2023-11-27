@@ -1,4 +1,41 @@
 {
-  "message": "Not Found",
-  "documentation_url": "https://docs.github.com/rest/releases/releases#get-the-latest-release"
+  "url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/releases/131560417",
+  "assets_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/releases/131560417/assets",
+  "upload_url": "https://uploads.github.com/repos/eclipse-keypop/keypop-reader-java-api/releases/131560417/assets{?name,label}",
+  "html_url": "https://github.com/eclipse-keypop/keypop-reader-java-api/releases/tag/2.0.0",
+  "id": 131560417,
+  "author": {
+    "login": "andrei-cristea",
+    "id": 26622621,
+    "node_id": "MDQ6VXNlcjI2NjIyNjIx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26622621?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/andrei-cristea",
+    "html_url": "https://github.com/andrei-cristea",
+    "followers_url": "https://api.github.com/users/andrei-cristea/followers",
+    "following_url": "https://api.github.com/users/andrei-cristea/following{/other_user}",
+    "gists_url": "https://api.github.com/users/andrei-cristea/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/andrei-cristea/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/andrei-cristea/subscriptions",
+    "organizations_url": "https://api.github.com/users/andrei-cristea/orgs",
+    "repos_url": "https://api.github.com/users/andrei-cristea/repos",
+    "events_url": "https://api.github.com/users/andrei-cristea/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/andrei-cristea/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "node_id": "RE_kwDOJ299fc4H13Ph",
+  "tag_name": "2.0.0",
+  "target_commitish": "main",
+  "name": "",
+  "draft": false,
+  "prerelease": false,
+  "created_at": "2023-11-27T13:04:09Z",
+  "published_at": "2023-11-27T14:29:33Z",
+  "assets": [
+
+  ],
+  "tarball_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/tarball/2.0.0",
+  "zipball_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/zipball/2.0.0",
+  "body": ":warning: The project has been migrated from the [Calypsonet Terminal Reader API](https://github.com/calypsonet/calypsonet-terminal-reader-java-api) GitHub repository.\r\n### Added\r\n- `ReaderApiFactory` centralizes the methods used to create instances of the various interfaces of the API.\r\n- `BasicCardSelector` can be used to create generic card selection filters based on card communication protocol or power-on data.\r\n- `IsoCardSelector` lets you create ISO card selection filters based on card communication protocol and power-on data, as well as AIDs, and define selection strategies (e.g. first occurrence, FCI reading, etc.).\r\n- `IsoSmartCard` extends the `SmartCard` interface and provides access to data from the **Select Application** ISO command response.\r\n### Changed\r\n- The project license is now \"MIT License\" (previously \"Eclipse Public License 2.0\").\r\n- CI: The Gradle plugin `org.eclipse.keyple:keyple-gradle:0.2.+` has been replaced by `org.eclipse.keypop:keypop-gradle:0.1.+`.\r\n- Renamed:\r\n  - Artifact `org.calypsonet.terminal:calypsonet-terminal-reader-java-api` -> `org.eclipse.keypop:keypop-reader-java-api`\r\n  - Package `org.calypsonet.terminal.reader` -> `org.eclipse.keypop.reader`\r\n  - Interface `CardSelection` -> `CardSelectionExtension`\r\n- Moved:\r\n  - Method `SmartCard.getSelectApplicationResponse()` ->  `IsoSmartCard.getSelectApplicationResponse()`\r\n- Method signature refactored:\r\n  - `CardSelectionManager.prepareSelection(CardSelection cardSelection)` -> `CardSelectionManager.prepareSelection(CardSelector<?> cardSelector, CardSelectionExtension cardSelectionExtension)`\r\n  - `CardSelectionManager.scheduleCardSelectionScenario(ObservableCardReader observableCardReader, DetectionMode detectionMode, NotificationMode notificationMode)` \r\n     -> `CardSelectionManager.scheduleCardSelectionScenario(ObservableCardReader observableCardReader, NotificationMode notificationMode)`"
 }

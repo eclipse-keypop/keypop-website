@@ -1,4 +1,41 @@
 {
-  "message": "Not Found",
-  "documentation_url": "https://docs.github.com/rest/releases/releases#get-the-latest-release"
+  "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/131563095",
+  "assets_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/131563095/assets",
+  "upload_url": "https://uploads.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/131563095/assets{?name,label}",
+  "html_url": "https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/tag/0.3.0",
+  "id": 131563095,
+  "author": {
+    "login": "andrei-cristea",
+    "id": 26622621,
+    "node_id": "MDQ6VXNlcjI2NjIyNjIx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26622621?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/andrei-cristea",
+    "html_url": "https://github.com/andrei-cristea",
+    "followers_url": "https://api.github.com/users/andrei-cristea/followers",
+    "following_url": "https://api.github.com/users/andrei-cristea/following{/other_user}",
+    "gists_url": "https://api.github.com/users/andrei-cristea/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/andrei-cristea/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/andrei-cristea/subscriptions",
+    "organizations_url": "https://api.github.com/users/andrei-cristea/orgs",
+    "repos_url": "https://api.github.com/users/andrei-cristea/repos",
+    "events_url": "https://api.github.com/users/andrei-cristea/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/andrei-cristea/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "node_id": "RE_kwDOJ2-Bcs4H135X",
+  "tag_name": "0.3.0",
+  "target_commitish": "main",
+  "name": "",
+  "draft": false,
+  "prerelease": false,
+  "created_at": "2023-11-27T14:19:35Z",
+  "published_at": "2023-11-27T14:44:50Z",
+  "assets": [
+
+  ],
+  "tarball_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/tarball/0.3.0",
+  "zipball_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/zipball/0.3.0",
+  "body": ":warning: The project has been migrated from the [Calypsonet Terminal Calypso Crypto Legacy SAM API](https://github.com/calypsonet/calypsonet-terminal-calypso-crypto-legacysam-java-api) GitHub repository.\r\n### Added\r\n- `LegacySamApiFactory` centralizes the methods used to create instances of the various interfaces of the API.\r\n- `CardTransactionLegacySamExtension` extends the SPI `CardTransactionCryptoExtension` provided by \"Keypop Calypso Card API\" to extends a card transaction with specific SAM features (e.g. signature computation, etc.).\r\n- New methods added to `LegacySamSelectionExtension`:\r\n  - `setUnlockData(String unlockData, LegacySam.ProductType productType)` sets the unlock data to be used to unlock a SAM C1 (8 or 16 bytes) and schedules the execution of the \"Unlock data\" command in the first position.\r\n  - `prepareReadSystemKeyParameters(SystemKeyType systemKeyType)` schedules the execution of a \"Read Key Parameters\" command for a system key.\r\n  - `prepareReadCounterStatus(int counterNumber)` schedules the execution of a \"Read Event Counter\" and \"Read Ceiling\" commands to read the status of a counter.\r\n  - `prepareReadAllCountersStatus()` schedules the execution of a \"Read Event Counter\" and \"Read Ceiling\" commands to read the status of all counters.\r\n- New method added to `LegacySam`:\r\n  - `getCounterIncrementAccess(int counterNumber)` returns the counter increment access mode.\r\n### Changed\r\n- The project license is now \"MIT License\" (previously \"Eclipse Public License 2.0\").\r\n- CI: The Gradle plugin `org.eclipse.keyple:keyple-gradle:0.2.+` has been replaced by `org.eclipse.keypop:keypop-gradle:0.1.+`.\r\n- Renamed:\r\n  - Artifact `org.calypsonet.terminal:calypsonet-terminal-calypso-crypto-legacysam-java-api` -> `org.eclipse.keypop:keypop-calypso-crypto-legacysam-java-api`\r\n  - Package `org.eclipse.keypop.calypso.card.crypto.legacysam` -> `org.eclipse.keypop.calypso.crypto.legacysam`\r\n  - Interface `LegacySamSelection` -> `LegacySamSelectionExtension`\r\n  - Interface `LSSecuritySetting` -> `SecuritySetting`\r\n  - Interface `LSFreeTransactionManager` -> `FreeTransactionManager`\r\n  - Interface `LSAsyncTransactionCreatorManager` -> `AsyncTransactionCreatorManager`\r\n  - Interface `LSAsyncTransactionExecutorManager` -> `AsyncTransactionExecutorManager`\r\n  - Interface `LSRevocationServiceSpi` -> `LegacySamRevocationServiceSpi`\r\n- All legacy factories were merged into a single factory `LegacySamApiFactory`:\r\n  - `LegacySamSelectionFactory`\r\n  - `LSTransactionManagerFactory`\r\n  - `LSSecuritySettingFactory`\r\n  - `LSCardTransactionCryptoExtensionFactory`\r\n  - `LSCommandDataFactory`\r\n- Method signature refactored:\r\n  - `LSWriteTransactionManager.prepareWriteCounterConfiguration(int counterNumber, int ceilingValue, boolean isManualCounterIncrementAuthorized)` -> `WriteTransactionManager.prepareWriteCounterConfiguration(int counterNumber, int ceilingValue, CounterIncrementAccess counterIncrementAccess)`.\r\n    The enum `CounterIncrementAccess` has been created for this purpose.\r\n  - `TraceableSignatureComputationData.withSamTraceabilityMode(int offset, boolean usePartialSamSerialNumber)` -> `TraceableSignatureComputationData.withSamTraceabilityMode(int offset, SamTraceabilityMode samTraceabilityMode)`.\r\n    The enum `SamTraceabilityMode` has been created for this purpose.\r\n  - `TraceableSignatureVerificationData.withSamTraceabilityMode(int offset, boolean isPartialSamSerialNumber, LSRevocationServiceSpi samRevocationService)` -> `TraceableSignatureComputationData.withSamTraceabilityMode(int offset, SamTraceabilityMode samTraceabilityMode, LegacySamRevocationServiceSpi samRevocationService)`.\r\n    The enum `SamTraceabilityMode` has been created for this purpose.\r\n### Removed\r\n- The `filterByProductType(LegacySam.ProductType productType)` and `filterBySerialNumber(String serialNumberRegex)` methods of `LegacySamSelection` have been removed following the introduction of generic selection filters in the \"Keypop Reader API\". Indeed, these two methods implemented filtering on power-on data, and it is now up to the implementation libraries to propose utility methods to recreate the regexes to be used for power-on data based on product type and/or serial number."
 }
