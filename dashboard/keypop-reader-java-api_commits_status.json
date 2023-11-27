@@ -1,17 +1,17 @@
 {
-  "state": "failure",
+  "state": "success",
   "statuses": [
     {
       "url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/statuses/57367acbbe7f36f1e3541d8672d5ad4b7a7814c6",
       "avatar_url": "https://avatars.githubusercontent.com/u/141153929?v=4",
-      "id": 26285194965,
-      "node_id": "SC_kwDOJ299fc8AAAAGHrg-1Q",
-      "state": "error",
-      "description": "This commit cannot be built",
-      "target_url": "https://ci.eclipse.org/keypop/job/Keypop/job/keypop-reader-java-api/job/main/6/display/redirect",
+      "id": 26287670233,
+      "node_id": "SC_kwDOJ299fc8AAAAGHt4D2Q",
+      "state": "success",
+      "description": "This commit looks good",
+      "target_url": "https://ci.eclipse.org/keypop/job/Keypop/job/keypop-reader-java-api/job/main/7/display/redirect",
       "context": "continuous-integration/jenkins/branch",
-      "created_at": "2023-11-27T14:58:43Z",
-      "updated_at": "2023-11-27T14:58:43Z"
+      "created_at": "2023-11-27T16:39:03Z",
+      "updated_at": "2023-11-27T16:39:03Z"
     }
   ],
   "sha": "57367acbbe7f36f1e3541d8672d5ad4b7a7814c6",
