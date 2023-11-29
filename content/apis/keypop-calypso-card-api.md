@@ -3,7 +3,7 @@ title: Keypop Calypso Card API
 linktitle: Calypso Card API
 summary: Public high-level API which standardizes the way to interact with a Calypso® product (card, NFC smartphone applet/application, SAM, etc...).
 type: book
-weight: 4
+weight: 3
 toc: true
 ---
 

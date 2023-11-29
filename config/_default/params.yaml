@@ -122,12 +122,17 @@ extensions:
 plugins_js: ['custom']
 
 # Custom variables
-cna_api_version:
-  keypop_reader_java_api: '1.3.0'
-  keypop_card_java_api: '1.0.0'
-  keypop_calypso_card_java_api: '1.8.0'
-  keypop_calypso_crypto_legacysam_java_api: '0.2.0'
+keypop_api_version:
+  keypop_reader_java_api: '2.0.0'
+  keypop_card_java_api: '2.0.0'
+  keypop_calypso_card_java_api: '2.0.0'
+  keypop_calypso_crypto_symmetric_java_api: '0.1.0'
+  keypop_calypso_crypto_legacysam_java_api: '0.3.0'
+  keypop_calypso_crypto_asymmetric_java_api: '0.1.0'
 
-  keypop_reader_cpp_api: '1.0.0'
-  keypop_card_cpp_api: '1.0.0'
-  keypop_calypso_card_cpp_api: '1.1.0'
+  keypop_reader_cpp_api: '2.0.0'
+  keypop_card_cpp_api: '2.0.0'
+  keypop_calypso_card_cpp_api: '2.0.0'
+  keypop_calypso_crypto_symmetric_cpp_api: '0.1.0'
+  keypop_calypso_crypto_legacysam_cpp_api: '0.3.0'
+  keypop_calypso_crypto_asymmetric_cpp_api: '0.1.0'
