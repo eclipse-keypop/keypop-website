@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Keypop architecture - APIs &amp; software layers | Eclipse Keypop</title><link>https://eclipse-keypop.github.io/keypop-website/apis/</link><atom:link href="https://eclipse-keypop.github.io/keypop-website/apis/index.xml" rel="self" type="application/rss+xml"/><description>Keypop architecture - APIs &amp; software layers</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://eclipse-keypop.github.io/keypop-website/media/logo.svg</url><title>Keypop architecture - APIs &amp; software layers</title><link>https://eclipse-keypop.github.io/keypop-website/apis/</link></image><item><title>Keypop Reader API</title><link>https://eclipse-keypop.github.io/keypop-website/apis/keypop-reader-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eclipse-keypop.github.io/keypop-website/apis/keypop-reader-api/</guid><description>&lt;hr>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Keypop architecture - APIs &amp; software layers | Eclipse Keypop</title><link>https://keypop.org/apis/</link><atom:link href="https://keypop.org/apis/index.xml" rel="self" type="application/rss+xml"/><description>Keypop architecture - APIs &amp; software layers</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keypop.org/media/logo.svg</url><title>Keypop architecture - APIs &amp; software layers</title><link>https://keypop.org/apis/</link></image><item><title>Keypop Reader API</title><link>https://keypop.org/apis/keypop-reader-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/keypop-reader-api/</guid><description>&lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>As part of the &lt;strong>Reader Layer&lt;/strong>, the &lt;strong>Reader API&lt;/strong> provides high-level functionality for identifying, monitoring,
 configuring readers and process card selection scenarios.&lt;/p>
@@ -215,7 +215,7 @@ id="tabs-5-2" role="tabpanel" aria-labelled-by="tabs-5-2-tab">
 &lt;span class="component-metadata">
 &lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-reader-cpp-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
 &lt;/div>
-&lt;/div></description></item><item><title>Keypop Card API</title><link>https://eclipse-keypop.github.io/keypop-website/apis/keypop-card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eclipse-keypop.github.io/keypop-website/apis/keypop-card-api/</guid><description>&lt;hr>
+&lt;/div></description></item><item><title>Keypop Card API</title><link>https://keypop.org/apis/keypop-card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/keypop-card-api/</guid><description>&lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>The &lt;strong>Card API&lt;/strong> is the communication interface between the &lt;strong>Reader Layer&lt;/strong> and the &lt;strong>Card Layer&lt;/strong> (e.g. Calypso Card API).&lt;/p>
 &lt;p>The documentation for the specification produced by the &lt;strong>Calypso Networks Association&lt;/strong>, on which this API is based,
@@ -319,7 +319,7 @@ id="tabs-3-2" role="tabpanel" aria-labelled-by="tabs-3-2-tab">
 &lt;span class="component-metadata">
 &lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-card-cpp-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
 &lt;/div>
-&lt;/div></description></item><item><title>Keypop Calypso Card API</title><link>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-card-api/</guid><description>&lt;hr>
+&lt;/div></description></item><item><title>Keypop Calypso Card API</title><link>https://keypop.org/apis/keypop-calypso-card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/keypop-calypso-card-api/</guid><description>&lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>As part of the &lt;strong>Card Layer&lt;/strong>, the &lt;strong>Calypso Card API&lt;/strong> provides high-level functionality for selecting and performing
 transactions with Calypso cards.&lt;/p>
@@ -530,7 +530,7 @@ id="tabs-13-2" role="tabpanel" aria-labelled-by="tabs-13-2-tab">
 &lt;span class="component-metadata">
 &lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-card-cpp-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
 &lt;/div>
-&lt;/div></description></item><item><title>Keypop Calypso Crypto Symmetric API</title><link>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-crypto-symmetric-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-crypto-symmetric-api/</guid><description>&lt;hr>
+&lt;/div></description></item><item><title>Keypop Calypso Crypto Symmetric API</title><link>https://keypop.org/apis/keypop-calypso-crypto-symmetric-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/keypop-calypso-crypto-symmetric-api/</guid><description>&lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>The &lt;strong>Calypso Crypto Symmetric API&lt;/strong> is the communication interface between the &lt;strong>Calypso Card&lt;/strong> and the
 &lt;strong>Calypso Symmetric Crypto&lt;/strong> libraries (e.g. Legacy SAM, Open SAM).&lt;/p>
@@ -626,7 +626,7 @@ id="tabs-3-2" role="tabpanel" aria-labelled-by="tabs-3-2-tab">
 &lt;span class="component-metadata">
 &lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-cpp-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
 &lt;/div>
-&lt;/div></description></item><item><title>Keypop Calypso Crypto Legacy SAM API</title><link>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-crypto-legacysam-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-crypto-legacysam-api/</guid><description>&lt;hr>
+&lt;/div></description></item><item><title>Keypop Calypso Crypto Legacy SAM API</title><link>https://keypop.org/apis/keypop-calypso-crypto-legacysam-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/keypop-calypso-crypto-legacysam-api/</guid><description>&lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>As part of the &lt;strong>Card Layer&lt;/strong>, the &lt;strong>Calypso Crypto Legacy SAM API&lt;/strong> provides high-level functionality for selecting
 and performing transactions with Calypso Legacy SAMs and can also be coupled with the &lt;strong>Calypso Card API&lt;/strong> to handle the
@@ -727,7 +727,7 @@ id="tabs-3-2" role="tabpanel" aria-labelled-by="tabs-3-2-tab">
 &lt;div>
 work in progress&amp;hellip;
 &lt;/div>
-&lt;/div></description></item><item><title>Keypop Calypso Crypto Asymmetric API</title><link>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-crypto-asymmetric-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eclipse-keypop.github.io/keypop-website/apis/keypop-calypso-crypto-asymmetric-api/</guid><description>&lt;hr>
+&lt;/div></description></item><item><title>Keypop Calypso Crypto Asymmetric API</title><link>https://keypop.org/apis/keypop-calypso-crypto-asymmetric-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/keypop-calypso-crypto-asymmetric-api/</guid><description>&lt;hr>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>The &lt;strong>Calypso Crypto Asymmetric API&lt;/strong> is the communication interface between the &lt;strong>Calypso Card&lt;/strong> and the
 &lt;strong>Calypso Asymmetric Crypto&lt;/strong> libraries.&lt;/p>
