@@ -25,7 +25,7 @@ github_json=`curl --request GET \
 github_hash=`echo $github_json | md5sum | cut -d ' ' -f 1`
 
 dashboard_json=`curl --request GET \
-          --url https://eclipse-keypop.github.io/keypop-website/dashboard/$repository_name"_.json" \
+          --url https://keypop.org/dashboard/$repository_name"_.json" \
           --header "content-type: application/json" | grep -v -e "size"$filter_website_repository`
 dashboard_hash=`echo $dashboard_json | md5sum | cut -d ' ' -f 1`
 

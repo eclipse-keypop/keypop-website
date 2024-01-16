@@ -11,7 +11,7 @@ loadProjectDashboard = async function() {
     let rootUrl = window.location.href + "../";
 
     if (rootUrl.includes("localhost")) {
-        rootUrl = "https://eclipse-keypop.github.io/keypop-website/";
+        rootUrl = "https://keypop.org/";
     }
 
     async function getJson(fileName) {
