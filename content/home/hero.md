@@ -20,11 +20,12 @@ icon_pack = "fas"
 icon = "eye"
 +++
 
-**_"The first open source APIs dedicated to contactless ticketing and access control applications"_**
+**_"the best APIs for processing smart cards"_**
+- Keypop offers **generic interfaces** to **operate smart card readers** and integrate dedicated **libraries to process smart card** solutions, facilitating the standardization of modular and interoperable software solutions providing high-level access to card readers and card transactions.
+- An additional interface is included to manage the [Calypso® smart card](https://calypsonet.org/calypso-for-cards/) solution.
 
-Eclipse Keypop offers Java and C++ interfaces facilitating the standardization of modular and interoperable software
-solutions providing high-level access to card readers and card transactions.
-
-These APIs are in compliance with the "Terminal" specifications developed by the [Calypso Networks Association](https://calypsonet.org/).
+Two versions of Keypop APIs are available: in Java and in C++.
+- These APIs follow the [smart card terminal interface models](https://terminal-api.calypsonet.org/) defined by the [Calypso Networks Association](https://calypsonet.org/). 
+- The [Eclipse Keyple®](https://keyple.org/) open source project provides libraries implementing the Keypop APIs for the 'Reader' and 'Calypso' layers.
 <br>
 &nbsp;
