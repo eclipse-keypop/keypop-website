@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/136456721",
-  "assets_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/136456721/assets",
-  "upload_url": "https://uploads.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/136456721/assets{?name,label}",
-  "html_url": "https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/tag/0.4.0",
-  "id": 136456721,
+  "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/150899444",
+  "assets_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/150899444/assets",
+  "upload_url": "https://uploads.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/150899444/assets{?name,label}",
+  "html_url": "https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases/tag/0.5.0",
+  "id": 150899444,
   "author": {
     "login": "andrei-cristea",
     "id": 26622621,
@@ -24,18 +24,18 @@
     "type": "User",
     "site_admin": false
   },
-  "node_id": "RE_kwDOJ2-Bcs4IIioR",
-  "tag_name": "0.4.0",
+  "node_id": "RE_kwDOJ2-Bcs4I_or0",
+  "tag_name": "0.5.0",
   "target_commitish": "main",
   "name": "",
   "draft": false,
   "prerelease": false,
-  "created_at": "2024-01-10T09:37:10Z",
-  "published_at": "2024-01-10T09:47:52Z",
+  "created_at": "2024-04-12T09:35:05Z",
+  "published_at": "2024-04-12T09:42:17Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/tarball/0.4.0",
-  "zipball_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/zipball/0.4.0",
-  "body": "### Added\r\n- `LegacySamStaticUnlockDataProviderSpi`, an SPI to provide SAM unlock data in static mode.\r\n- `LegacySamDynamicUnlockDataProviderSpi`, an SPI to provide SAM unlock data in dynamic mode.\r\n- New methods added to `LegacySamSelectionExtension`:\r\n  - `setStaticUnlockDataProvider(LegacySamStaticUnlockDataProviderSpi unlockDataProvider)` sets the unlock data provider for the static mode when the card reader becomes available at a later stage.\r\n  - `setStaticUnlockDataProvider(LegacySamStaticUnlockDataProviderSpi unlockDataProvider, CardReader targetSamReader)` sets the unlock data provider and the target SAM reader for the static mode when the target SAM reader is initially available.\r\n  - `setDynamicUnlockDataProvider(LegacySamDynamicUnlockDataProviderSpi unlockDataProvider)` sets the unlock data provider for the dynamic mode when the card reader becomes available at a later stage.\r\n  - `setDynamicUnlockDataProvider(LegacySamDynamicUnlockDataProviderSpi unlockDataProvider, CardReader targetSamReader)` sets the unlock data provider and the target SAM reader for the dynamic mode when the target SAM reader is initially available.\r\n### Fixed\r\n- The allowed length for unlocking data in static mode is 16 bytes only as expected by the SAM (`setUnlockData` method)."
+  "tarball_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/tarball/0.5.0",
+  "zipball_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/zipball/0.5.0",
+  "body": "### Changed\r\n- Java source and target levels `1.6` -> `1.8`\r\n### Upgraded\r\n- Gradle `6.8.3` -> `7.6.4`\r\n### Added\r\n- `GetDataTag` to enumerate all output data types.\r\n- `KeyPairContainer` interface to contain a key pair.\r\n- `CardCertificateComputationData` interface to contain input/output data for the \"PSO Compute Certificate\" command.\r\n- New methods added to `FreeTransactionManager`:\r\n  - `prepareGetData(GetDataTag tag)` to schedule the execution of a \"Get Data\" command for the specified tag.\r\n  - `prepareGenerateCardAsymmetricKeyPair(KeyPairContainer keyPairContainer)` to schedule the execution of \"Card Generate Asymmetric Key Pair\" command.\r\n  - `prepareComputeCardCertificate(CardCertificateComputationData data)` to schedule the execution of a \"PSO Compute Certificate\" command.\r\n- New methods added to `LegacySamApiFactory`:\r\n  - `createKeyPairContainer()` to create a new instance of `KeyPairContainer`.\r\n  - `createCardCertificateComputationData()` to create a new instance of `CardCertificateComputationData`.\r\n- New method added to `LegacySam`:\r\n  - `getCaCertificate()` to get the CA certificate retrieved from the SAM as a 384-byte byte array."
 }
