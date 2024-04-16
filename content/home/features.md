@@ -2,31 +2,31 @@
 widget = "featurette" 
 headless = true 
 active = true 
-weight = 30 
+weight = 10 
 
-title = "Eclipse Keypop®" 
-subtitle = "the best APIs for processing smart cards<br><br>" 
+#title = "Eclipse Keypop®" 
+title = "_\"the best open source APIs for smart card processing\"_<br><br>" 
 
 [design.background]
-  #image = "hero-background.jpg"
-  color = "#eff7fe"
+  image = "hero-background.jpg"
+  color = "#eff7fe" 
   text_color_light = false 
 
 [[feature]]
-  icon = "lightbulb"
+  icon = "fas fa-cubes"
   icon_pack = "fas"
-  name = "Generic Interfaces"
-  description = "Eclipse Keypop® offers generic interfaces to operate smart card readers and integrates dedicated libraries to process smart card solutions, facilitating the standardization of modular and interoperable software solutions providing high-level access to card readers and card transactions. An additional interface is included to manage the Calypso® smart card solution."
+  name = "A Comprehensive Solution"
+  description = "<br>Eclipse Keypop® offers a flexible set of APIs to handle generic smart card reader operations, while also integrating dedicated APIs tailored for specific card technologies like the [Calypso®](https://calypsonet.org/calypso-for-cards/) standard.<br><br>This comprehensive API suite empowers developers to build smart card-enabled systems that can seamlessly integrate a wide range of card readers and card technologies."
+
+[[feature]]
+  icon = "fas fa-puzzle-piece"
+  icon_pack = "fas"
+  name = "Versatile API Support"
+  description = "<br>The solution provides Java and C++ APIs that closely adhere to the [UML-based smart card terminal interface models](https://terminal-api.calypsonet.org/) defined by the [Calypso Networks Association](https://calypsonet.org/), ensuring seamless compatibility and interoperability.<br><br>This facilitates the standardization of modular and interoperable software solutions, providing high-level access to card readers and card transactions."  
   
 [[feature]]
-  icon = "github"
-  icon_pack = "fab"
-  name = "Smart card terminal interface models"
-  description = "Available in Java and in C++, these APIs follow the smart card terminal interface models defined by the Calypso Networks Association."  
-  
-[[feature]]
-  icon = "envelope"
+  icon = "fas fa-plug"
   icon_pack = "fas"
-  name = "Eclipse Keyple® Project"
-  description = "The Eclipse Keyple® open source project provides libraries implementing the Keypop APIs for the 'Reader' and 'Calypso' layers."
+  name = "Eclipse Keyple®"
+  description = "<br>The [Eclipse Keyple®](https://keyple.org/) open source project serves as the native implementation of the Keypop APIs, providing libraries conforming to the [Reader and Calypso layers](https://calypsonet.org/calypso-certification/)."
 +++
