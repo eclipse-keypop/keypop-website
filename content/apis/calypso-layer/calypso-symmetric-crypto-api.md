@@ -13,8 +13,8 @@ toc: true
 <span class="component-metadata">{{< icon name="exchange-alt" pack="fas" >}} [Changelog](https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-java-api/blob/main/CHANGELOG.md)</span>
 {{% /callout %}}
 
-The **Calypso Crypto Asymmetric API** is the communication interface between the **Calypso Card** and the
-**Calypso Asymmetric Crypto** libraries.
+The **Calypso Crypto Symmetric API** is the communication interface between the **Calypso Card** and the
+**Calypso Symmetric Crypto** libraries.
 
 <br>
 
