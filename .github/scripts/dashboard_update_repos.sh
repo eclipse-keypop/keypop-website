@@ -26,6 +26,18 @@ echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token keypop-calypso-crypto-symmetric-java-api main true true
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token keypop-calypso-crypto-asymmetric-java-api main true true
+echo "[" >> dashboard/repository_list.json
+../.github/scripts/dashboard_update_repo.sh $token keypop-reader-cpp-api main true true
+echo "," >> dashboard/repository_list.json
+../.github/scripts/dashboard_update_repo.sh $token keypop-card-cpp-api main true true
+echo "," >> dashboard/repository_list.json
+../.github/scripts/dashboard_update_repo.sh $token keypop-calypso-card-cpp-api main true true
+echo "," >> dashboard/repository_list.json
+../.github/scripts/dashboard_update_repo.sh $token keypop-calypso-crypto-legacysam-cpp-api main true true
+echo "," >> dashboard/repository_list.json
+../.github/scripts/dashboard_update_repo.sh $token keypop-calypso-crypto-symmetric-cpp-api main true true
+echo "," >> dashboard/repository_list.json
+../.github/scripts/dashboard_update_repo.sh $token keypop-calypso-crypto-asymmetric-cpp-api main true true
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token keypop-website main false false
 echo "" >> dashboard/repository_list.json

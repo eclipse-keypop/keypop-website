@@ -29,6 +29,30 @@ fi
 if [ $? -eq 0 ]; then
   exit 0
 fi
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-reader-cpp-api
+if [ $? -eq 0 ]; then
+  exit 0
+fi
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-card-cpp-api
+if [ $? -eq 0 ]; then
+  exit 0
+fi
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-calypso-card-cpp-api
+if [ $? -eq 0 ]; then
+  exit 0
+fi
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-calypso-crypto-legacysam-cpp-api
+if [ $? -eq 0 ]; then
+  exit 0
+fi
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-calypso-crypto-symmetric-cpp-api
+if [ $? -eq 0 ]; then
+  exit 0
+fi
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-calypso-crypto-asymmetric-cpp-api
+if [ $? -eq 0 ]; then
+  exit 0
+fi
 ./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-website
 if [ $? -eq 0 ]; then
   exit 0
