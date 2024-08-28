@@ -283,7 +283,7 @@ loadProjectDashboard = async function() {
         return '<span data-toggle="tooltip" title="' + date + ' ' + time + '">' + date + '</span>';
     }
 
-    let owner = "eclipse";
+    let owner = "eclipse-keypop";
 
     const lastUpdate = await getJson('datetime');
     const date = new Date(lastUpdate.datetime);
