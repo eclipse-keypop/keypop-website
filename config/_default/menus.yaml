@@ -15,6 +15,10 @@ main:
     parent: Community
     url: '/community/contributing/'
     weight: 10
+  - name: Roadmap
+    parent: Community
+    url: '/community/roadmap/'
+    weight: 20
   - name: Changelog
     parent: Community
     url: '/community/changelog/'

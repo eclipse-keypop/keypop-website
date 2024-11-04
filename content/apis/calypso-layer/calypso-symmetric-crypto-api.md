@@ -21,7 +21,7 @@ The **Calypso Crypto Symmetric API** is the communication interface between the 
 ## Java implementation
 {{% callout note %}}
 Latest version **`{{% keypop-calypso-crypto-symmetric-java-api-version %}}`**
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://eclipse-keypop.github.io/keypop-calypso-crypto-symmetric-java-api/)</span>
+<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://calypso-crypto-symmetric-java.keypop.org/)</span>
 <span class="component-metadata">{{< icon name="github" pack="fab" >}} [GitHub repository](https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-java-api/)</span>
 {{% /callout %}}
 
