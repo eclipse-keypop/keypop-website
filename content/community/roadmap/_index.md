@@ -48,16 +48,16 @@ Here's the development integration history for each interface by programming lan
   </tr>
   <tr>
     <td rowspan="2">Calypso Card</td>
-    <td>2.0</td>
-    <td>first stable release</td>
-    <td>2023/11</td>
-    <td>candidate 2024/08</td>
-  </tr>
-  <tr>
     <td>2.1</td>
     <td>PKI-based card secure session added</td>
     <td>2024/04</td>
-    <td>-</td>
+    <td>candidate 2024/08</td>    
+  </tr>
+  <tr>
+    <td>2.0</td>
+    <td>first stable release</td>
+    <td>2023/11</td>
+    <td>skipped</td>
   </tr>
   <tr>
     <td>Calypso Crypto Symmetric</td>
@@ -68,22 +68,28 @@ Here's the development integration history for each interface by programming lan
   </tr>
   <tr>
     <td rowspan="2">Calypso Crypto Asymmetric</td>
-    <td>0.1</td>
-    <td>first architectural attempt</td>
-    <td>2023/11</td>
-    <td>skipped</td>
-  </tr>
-  <tr>
     <td>0.2</td>
     <td>stable redesign</td>
     <td>2024/04</td>
     <td>2024/08 candidate</td>
   </tr>
   <tr>
-    <td rowspan="4">Calypso Legacy SAM</td>
-    <td>0.3</td>
-    <td>first stable release</td>
+    <td>0.1</td>
+    <td>first architectural attempt</td>
     <td>2023/11</td>
+    <td>skipped</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Calypso Legacy SAM</td>
+    <td>0.6</td>
+    <td>Get Data support on selection</td>
+    <td>2024/04</td>
+    <td>2024/08 candidate</td>
+  </tr>
+  <tr>
+    <td>0.5</td>
+    <td>issuance of CACert certificates for PKI card personalization</td>
+    <td>2024/04</td>
     <td>skipped</td>
   </tr>
   <tr>
@@ -93,16 +99,10 @@ Here's the development integration history for each interface by programming lan
     <td>skipped</td>
   </tr>
   <tr>
-    <td>0.5</td>
-    <td>issuance of CACert certificates for PKI card personalization</td>
-    <td>2024/04</td>
+    <td>0.3</td>
+    <td>first stable release</td>
+    <td>2023/11</td>
     <td>skipped</td>
-  </tr>
-  <tr>
-    <td>0.6</td>
-    <td>Get Data support on selection</td>
-    <td>2024/04</td>
-    <td>2024/08 candidate</td>
-  </tr>
+  </tr>  
 </tbody>
 </table>
