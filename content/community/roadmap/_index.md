@@ -51,13 +51,13 @@ Here's the development integration history for each interface by programming lan
     <td>2.1</td>
     <td>PKI-based card secure session added</td>
     <td>2024/04</td>
-    <td>candidate 2024/08</td>    
+    <td>in progress</td>    
   </tr>
   <tr>
     <td>2.0</td>
     <td>first stable release</td>
     <td>2023/11</td>
-    <td>skipped</td>
+    <td>candidate 2024/08</td>
   </tr>
   <tr>
     <td>Calypso Crypto Symmetric</td>
