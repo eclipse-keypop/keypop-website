@@ -22,7 +22,7 @@ cryptographic calculations required for Calypso card transactions secured by sym
 ## Java implementation
 {{% callout note %}}
 Latest version **`{{% keypop-calypso-crypto-legacysam-java-api-version %}}`**
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://calypso-crypto-legacysam-java.keypop.org/)</span>
+<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://docs.keypop.org/keypop-calypso-crypto-legacysam-java-api/)</span>
 <span class="component-metadata">{{< icon name="github" pack="fab" >}} [GitHub repository](https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/)</span>
 {{% /callout %}}
 

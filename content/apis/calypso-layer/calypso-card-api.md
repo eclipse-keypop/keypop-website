@@ -21,7 +21,7 @@ transactions with Calypso cards.
 ## Java implementation
 {{% callout note %}}
 Latest version **`{{% keypop-calypso-card-java-api-version %}}`**
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://calypso-card-java.keypop.org/)</span>
+<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://docs.keypop.org/keypop-calypso-card-java-api/)</span>
 <span class="component-metadata">{{< icon name="github" pack="fab" >}} [GitHub repository](https://github.com/eclipse-keypop/keypop-calypso-card-java-api/)</span>
 {{% /callout %}}
 

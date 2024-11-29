@@ -55,11 +55,7 @@ loadProjectDashboard = async function() {
             cell.appendChild(space);
             a.innerHTML = "<i class=\"fas fa-book\"></i>";
             a.title = "API documentation for " + json.name;
-            if (json.name.match(/^keypop-(.*)-java-api$/)) {
-                a.href = "https://" + json.name.replace(/^keypop-(.*)-java-api$/, '$1-java.keypop.org');
-            } else {
-                a.href = "https://eclipse-keypop.github.io/" + json.name;
-            }
+            a.href = "https://docs.keypop.org/" + json.name;
             a.target = "_blank";
             cell.appendChild(a);
         }

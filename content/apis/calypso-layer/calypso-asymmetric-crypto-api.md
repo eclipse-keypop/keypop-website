@@ -21,7 +21,7 @@ The **Calypso Crypto Asymmetric API** is the communication interface between the
 ## Java implementation
 {{% callout note %}}
 Latest version **`{{% keypop-calypso-crypto-asymmetric-java-api-version %}}`**
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://calypso-crypto-asymmetric-java.keypop.org/)</span>
+<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://docs.keypop.org/keypop-calypso-crypto-asymmetric-java-api/)</span>
 <span class="component-metadata">{{< icon name="github" pack="fab" >}} [GitHub repository](https://github.com/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/)</span>
 {{% /callout %}}
 

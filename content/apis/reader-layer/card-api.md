@@ -21,7 +21,7 @@ reader layer to implement specific card layers (like the Calypso Card layer).
 ## Java implementation
 {{% callout note %}}
 Latest version **`{{% keypop-card-java-api-version %}}`**
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://card-java.keypop.org/)</span>
+<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://docs.keypop.org/keypop-card-java-api/)</span>
 <span class="component-metadata">{{< icon name="github" pack="fab" >}} [GitHub repository](https://github.com/eclipse-keypop/keypop-card-java-api/)</span>
 {{% /callout %}}
 

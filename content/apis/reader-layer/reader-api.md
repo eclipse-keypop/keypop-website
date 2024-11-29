@@ -21,7 +21,7 @@ configuring readers and process card selection scenarios.
 ## Java implementation
 {{% callout note %}}
 Latest version **`{{% keypop-reader-java-api-version %}}`**
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://reader-java.keypop.org/)</span>
+<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://docs.keypop.org/keypop-reader-java-api/)</span>
 <span class="component-metadata">{{< icon name="github" pack="fab" >}} [GitHub repository](https://github.com/eclipse-keypop/keypop-reader-java-api/)</span>
 {{% /callout %}}
 
