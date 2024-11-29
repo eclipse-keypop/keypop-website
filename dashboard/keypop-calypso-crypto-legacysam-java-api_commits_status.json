@@ -1,20 +1,20 @@
 {
-  "state": "success",
+  "state": "pending",
   "statuses": [
     {
-      "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/statuses/2e93f7fab3d39cf920fdfc9022fc55fb15b50ab1",
+      "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/statuses/c1e7fce150c2f8ebfbfee52bc66dd395b35bdcd7",
       "avatar_url": "https://avatars.githubusercontent.com/u/141153929?v=4",
-      "id": 32826617439,
-      "node_id": "SC_kwDOJ2-Bcs8AAAAHpJ5uXw",
-      "state": "success",
-      "description": "This commit looks good",
-      "target_url": "https://ci.eclipse.org/keypop/job/Keypop/job/keypop-calypso-crypto-legacysam-java-api/job/main/19/display/redirect",
+      "id": 32883066918,
+      "node_id": "SC_kwDOJ2-Bcs8AAAAHp_vIJg",
+      "state": "pending",
+      "description": "This commit is being built",
+      "target_url": "https://ci.eclipse.org/keypop/job/Keypop/job/keypop-calypso-crypto-legacysam-java-api/job/main/20/display/redirect",
       "context": "continuous-integration/jenkins/branch",
-      "created_at": "2024-11-26T16:41:11Z",
-      "updated_at": "2024-11-26T16:41:11Z"
+      "created_at": "2024-11-29T09:08:19Z",
+      "updated_at": "2024-11-29T09:08:19Z"
     }
   ],
-  "sha": "2e93f7fab3d39cf920fdfc9022fc55fb15b50ab1",
+  "sha": "c1e7fce150c2f8ebfbfee52bc66dd395b35bdcd7",
   "total_count": 1,
   "repository": {
     "id": 661619058,
@@ -84,6 +84,6 @@
     "releases_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/releases{/id}",
     "deployments_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/deployments"
   },
-  "commit_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/commits/2e93f7fab3d39cf920fdfc9022fc55fb15b50ab1",
-  "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/commits/2e93f7fab3d39cf920fdfc9022fc55fb15b50ab1/status"
+  "commit_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/commits/c1e7fce150c2f8ebfbfee52bc66dd395b35bdcd7",
+  "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/commits/c1e7fce150c2f8ebfbfee52bc66dd395b35bdcd7/status"
 }
