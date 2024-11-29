@@ -43,6 +43,10 @@ main:
     parent: Community
     url: 'https://github.com/eclipse-keypop/'
     weight: 70
+  - name: All API doc
+    parent: Community
+    url: 'https://docs.keypop.org/'
+    weight: 80
 
   - name: Implementations
     url: '/implementations/'
