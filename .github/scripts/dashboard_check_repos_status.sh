@@ -57,5 +57,13 @@ fi
 if [ $? -eq 0 ]; then
   exit 0
 fi
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-actions
+if [ $? -eq 0 ]; then
+  exit 0
+fi
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-api-docs
+if [ $? -eq 0 ]; then
+  exit 0
+fi
 
 exit 1
