@@ -33,5 +33,9 @@ echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token keypop-calypso-crypto-asymmetric-cpp-api main true false
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token keypop-website main false false
+echo "," >> dashboard/repository_list.json
+../.github/scripts/dashboard_update_repo.sh $token keypop-actions main false false
+echo "," >> dashboard/repository_list.json
+../.github/scripts/dashboard_update_repo.sh $token keypop-api-docs main false false
 echo "" >> dashboard/repository_list.json
 echo "]" >> dashboard/repository_list.json
