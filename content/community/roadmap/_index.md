@@ -8,10 +8,8 @@ weight: 2
 ---
 
 Keypop developments follow the definitions of [ticketing terminal API](https://terminal-api.calypsonet.org/) issued by [CNA](https://calypsonet.org/): , starting with an initial development in Java for each interface evolution, followed by a porting in C++.
-Keypop APIs are initially be versioned as a release candidate until a first implementation has been completed to validate the interfaces (e.g. [on Eclipse Keyple](https://keyple.org/community/roadmap/#current-work)).
 
 ## Current work and future developments
-- For the first quarter of 2025, we plan to release the Keypop C++ APIs (currently available as a release candidate) in stable version 2.x.
 - During 2025, a new interface dedicated to the administration of a Calypso security module of the 'OpenSAM' type should be developed.
 
 ## History of developments
@@ -37,14 +35,14 @@ Here's the development integration history for each interface by programming lan
     <td>2.0</td>
     <td>first stable release</td>
     <td>2023/11</td>
-    <td>candidate 2024/08</td>
+    <td>2024/12</td>
   </tr>
   <tr>
     <td>Card</td>
     <td>2.0</td>
     <td>first stable release</td>
     <td>2023/11</td>
-    <td>candidate 2024/08</td>
+    <td>2024/12</td>
   </tr>
   <tr>
     <td rowspan="2">Calypso Card</td>
@@ -57,21 +55,21 @@ Here's the development integration history for each interface by programming lan
     <td>2.0</td>
     <td>first stable release</td>
     <td>2023/11</td>
-    <td>candidate 2024/08</td>
+    <td>2024/12</td>
   </tr>
   <tr>
     <td>Calypso Crypto Symmetric</td>
     <td>0.1</td>
     <td>first stable release</td>
     <td>2023/11</td>
-    <td>2024/08 candidate</td>
+    <td>2024/12</td>
   </tr>
   <tr>
     <td rowspan="2">Calypso Crypto Asymmetric</td>
     <td>0.2</td>
     <td>stable redesign</td>
     <td>2024/04</td>
-    <td>2024/08 candidate</td>
+    <td>2024/12</td>
   </tr>
   <tr>
     <td>0.1</td>
@@ -84,7 +82,7 @@ Here's the development integration history for each interface by programming lan
     <td>0.6</td>
     <td>Get Data support on selection</td>
     <td>2024/04</td>
-    <td>2024/08 candidate</td>
+    <td>2024/12</td>
   </tr>
   <tr>
     <td>0.5</td>
