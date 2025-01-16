@@ -1,20 +1,20 @@
 {
-  "state": "success",
+  "state": "pending",
   "statuses": [
     {
-      "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-card-java-api/statuses/5691d96fdd91af064d7d8a6a31c0366b3b67617d",
+      "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-card-java-api/statuses/aecb9973873968fe74d339b1078b3f524a58d894",
       "avatar_url": "https://avatars.githubusercontent.com/u/141153929?v=4",
-      "id": 32817683622,
-      "node_id": "SC_kwDOJ29_188AAAAHpBYcpg",
-      "state": "success",
-      "description": "This commit looks good",
-      "target_url": "https://ci.eclipse.org/keypop/job/Keypop/job/keypop-calypso-card-java-api/job/main/19/display/redirect",
+      "id": 33660875552,
+      "node_id": "SC_kwDOJ29_188AAAAH1lgzIA",
+      "state": "pending",
+      "description": "This commit is being built",
+      "target_url": "https://ci.eclipse.org/keypop/job/Keypop/job/keypop-calypso-card-java-api/job/main/20/display/redirect",
       "context": "continuous-integration/jenkins/branch",
-      "created_at": "2024-11-26T10:41:36Z",
-      "updated_at": "2024-11-26T10:41:36Z"
+      "created_at": "2025-01-16T09:02:37Z",
+      "updated_at": "2025-01-16T09:02:37Z"
     }
   ],
-  "sha": "5691d96fdd91af064d7d8a6a31c0366b3b67617d",
+  "sha": "aecb9973873968fe74d339b1078b3f524a58d894",
   "total_count": 1,
   "repository": {
     "id": 661618647,
@@ -84,6 +84,6 @@
     "releases_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-card-java-api/releases{/id}",
     "deployments_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-card-java-api/deployments"
   },
-  "commit_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-card-java-api/commits/5691d96fdd91af064d7d8a6a31c0366b3b67617d",
-  "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-card-java-api/commits/5691d96fdd91af064d7d8a6a31c0366b3b67617d/status"
+  "commit_url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-card-java-api/commits/aecb9973873968fe74d339b1078b3f524a58d894",
+  "url": "https://api.github.com/repos/eclipse-keypop/keypop-calypso-card-java-api/commits/aecb9973873968fe74d339b1078b3f524a58d894/status"
 }
