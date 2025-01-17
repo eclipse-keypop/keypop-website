@@ -1,20 +1,20 @@
 {
-  "state": "success",
+  "state": "pending",
   "statuses": [
     {
-      "url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/statuses/7e2a7ed904b87821e1a7239b9df05b696c9b20a0",
+      "url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/statuses/fbc09e749fdb421975be4a43ecac188943598e4d",
       "avatar_url": "https://avatars.githubusercontent.com/u/141153929?v=4",
-      "id": 33694367935,
-      "node_id": "SC_kwDOJ299fc8AAAAH2FdAvw",
-      "state": "success",
-      "description": "This commit looks good",
-      "target_url": "https://ci.eclipse.org/keypop/job/Keypop/job/keypop-reader-java-api/job/main/17/display/redirect",
+      "id": 33695906546,
+      "node_id": "SC_kwDOJ299fc8AAAAH2G668g",
+      "state": "pending",
+      "description": "This commit is being built",
+      "target_url": "https://ci.eclipse.org/keypop/job/Keypop/job/keypop-reader-java-api/job/main/18/display/redirect",
       "context": "continuous-integration/jenkins/branch",
-      "created_at": "2025-01-17T13:57:58Z",
-      "updated_at": "2025-01-17T13:57:58Z"
+      "created_at": "2025-01-17T15:00:06Z",
+      "updated_at": "2025-01-17T15:00:06Z"
     }
   ],
-  "sha": "7e2a7ed904b87821e1a7239b9df05b696c9b20a0",
+  "sha": "fbc09e749fdb421975be4a43ecac188943598e4d",
   "total_count": 1,
   "repository": {
     "id": 661618045,
@@ -84,6 +84,6 @@
     "releases_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/releases{/id}",
     "deployments_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/deployments"
   },
-  "commit_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/commits/7e2a7ed904b87821e1a7239b9df05b696c9b20a0",
-  "url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/commits/7e2a7ed904b87821e1a7239b9df05b696c9b20a0/status"
+  "commit_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/commits/fbc09e749fdb421975be4a43ecac188943598e4d",
+  "url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/commits/fbc09e749fdb421975be4a43ecac188943598e4d/status"
 }
