@@ -5,7 +5,7 @@ active = true
 weight = 10 
 
 #title = "Eclipse Keypop®" 
-title = "_\"the best open source APIs for smart card processing\"_<br><br>" 
+title = "_\"smart open source APIs for smart card processing terminal\"_<br><br>" 
 
 [design.background]
   image = "hero-background.jpg"
