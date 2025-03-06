@@ -330,7 +330,7 @@ table>tbody>tr:nth-child(odd)>td, table>tbody>tr:nth-child(odd)>th {
   background-color: #f9f9f9;
 }
 
-// Fix copy button visibility
+// Fix copy button visibility and size
 .btn-copy-code {
   display: block;
   line-height: .5;
@@ -345,4 +345,9 @@ table>tbody>tr:nth-child(odd)>td, table>tbody>tr:nth-child(odd)>th {
     //max-height: calc(100vh - 5rem - 70px);
     max-height: calc(100vh - 4rem);
   }
+}
+
+// Table header
+thead {
+  background-color: #DDD;
 }

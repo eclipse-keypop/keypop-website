@@ -1,7 +1,7 @@
 ---
 title: Overall project dashboard
 subtitle: 
-summary: 
+summary:
 ---
 
 {{% callout note %}}
