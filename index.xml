@@ -13,7 +13,7 @@ transactions with Calypso cards.&lt;/p>
 &lt;h2 id="java-implementation">Java implementation&lt;/h2>
 &lt;div class="alert alert-note">
 &lt;div>
-Latest version &lt;strong>&lt;code>2.1.0&lt;/code>&lt;/strong>
+Latest version &lt;strong>&lt;code>2.1.1&lt;/code>&lt;/strong>
 &lt;span class="component-metadata">
 &lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-card-java-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
 &lt;span class="component-metadata">
@@ -44,14 +44,14 @@ Maven
 &lt;div class="tab-content" id="tabs-2-content">&lt;div class="tab-pane fade show active"
 id="tabs-2-0" role="tabpanel" aria-labelled-by="tabs-2-0-tab">
 &lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;org.eclipse.keypop:keypop-calypso-card-java-api:2.1.0&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;org.eclipse.keypop:keypop-calypso-card-java-api:2.1.1&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-pane fade"
 id="tabs-2-1" role="tabpanel" aria-labelled-by="tabs-2-1-tab">
 &lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gradle" data-lang="gradle">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span> &lt;span class="s1">&amp;#39;org.eclipse.keypop:keypop-calypso-card-java-api:2.1.0&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gradle" data-lang="gradle">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span> &lt;span class="s1">&amp;#39;org.eclipse.keypop:keypop-calypso-card-java-api:2.1.1&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;/div>
@@ -61,7 +61,7 @@ id="tabs-2-2" role="tabpanel" aria-labelled-by="tabs-2-2-tab">
 &lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;dependency&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;groupId&amp;gt;&lt;/span>org.eclipse.keypop&lt;span class="nt">&amp;lt;/groupId&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;artifactId&amp;gt;&lt;/span>keypop-calypso-card-java-api&lt;span class="nt">&amp;lt;/artifactId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;version&amp;gt;&lt;/span>2.1.0&lt;span class="nt">&amp;lt;/version&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;version&amp;gt;&lt;/span>2.1.1&lt;span class="nt">&amp;lt;/version&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/dependency&amp;gt;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;/div>
 &lt;/div>
