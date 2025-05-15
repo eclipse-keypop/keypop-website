@@ -29,6 +29,10 @@ fi
 if [ $? -eq 0 ]; then
   exit 0
 fi
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-storagecard-java-api
+if [ $? -eq 0 ]; then
+  exit 0
+fi
 ./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-reader-cpp-api
 if [ $? -eq 0 ]; then
   exit 0

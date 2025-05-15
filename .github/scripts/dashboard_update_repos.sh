@@ -20,6 +20,8 @@ echo "," >> dashboard/repository_list.json
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token keypop-calypso-crypto-asymmetric-java-api main true true
 echo "," >> dashboard/repository_list.json
+../.github/scripts/dashboard_update_repo.sh $token keypop-storagecard-java-api main true true
+echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token keypop-reader-cpp-api main true false
 echo "," >> dashboard/repository_list.json
 ../.github/scripts/dashboard_update_repo.sh $token keypop-card-cpp-api main true false
