@@ -4,7 +4,7 @@ linktitle: Roadmap
 summary: Overview of past and future Keypop Releases.
 type: book
 toc: true
-weight: 2
+weight: 3
 ---
 
 Keypop developments follow the definitions of [ticketing terminal API](https://terminal-api.calypsonet.org/) issued by [CNA](https://calypsonet.org/): , starting with an initial development in Java for each interface evolution, followed by a porting in C++.

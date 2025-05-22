@@ -11,6 +11,10 @@ main:
   - name: Community
     url: '/community/'
     weight: 20
+  - name: License
+    parent: Community
+    url: '/community/license/'
+    weight: 5
   - name: Contributing
     parent: Community
     url: '/community/contributing/'
