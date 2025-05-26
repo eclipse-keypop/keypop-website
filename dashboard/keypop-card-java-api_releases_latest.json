@@ -1,1 +1,42 @@
-{"message": "We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."}
+{
+  "url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/releases/150891783",
+  "assets_url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/releases/150891783/assets",
+  "upload_url": "https://uploads.github.com/repos/eclipse-keypop/keypop-card-java-api/releases/150891783/assets{?name,label}",
+  "html_url": "https://github.com/eclipse-keypop/keypop-card-java-api/releases/tag/2.0.1",
+  "id": 150891783,
+  "author": {
+    "login": "andrei-cristea",
+    "id": 26622621,
+    "node_id": "MDQ6VXNlcjI2NjIyNjIx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26622621?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/andrei-cristea",
+    "html_url": "https://github.com/andrei-cristea",
+    "followers_url": "https://api.github.com/users/andrei-cristea/followers",
+    "following_url": "https://api.github.com/users/andrei-cristea/following{/other_user}",
+    "gists_url": "https://api.github.com/users/andrei-cristea/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/andrei-cristea/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/andrei-cristea/subscriptions",
+    "organizations_url": "https://api.github.com/users/andrei-cristea/orgs",
+    "repos_url": "https://api.github.com/users/andrei-cristea/repos",
+    "events_url": "https://api.github.com/users/andrei-cristea/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/andrei-cristea/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "node_id": "RE_kwDOJ29-9c4I_m0H",
+  "tag_name": "2.0.1",
+  "target_commitish": "main",
+  "name": "",
+  "draft": false,
+  "prerelease": false,
+  "created_at": "2024-04-12T08:31:34Z",
+  "published_at": "2024-04-12T08:48:29Z",
+  "assets": [
+
+  ],
+  "tarball_url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/tarball/2.0.1",
+  "zipball_url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/zipball/2.0.1",
+  "body": "### Changed\r\n- Java source and target levels `1.6` -> `1.8`\r\n### Upgraded\r\n- Gradle `6.8.3` -> `7.6.4`"
+}
