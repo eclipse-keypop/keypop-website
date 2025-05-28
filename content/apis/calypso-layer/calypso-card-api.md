@@ -1,14 +1,14 @@
 ---
 title: Calypso Card API (external)
 linktitle: 🟢 Calypso Card
-summary: Public high-level API which standardizes the way to interact with a Calypso® product (card, NFC smartphone applet/application, SAM, etc...).
+summary: Public high-level API which standardizes the way to interact with a Calypso® product (card, NFC smartphone applet/application, SAM, etc.).
 type: book
 weight: 1
 toc: true
 ---
 
 {{% callout note %}}
-{{< icon name="project-diagram" pack="fas" >}} [UML class diagram](https://calypsonet.github.io/calypsonet-terminal-calypso-card-uml-api/)
+{{< icon name="project-diagram" pack="fas" >}} [UML class diagram](https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-card-uml-api/)
 <span class="component-metadata">{{< icon name="book" pack="fas" >}} [Design guide](https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-card-api/)</span>
 <span class="component-metadata">{{< icon name="exchange-alt" pack="fas" >}} [Changelog](https://github.com/eclipse-keypop/keypop-calypso-card-java-api/blob/main/CHANGELOG.md)</span>
 {{% /callout %}}

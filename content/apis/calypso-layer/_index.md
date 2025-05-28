@@ -1,6 +1,6 @@
 ---
-title: Calypso Layer APIs
-linktitle: Calypso layer APIs
+title: Card Layer - Calypso APIs
+linktitle: Card Layer - Calypso
 type: book
 toc: false
 weight: 20
@@ -8,5 +8,5 @@ weight: 20
 
 <br>
 
-The **Keypop Calypso layer APIs** follow the architecture described by the
-[CNA Calypso layer specifications](https://terminal-api.calypsonet.org/specifications/calypso-layer/).
+The **Keypop Calypso APIs** follow the architecture described by the
+[CNA Card Layer - Calypso specifications](https://terminal-api.calypsonet.org/specifications/calypso-layer/).

@@ -8,13 +8,13 @@ toc: true
 ---
 
 {{% callout note %}}
-{{< icon name="project-diagram" pack="fas" >}} [UML class diagram](https://calypsonet.github.io/calypsonet-terminal-card-uml-api/)
+{{< icon name="project-diagram" pack="fas" >}} [UML class diagram](https://docs.terminal-api.calypsonet.org/calypsonet-terminal-card-uml-api/)
 <span class="component-metadata">{{< icon name="book" pack="fas" >}} [Design guide](https://terminal-api.calypsonet.org/specifications/reader-layer/card-api/)</span>
 <span class="component-metadata">{{< icon name="exchange-alt" pack="fas" >}} [Changelog](https://github.com/eclipse-keypop/keypop-card-java-api/blob/main/CHANGELOG.md)</span>
 {{% /callout %}}
 
 As part of the **Reader Layer**, the **Card API** defines the internal elements shared by the
-reader layer to implement specific card layers (like the Calypso Card layer).
+reader layer to implement specific card layers (like the Calypso Card Layer).
 
 <br>
 

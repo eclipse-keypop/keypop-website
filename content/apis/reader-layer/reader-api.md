@@ -8,7 +8,7 @@ toc: true
 ---
 
 {{% callout note %}}
-{{< icon name="project-diagram" pack="fas" >}} [UML class diagram](https://calypsonet.github.io/calypsonet-terminal-reader-uml-api/)
+{{< icon name="project-diagram" pack="fas" >}} [UML class diagram](https://docs.terminal-api.calypsonet.org/calypsonet-terminal-reader-uml-api/)
 <span class="component-metadata">{{< icon name="book" pack="fas" >}} [Design guide](https://terminal-api.calypsonet.org/specifications/reader-layer/reader-api/)</span>
 <span class="component-metadata">{{< icon name="exchange-alt" pack="fas" >}} [Changelog](https://github.com/eclipse-keypop/keypop-reader-java-api/blob/main/CHANGELOG.md)</span>
 {{% /callout %}}
