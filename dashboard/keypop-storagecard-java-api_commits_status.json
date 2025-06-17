@@ -1,21 +1,10 @@
 {
-  "state": "success",
+  "state": "pending",
   "statuses": [
-    {
-      "url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/statuses/1a3c74600bec58b7aecd98c0ea841379e00cf2eb",
-      "avatar_url": "https://avatars.githubusercontent.com/u/141153929?v=4",
-      "id": 36295145435,
-      "node_id": "SC_kwDOOp6-js8AAAAIc1v32w",
-      "state": "success",
-      "description": "This commit looks good",
-      "target_url": "https://ci.eclipse.org/keypop/job/Keypop/job/keypop-storagecard-java-api/job/main/3/display/redirect",
-      "context": "continuous-integration/jenkins/branch",
-      "created_at": "2025-05-15T15:18:04Z",
-      "updated_at": "2025-05-15T15:18:04Z"
-    }
+
   ],
-  "sha": "1a3c74600bec58b7aecd98c0ea841379e00cf2eb",
-  "total_count": 1,
+  "sha": "d8529a5f13dc2bc50bfd326af699f9f631a078ed",
+  "total_count": 0,
   "repository": {
     "id": 983481998,
     "node_id": "R_kgDOOp6-jg",
@@ -84,6 +73,6 @@
     "releases_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases{/id}",
     "deployments_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/deployments"
   },
-  "commit_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/commits/1a3c74600bec58b7aecd98c0ea841379e00cf2eb",
-  "url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/commits/1a3c74600bec58b7aecd98c0ea841379e00cf2eb/status"
+  "commit_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/commits/d8529a5f13dc2bc50bfd326af699f9f631a078ed",
+  "url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/commits/d8529a5f13dc2bc50bfd326af699f9f631a078ed/status"
 }
