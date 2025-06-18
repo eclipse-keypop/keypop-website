@@ -195,62 +195,32 @@ loadProjectDashboard = async function() {
         a.appendChild(linkText);
         a.target = "_blank";
 
-        if (repos.toLowerCase().includes("cpp")) {
-            try {
-                json = await getJsonRepositoryData(repos, "_check_runs");
-            } catch (err) {
-            }
+        try {
+            json = await getJsonRepositoryData(repos, "_check_runs");
+        } catch (err) {
+        }
 
-            a.title = "CI status page";
-            a.href = "https://github.com/" + owner + "/" + repos + "/actions";
+        a.title = "CI status page";
+        a.href = "https://github.com/" + owner + "/" + repos + "/actions";
 
-            if (json && json.check_runs && json.check_runs[0] && json.check_runs[0].status === "completed") {
-                switch (json.check_runs[0].conclusion) {
-                    case "failure":
-                    case "action_required":
-                    case "cancelled":
-                    case "skipped":
-                    case "timed-out":
-                        a.style.color = "red";
-                        break;
-                    case "neutral":
-                        a.style.color = "lightgreen";
-                        break;
-                    case "success":
-                        a.style.color = "green";
-                        break;
-                }
-            } else {
-                a.style.color = "orange";
-            }
-        } else {
-            let branch = "main";
-            try {
-                json = await getJsonRepositoryData(repos, "_commits_status");
-            } catch (err) {
-            }
-
-            a.title = "CI status page";
-            a.href = "https://ci.eclipse.org/keypop/job/Keypop/job/" + repos + "/job/" + branch + "/";
-
-            switch (json ? json.state : null) {
-                case "error":
+        if (json && json.check_runs && json.check_runs[0] && json.check_runs[0].status === "completed") {
+            switch (json.check_runs[0].conclusion) {
                 case "failure":
+                case "action_required":
+                case "cancelled":
+                case "skipped":
+                case "timed-out":
                     a.style.color = "red";
-                    a.title += ": failure";
                     break;
-                case "pending":
-                    a.style.color = "orange";
-                    a.title += ": pending";
+                case "neutral":
+                    a.style.color = "lightgreen";
                     break;
                 case "success":
                     a.style.color = "green";
-                    a.title += ": success";
                     break;
-                default:
-                    a.style.color = "gray"; // Default color if the state is unknown
-                    a.title += ": unknown";
             }
+        } else {
+            a.style.color = "orange";
         }
 
         cell.appendChild(a);
