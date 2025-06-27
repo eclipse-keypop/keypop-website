@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/227684441",
-  "assets_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/227684441/assets",
-  "upload_url": "https://uploads.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/227684441/assets{?name,label}",
-  "html_url": "https://github.com/eclipse-keypop/keypop-storagecard-java-api/releases/tag/0.1.0",
-  "id": 227684441,
+  "url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/228371261",
+  "assets_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/228371261/assets",
+  "upload_url": "https://uploads.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/228371261/assets{?name,label}",
+  "html_url": "https://github.com/eclipse-keypop/keypop-storagecard-java-api/releases/tag/0.2.0",
+  "id": 228371261,
   "author": {
     "login": "jeanpierrefortune",
     "id": 1011563,
@@ -25,18 +25,18 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "node_id": "RE_kwDOOp6-js4NkjBZ",
-  "tag_name": "0.1.0",
+  "node_id": "RE_kwDOOp6-js4NnKs9",
+  "tag_name": "0.2.0",
   "target_commitish": "main",
   "name": "",
   "draft": false,
   "prerelease": false,
-  "created_at": "2025-06-18T10:09:21Z",
-  "published_at": "2025-06-25T13:26:42Z",
+  "created_at": "2025-06-27T13:37:22Z",
+  "published_at": "2025-06-27T13:47:28Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/tarball/0.1.0",
-  "zipball_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/zipball/0.1.0",
-  "body": "This is the initial release."
+  "tarball_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/tarball/0.2.0",
+  "zipball_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/zipball/0.2.0",
+  "body": "### Added\r\n- **System block management**: New methods to handle system blocks for compatible storage card types:\r\n    - `StorageCardTransactionManager.prepareReadSystemBlock()` method.\r\n    - `StorageCardTransactionManager.prepareWriteSystemBlock(byte[] data)` method.\r\n    - `StorageCard.getSystemBlock()` method.\r\n    - `ProductType.hasSystemBlock()` method to indicate system block support by card type.\r\n### Changed\r\n- Parameter naming consistency across all APIs: renamed from `blockNumber` to `blockAddress`:\r\n    - `StorageCardTransactionManager.prepareReadBlock(int blockAddress)` method.\r\n    - `StorageCardTransactionManager.prepareReadBlocks(int fromBlockAddress, int toBlockAddress)` method.\r\n    - `StorageCardTransactionManager.prepareWriteBlocks(int fromBlockAddress, byte[] data)` method.\r\n    - `StorageCardSelectionExtension.prepareReadBlock(int blockAddress)` method.\r\n    - `StorageCardSelectionExtension.prepareReadBlocks(int fromBlockAddress, int toBlockAddress)` method.\r\n    - `StorageCard.getBlock(int blockAddress)` method.\r\n    - `StorageCard.getBlocks(int fromBlockAddress, int toBlockAddress)` method.\r\n- Documentation improvements:\r\n    - Clarified that block addresses start at 0 and maximum value is `getBlockCount() - 1`.\r\n    - Enhanced documentation for zero-filled behavior when blocks haven't been read.\r\n    - Fixed incorrect reference from `ProductType.getBlockCount()` to `ProductType.getBlockSize()` in write methods.\r\n- **Write operation behavior**: Write commands no longer automatically update the `StorageCard` memory image due to storage card technology limitations. Applications must perform explicit read operations after writes to verify actual card content."
 }
