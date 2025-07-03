@@ -179,6 +179,10 @@ loadProjectDashboard = async function() {
     }
 
     async function getLatestTag(rowIndex, owner, repos) {
+        if (repos === "keypop-actions") {
+            // do not display useless tag for this repos
+            return;
+        }
         let cell = document.getElementById("latest-tag-" + rowIndex);
         try {
             const json = await getJsonRepositoryData(repos, "_tags");
