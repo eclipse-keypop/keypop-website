@@ -34,36 +34,16 @@
     },
     "body": "Updates API contract for prepareWriteBlocks() method",
     "created_at": "2025-07-21T10:49:49Z",
-    "updated_at": "2025-07-21T12:55:26Z",
+    "updated_at": "2025-07-21T14:04:40Z",
     "closed_at": null,
     "merged_at": null,
-    "merge_commit_sha": "81a3890888eeda69e3403f9cea29d60a4396e167",
+    "merge_commit_sha": "b9493ee133f3ed63501aa22a438ddc7e00f22528",
     "assignee": null,
     "assignees": [
 
     ],
     "requested_reviewers": [
-      {
-        "login": "andrei-cristea",
-        "id": 26622621,
-        "node_id": "MDQ6VXNlcjI2NjIyNjIx",
-        "avatar_url": "https://avatars.githubusercontent.com/u/26622621?v=4",
-        "gravatar_id": "",
-        "url": "https://api.github.com/users/andrei-cristea",
-        "html_url": "https://github.com/andrei-cristea",
-        "followers_url": "https://api.github.com/users/andrei-cristea/followers",
-        "following_url": "https://api.github.com/users/andrei-cristea/following{/other_user}",
-        "gists_url": "https://api.github.com/users/andrei-cristea/gists{/gist_id}",
-        "starred_url": "https://api.github.com/users/andrei-cristea/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/andrei-cristea/subscriptions",
-        "organizations_url": "https://api.github.com/users/andrei-cristea/orgs",
-        "repos_url": "https://api.github.com/users/andrei-cristea/repos",
-        "events_url": "https://api.github.com/users/andrei-cristea/events{/privacy}",
-        "received_events_url": "https://api.github.com/users/andrei-cristea/received_events",
-        "type": "User",
-        "user_view_type": "public",
-        "site_admin": false
-      }
+
     ],
     "requested_teams": [
 
@@ -77,11 +57,11 @@
     "review_comments_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/pulls/7/comments",
     "review_comment_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/pulls/comments{/number}",
     "comments_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/issues/7/comments",
-    "statuses_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/statuses/ff09638466bfa4b61344d1df11f3ee133de3e08f",
+    "statuses_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/statuses/be0ea124e64bf3738cd90fe45a3925683015945b",
     "head": {
       "label": "eclipse-keypop:release-0.3.0",
       "ref": "release-0.3.0",
-      "sha": "ff09638466bfa4b61344d1df11f3ee133de3e08f",
+      "sha": "be0ea124e64bf3738cd90fe45a3925683015945b",
       "user": {
         "login": "eclipse-keypop",
         "id": 138451421,
@@ -172,13 +152,13 @@
         "deployments_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/deployments",
         "created_at": "2025-05-14T12:54:31Z",
         "updated_at": "2025-06-27T13:37:34Z",
-        "pushed_at": "2025-07-21T12:55:25Z",
+        "pushed_at": "2025-07-21T13:48:18Z",
         "git_url": "git://github.com/eclipse-keypop/keypop-storagecard-java-api.git",
         "ssh_url": "git@github.com:eclipse-keypop/keypop-storagecard-java-api.git",
         "clone_url": "https://github.com/eclipse-keypop/keypop-storagecard-java-api.git",
         "svn_url": "https://github.com/eclipse-keypop/keypop-storagecard-java-api",
         "homepage": "https://keypop.org/",
-        "size": 376,
+        "size": 381,
         "stargazers_count": 0,
         "watchers_count": 0,
         "language": "Java",
@@ -310,13 +290,13 @@
         "deployments_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/deployments",
         "created_at": "2025-05-14T12:54:31Z",
         "updated_at": "2025-06-27T13:37:34Z",
-        "pushed_at": "2025-07-21T12:55:25Z",
+        "pushed_at": "2025-07-21T13:48:18Z",
         "git_url": "git://github.com/eclipse-keypop/keypop-storagecard-java-api.git",
         "ssh_url": "git@github.com:eclipse-keypop/keypop-storagecard-java-api.git",
         "clone_url": "https://github.com/eclipse-keypop/keypop-storagecard-java-api.git",
         "svn_url": "https://github.com/eclipse-keypop/keypop-storagecard-java-api",
         "homepage": "https://keypop.org/",
-        "size": 376,
+        "size": 381,
         "stargazers_count": 0,
         "watchers_count": 0,
         "language": "Java",
@@ -377,7 +357,7 @@
         "href": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/pulls/7/commits"
       },
       "statuses": {
-        "href": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/statuses/ff09638466bfa4b61344d1df11f3ee133de3e08f"
+        "href": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/statuses/be0ea124e64bf3738cd90fe45a3925683015945b"
       }
     },
     "author_association": "CONTRIBUTOR",
