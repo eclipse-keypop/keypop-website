@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/228371261",
-  "assets_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/228371261/assets",
-  "upload_url": "https://uploads.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/228371261/assets{?name,label}",
-  "html_url": "https://github.com/eclipse-keypop/keypop-storagecard-java-api/releases/tag/0.2.0",
-  "id": 228371261,
+  "url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/233964263",
+  "assets_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/233964263/assets",
+  "upload_url": "https://uploads.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/releases/233964263/assets{?name,label}",
+  "html_url": "https://github.com/eclipse-keypop/keypop-storagecard-java-api/releases/tag/0.3.0",
+  "id": 233964263,
   "author": {
     "login": "jeanpierrefortune",
     "id": 1011563,
@@ -25,19 +25,19 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "node_id": "RE_kwDOOp6-js4NnKs9",
-  "tag_name": "0.2.0",
+  "node_id": "RE_kwDOOp6-js4N8gLn",
+  "tag_name": "0.3.0",
   "target_commitish": "main",
   "name": "",
   "draft": false,
   "immutable": false,
   "prerelease": false,
-  "created_at": "2025-06-27T13:37:22Z",
-  "published_at": "2025-06-27T13:47:28Z",
+  "created_at": "2025-07-21T15:38:25Z",
+  "published_at": "2025-07-21T15:40:49Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/tarball/0.2.0",
-  "zipball_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/zipball/0.2.0",
-  "body": "### Added\r\n- **System block management**: New methods to handle system blocks for compatible storage card types:\r\n    - `StorageCardTransactionManager.prepareReadSystemBlock()` method.\r\n    - `StorageCardTransactionManager.prepareWriteSystemBlock(byte[] data)` method.\r\n    - `StorageCard.getSystemBlock()` method.\r\n    - `ProductType.hasSystemBlock()` method to indicate system block support by card type.\r\n### Changed\r\n- Parameter naming consistency across all APIs: renamed from `blockNumber` to `blockAddress`:\r\n    - `StorageCardTransactionManager.prepareReadBlock(int blockAddress)` method.\r\n    - `StorageCardTransactionManager.prepareReadBlocks(int fromBlockAddress, int toBlockAddress)` method.\r\n    - `StorageCardTransactionManager.prepareWriteBlocks(int fromBlockAddress, byte[] data)` method.\r\n    - `StorageCardSelectionExtension.prepareReadBlock(int blockAddress)` method.\r\n    - `StorageCardSelectionExtension.prepareReadBlocks(int fromBlockAddress, int toBlockAddress)` method.\r\n    - `StorageCard.getBlock(int blockAddress)` method.\r\n    - `StorageCard.getBlocks(int fromBlockAddress, int toBlockAddress)` method.\r\n- Documentation improvements:\r\n    - Clarified that block addresses start at 0 and maximum value is `getBlockCount() - 1`.\r\n    - Enhanced documentation for zero-filled behavior when blocks haven't been read.\r\n    - Fixed incorrect reference from `ProductType.getBlockCount()` to `ProductType.getBlockSize()` in write methods.\r\n- **Write operation behavior**: Write commands no longer automatically update the `StorageCard` memory image due to storage card technology limitations. Applications must perform explicit read operations after writes to verify actual card content."
+  "tarball_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/tarball/0.3.0",
+  "zipball_url": "https://api.github.com/repos/eclipse-keypop/keypop-storagecard-java-api/zipball/0.3.0",
+  "body": "### Added\r\n- **Exception hierarchy**: New base class `StorageCardException` with block address context support:\r\n  - `StorageCardException.getBlockAddress()` method to retrieve the block address involved in errors.\r\n- **Enhanced exception handling**: All storage card exceptions now extend `StorageCardException` and include block address context:\r\n  - `CardIOException` constructor now accepts `blockAddress` parameter.\r\n  - `ReaderIOException` constructor now accepts `blockAddress` parameter.\r\n  - `UnexpectedCommandStatusException` constructor now accepts `blockAddress` parameter.\r\n* **Product type capability**:\r\n  New `ProductType.hasWriteAcknowledgment()` method to indicate whether a storage card provides a reliable acknowledgment after write operations.\r\n### Changed\r\n- **Write operation behavior**: API contract updated for `prepareWriteBlocks()` method regarding verification reads:\r\n  - The API now specifies that implementations must handle verification reads transparently for storage cards without reliable write acknowledgment (e.g., SRT512/ST25).\r\n  - For cards with reliable write acknowledgment, no additional reads are required by the implementation.\r\n  - Applications can now rely on the API contract that data integrity is guaranteed without explicitly performing verification reads.\r\n### Removed\r\n- **Deprecated exception**: Removed `InconsistentDataException` class as it's no longer needed with the new exception hierarchy."
 }
