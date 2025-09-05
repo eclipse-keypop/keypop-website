@@ -77,12 +77,6 @@ loadProjectDashboard = async function() {
         cell.setAttribute("class", "text-center");
         cell.appendChild(document.createTextNode(""));
 
-        // column latest tag
-        cell = row.insertCell(-1);
-        cell.setAttribute("id", "latest-tag-" + rowIndex);
-        cell.setAttribute("class", "text-center");
-        cell.appendChild(document.createTextNode(""));
-
         // column issues
         cell = row.insertCell(-1);
         cell.setAttribute("id", "issue-" + rowIndex);
@@ -129,7 +123,6 @@ loadProjectDashboard = async function() {
         await getPullData(rowIndex, owner, project[0]);
         await getLatestRelease(rowIndex, owner, project[0]);
         await getReleaseDate(rowIndex, owner, project[0]);
-        await getLatestTag(rowIndex, owner, project[0]);
         if (project[2] === true) {
             await getStatus(rowIndex, owner, project[0]);
         }
@@ -174,19 +167,6 @@ loadProjectDashboard = async function() {
             if (json.tag_name !== undefined) {
                 cell.innerHTML = formatDate(json.published_at);
             }
-        } catch (err) {
-        }
-    }
-
-    async function getLatestTag(rowIndex, owner, repos) {
-        if (repos === "keypop-actions") {
-            // do not display useless tag for this repos
-            return;
-        }
-        let cell = document.getElementById("latest-tag-" + rowIndex);
-        try {
-            const json = await getJsonRepositoryData(repos, "_tags");
-            cell.innerHTML = json[0].name;
         } catch (err) {
         }
     }
@@ -284,7 +264,7 @@ loadProjectDashboard = async function() {
                 $('#project-dashboard-table').DataTable({
                     "lengthMenu": [25, 50, 75, 100],
                     "pageLength": 50,
-                    "order": [[11, 'desc']],
+                    "order": [[10, 'desc']],
                     "oLanguage": {"sSearch": "Filter:"}
                 });
                 $('.dataTables_length').addClass('bs-select');
