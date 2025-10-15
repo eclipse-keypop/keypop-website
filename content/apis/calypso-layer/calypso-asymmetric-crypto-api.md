@@ -54,6 +54,6 @@ implementation 'org.eclipse.keypop:keypop-calypso-crypto-asymmetric-java-api:{{%
 ## C++ implementation
 {{% callout note %}}
 Latest version **`{{% keypop-calypso-crypto-asymmetric-cpp-api-version %}}`**
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://eclipse-keypop.github.io/keypop-calypso-crypto-asymmetric-cpp-api/)</span>
+<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://docs.keypop.org/keypop-calypso-crypto-asymmetric-cpp-api/)</span>
 <span class="component-metadata">{{< icon name="github" pack="fab" >}} [GitHub repository](https://github.com/eclipse-keypop/keypop-calypso-crypto-asymmetric-cpp-api/)</span>
 {{% /callout %}}

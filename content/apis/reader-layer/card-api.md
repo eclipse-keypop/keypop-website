@@ -54,6 +54,6 @@ implementation 'org.eclipse.keypop:keypop-card-java-api:{{% keypop-card-java-api
 ## C++ implementation
 {{% callout note %}}
 Latest version **`{{% keypop-card-cpp-api-version %}}`**
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://eclipse-keypop.github.io/keypop-card-cpp-api/)</span>
+<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://docs.keypop.org/keypop-card-cpp-api/)</span>
 <span class="component-metadata">{{< icon name="github" pack="fab" >}} [GitHub repository](https://github.com/eclipse-keypop/keypop-card-cpp-api/)</span>
 {{% /callout %}}

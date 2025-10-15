@@ -54,6 +54,6 @@ implementation 'org.eclipse.keypop:keypop-reader-java-api:{{% keypop-reader-java
 ## C++ implementation
 {{% callout note %}}
 Latest version **`{{% keypop-reader-cpp-api-version %}}`**
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://eclipse-keypop.github.io/keypop-reader-cpp-api/)</span>
+<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://docs.keypop.org/keypop-reader-cpp-api/)</span>
 <span class="component-metadata">{{< icon name="github" pack="fab" >}} [GitHub repository](https://github.com/eclipse-keypop/keypop-reader-cpp-api/)</span>
 {{% /callout %}}
