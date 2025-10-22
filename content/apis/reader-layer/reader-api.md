@@ -6,54 +6,98 @@ type: book
 weight: 1
 toc: true
 ---
+<style>
+table th:nth-child(1) {
+  width: 12rem;
+}
+</style>
 
-{{% callout note %}}
-{{< icon name="project-diagram" pack="fas" >}} [UML class diagram](https://docs.terminal-api.calypsonet.org/calypsonet-terminal-reader-uml-api/)
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [Design guide](https://terminal-api.calypsonet.org/specifications/reader-layer/reader-api/)</span>
-<span class="component-metadata">{{< icon name="exchange-alt" pack="fas" >}} [Changelog](https://github.com/eclipse-keypop/keypop-reader-java-api/blob/main/CHANGELOG.md)</span>
-{{% /callout %}}
+## Overview
 
-As part of the **Reader Layer**, the **Reader API** provides high-level functionality for identifying, monitoring, 
-configuring readers and process card selection scenarios.
+|                                                                    |                                                                                                                                             |
+|--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| {{< icon name="file-alt" pack="fas" >}} **Description**            | The **Reader API** provides high-level functionality for identifying, monitoring, configuring readers and process card selection scenarios. |
+| {{< icon name="layer-group" pack="fas" >}} **Specification Layer** | Reader Layer.                                                                                                                               |
+| {{< icon name="users" pack="fas" >}} **Intended Audience**         | Developers implementing the Reader or Card layer, or creating Keypop-based applications.                                                    |
+| {{< icon name="laptop" pack="fas" >}} **Compatible OS**            | Windows, Linux, macOS, Android.                                                                                                             |
+| {{< icon name="code-branch" pack="fas" >}} **Versioning Note**     | {{< content-include file="api-versioning-note" >}}                                                                                          |
 
-<br>
+## Implementations
 
-## Java implementation
-{{% callout note %}}
-Latest version **`{{% keypop-reader-java-api-version %}}`**
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://docs.keypop.org/keypop-reader-java-api/)</span>
-<span class="component-metadata">{{< icon name="github" pack="fab" >}} [GitHub repository](https://github.com/eclipse-keypop/keypop-reader-java-api/)</span>
-{{% /callout %}}
+{{< tabpane showCopyButton="false" >}}
 
-All deliverables are available directly from the [Maven Central Repository](https://central.sonatype.com/search?q=keypop-reader-java-api) or by using one of the project resource managers below:
+{{< tab header="Java" >}}
 
-{{< tabpane >}}
-{{< tab header="Gradle Kotlin" >}}
-{{< code lang="kotlin" copy="true">}}
-implementation("org.eclipse.keypop:keypop-reader-java-api:{{% keypop-reader-java-api-version %}}")
-{{< /code>}}
+<table>
+<thead><tr><th></th><th></th></tr></thead>
+<tbody>
+  <tr>
+    <td>{{< icon name="tag" pack="fas" >}} <strong>Latest Version</strong></td>
+    <td><strong><code>{{% keypop-reader-java-api-version %}}</code></strong></td>
+  </tr>
+  <tr>
+    <td>{{< icon name="exchange-alt" pack="fas" >}} <a href="https://github.com/eclipse-keypop/keypop-reader-java-api/blob/main/CHANGELOG.md">Changelog</a></td>
+    <td>List of changes and new features introduced in each release.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="github" pack="fab" >}} <a href="https://github.com/eclipse-keypop/keypop-reader-java-api/">GitHub</a></td>
+    <td>Source code repository and issue tracker for the Java project.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="book" pack="fas" >}} <a href="https://terminal-api.calypsonet.org/specifications/reader-layer/reader-api/">Design Guide</a></td>
+    <td>CNA guide describing the design principles and intended usage of the current Terminal API.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="file-code" pack="fas" >}} <a href="https://docs.keypop.org/keypop-reader-java-api/">API Reference</a></td>
+    <td>Complete documentation of all classes and methods in the Java API.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="sitemap" pack="fas" >}} <a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-reader-uml-api/">UML Class Diagram</a></td>
+    <td>CNA UML diagram showing the structure and relationships between classes.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="database" pack="fas" >}} <a href="https://central.sonatype.com/search?q=keypop-reader-java-api">Maven Central</a></td>
+    <td>Official Maven Central page to include the Java component in your project.</td>
+  </tr>
+</tbody>
+</table>
+
 {{< /tab >}}
-{{< tab header="Gradle Groovy" >}}
-{{< code lang="gradle" copy="true">}}
-implementation 'org.eclipse.keypop:keypop-reader-java-api:{{% keypop-reader-java-api-version %}}'
-{{< /code>}}
+
+{{< tab header="C++" >}}
+
+<table>
+<thead><tr><th></th><th></th></tr></thead>
+<tbody>
+  <tr>
+    <td>{{< icon name="tag" pack="fas" >}} <strong>Latest Version</strong></td>
+    <td><strong><code>{{% keypop-reader-cpp-api-version %}}</code></strong></td>
+  </tr>
+  <tr>
+    <td>{{< icon name="exchange-alt" pack="fas" >}} <a href="https://github.com/eclipse-keypop/keypop-reader-cpp-api/releases/">Release History</a></td>
+    <td>List of published releases and related release notes.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="github" pack="fab" >}} <a href="https://github.com/eclipse-keypop/keypop-reader-cpp-api/">GitHub</a></td>
+    <td>Source code repository and documentation for the C++ project.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="book" pack="fas" >}} <a href="https://terminal-api.calypsonet.org/specifications/reader-layer/reader-api/">Design Guide</a></td>
+    <td>CNA guide describing the design principles and intended usage of the current Terminal API.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="file-code" pack="fas" >}} <a href="https://docs.keypop.org/keypop-reader-cpp-api/">API Reference</a></td>
+    <td>Complete documentation of all classes and functions in the C++ API.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="sitemap" pack="fas" >}} <a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-reader-uml-api/">UML Class Diagram</a></td>
+    <td>CNA UML diagram showing the structure and relationships between classes.</td>
+  </tr>
+</tbody>
+</table>
+
+{{< content-include file="note-about-cpp" >}}
+
 {{< /tab >}}
-{{< tab header="Maven" >}}
-{{< code lang="xml" copy="true">}}
-<dependency>
-    <groupId>org.eclipse.keypop</groupId>
-    <artifactId>keypop-reader-java-api</artifactId>
-    <version>{{% keypop-reader-java-api-version %}}</version>
-</dependency>
-{{< /code>}}
-{{< /tab >}}
+
 {{< /tabpane >}}
-
-<br>
-
-## C++ implementation
-{{% callout note %}}
-Latest version **`{{% keypop-reader-cpp-api-version %}}`**
-<span class="component-metadata">{{< icon name="book" pack="fas" >}} [API documentation](https://docs.keypop.org/keypop-reader-cpp-api/)</span>
-<span class="component-metadata">{{< icon name="github" pack="fab" >}} [GitHub repository](https://github.com/eclipse-keypop/keypop-reader-cpp-api/)</span>
-{{% /callout %}}
