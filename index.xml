@@ -1,551 +1,1025 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Eclipse Keypop</title><link>https://keypop.org/</link><atom:link href="https://keypop.org/index.xml" rel="self" type="application/rss+xml"/><description>Eclipse Keypop</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keypop.org/media/logo.svg</url><title>Eclipse Keypop</title><link>https://keypop.org/</link></image><item><title>Calypso Card API (external)</title><link>https://keypop.org/apis/calypso-layer/calypso-card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/calypso-layer/calypso-card-api/</guid><description>&lt;div class="alert alert-note">
-&lt;div>
-&lt;i class="fas fa-project-diagram pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-card-uml-api/" target="_blank" rel="noopener">UML class diagram&lt;/a>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-card-api/" target="_blank" rel="noopener">Design guide&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-card-java-api/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;p>As part of the &lt;strong>Card Layer&lt;/strong>, the &lt;strong>Calypso Card API&lt;/strong> provides high-level functionality for selecting and performing
-transactions with Calypso cards.&lt;/p>
-&lt;br>
-&lt;h2 id="java-implementation">Java implementation&lt;/h2>
-&lt;div class="alert alert-note">
-&lt;div>
-Latest version &lt;strong>&lt;code>2.1.2&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-card-java-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-card-java-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;p>All deliverables are available directly from the &lt;a href="https://central.sonatype.com/search?q=keypop-calypso-card-java-api" target="_blank" rel="noopener">Maven Central Repository&lt;/a> or by using one of the project resource managers below:&lt;/p>
-&lt;ul class="nav nav-tabs" id="tabs-2" role="tablist">&lt;li class="nav-item">
-&lt;a class="nav-link active tab-Gradle-Kotlin"
-id="tabs-2-0-tab" data-toggle="tab" href="#tabs-2-0" role="tab" onclick="handleClick(&amp;#34;Gradle-Kotlin&amp;#34;);"
-aria-controls="tabs-2-0" aria-selected="true">
-Gradle Kotlin
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Eclipse Keypop</title><link>https://keypop.org/</link><atom:link href="https://keypop.org/index.xml" rel="self" type="application/rss+xml"/><description>Eclipse Keypop</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keypop.org/media/logo.svg</url><title>Eclipse Keypop</title><link>https://keypop.org/</link></image><item><title>Calypso Card API (external)</title><link>https://keypop.org/apis/calypso-layer/calypso-card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/calypso-layer/calypso-card-api/</guid><description>&lt;style>
+table th:nth-child(1) {
+width: 12rem;
+}
+&lt;/style>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-alt pr-1 fa-fw">&lt;/i> &lt;strong>Description&lt;/strong>&lt;/td>
+&lt;td>The &lt;strong>Calypso Card API&lt;/strong> provides high-level functionality for selecting and performing transactions with Calypso cards.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-layer-group pr-1 fa-fw">&lt;/i> &lt;strong>Specification Layer&lt;/strong>&lt;/td>
+&lt;td>Card Layer.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-users pr-1 fa-fw">&lt;/i> &lt;strong>Intended Audience&lt;/strong>&lt;/td>
+&lt;td>Developers implementing the Calypso Card layer or creating Keypop-based applications targeting Calypso cards.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-laptop pr-1 fa-fw">&lt;/i> &lt;strong>Compatible OS&lt;/strong>&lt;/td>
+&lt;td>Windows, Linux, macOS, Android.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-code-branch pr-1 fa-fw">&lt;/i> &lt;strong>Versioning Note&lt;/strong>&lt;/td>
+&lt;td>
+The third version digit &lt;code>x.y.Z&lt;/code> refers only to documentation updates, as this component contains no implementation.
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="implementations">Implementations&lt;/h2>
+&lt;ul class="nav nav-tabs" id="tabs-6" role="tablist">&lt;li class="nav-item">
+&lt;a class="nav-link active tab-Java"
+id="tabs-6-0-tab" data-toggle="tab" href="#tabs-6-0" role="tab" onclick="handleClick(&amp;#34;Java&amp;#34;);"
+aria-controls="tabs-6-0" aria-selected="true">
+Java
 &lt;/a>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Gradle-Groovy"
-id="tabs-2-1-tab" data-toggle="tab" href="#tabs-2-1" role="tab" onclick="handleClick(&amp;#34;Gradle-Groovy&amp;#34;);"
-aria-controls="tabs-2-1" aria-selected="false">
-Gradle Groovy
-&lt;/a>
-&lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Maven"
-id="tabs-2-2-tab" data-toggle="tab" href="#tabs-2-2" role="tab" onclick="handleClick(&amp;#34;Maven&amp;#34;);"
-aria-controls="tabs-2-2" aria-selected="false">
-Maven
+&lt;a class="nav-link tab-C--"
+id="tabs-6-1-tab" data-toggle="tab" href="#tabs-6-1" role="tab" onclick="handleClick(&amp;#34;C--&amp;#34;);"
+aria-controls="tabs-6-1" aria-selected="false">
+C&amp;#43;&amp;#43;
 &lt;/a>
 &lt;/li>&lt;/ul>
-&lt;div class="bd-clipboard">&lt;button type="button" class="btn btn-clipboard btn-outline-light" title="Copy to clipboard" onClick="javascript:copyTabContentToClipboard('tabs-2', this);">Copy&lt;/button>&lt;/div>
-&lt;div class="tab-content" id="tabs-2-content">&lt;div class="tab-pane fade show active"
-id="tabs-2-0" role="tabpanel" aria-labelled-by="tabs-2-0-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;org.eclipse.keypop:keypop-calypso-card-java-api:2.1.2&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
+&lt;div class="tab-content" id="tabs-6-content">&lt;div class="tab-pane fade show active"
+id="tabs-6-0" role="tabpanel" aria-labelled-by="tabs-6-0-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>2.1.2&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-card-java-api/blob/main/CHANGELOG.md">Changelog&lt;/a>&lt;/td>
+&lt;td>List of changes and new features introduced in each release.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-card-java-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and issue tracker for the Java project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-card-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-card-java-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and methods in the Java API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-card-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-database pr-1 fa-fw">&lt;/i> &lt;a href="https://central.sonatype.com/search?q=keypop-calypso-card-java-api">Maven Central&lt;/a>&lt;/td>
+&lt;td>Official Maven Central page to include the Java component in your project.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;/div>
 &lt;div class="tab-pane fade"
-id="tabs-2-1" role="tabpanel" aria-labelled-by="tabs-2-1-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gradle" data-lang="gradle">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span> &lt;span class="s1">&amp;#39;org.eclipse.keypop:keypop-calypso-card-java-api:2.1.2&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane fade"
-id="tabs-2-2" role="tabpanel" aria-labelled-by="tabs-2-2-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;dependency&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;groupId&amp;gt;&lt;/span>org.eclipse.keypop&lt;span class="nt">&amp;lt;/groupId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;artifactId&amp;gt;&lt;/span>keypop-calypso-card-java-api&lt;span class="nt">&amp;lt;/artifactId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;version&amp;gt;&lt;/span>2.1.2&lt;span class="nt">&amp;lt;/version&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/dependency&amp;gt;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;br>
-&lt;h2 id="c-implementation">C++ implementation&lt;/h2>
+id="tabs-6-1" role="tabpanel" aria-labelled-by="tabs-6-1-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>2.0.0&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-card-cpp-api/releases/">Release History&lt;/a>&lt;/td>
+&lt;td>List of published releases and related release notes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-card-cpp-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and documentation for the C++ project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-card-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-card-cpp-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and functions in the C++ API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-card-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;div class="alert alert-note">
 &lt;div>
-Latest version &lt;strong>&lt;code>2.0.0&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-card-cpp-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-card-cpp-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div></description></item><item><title>Reader API (external)</title><link>https://keypop.org/apis/reader-layer/reader-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/reader-layer/reader-api/</guid><description>&lt;div class="alert alert-note">
-&lt;div>
-&lt;i class="fas fa-project-diagram pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-reader-uml-api/" target="_blank" rel="noopener">UML class diagram&lt;/a>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/reader-layer/reader-api/" target="_blank" rel="noopener">Design guide&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-reader-java-api/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;p>As part of the &lt;strong>Reader Layer&lt;/strong>, the &lt;strong>Reader API&lt;/strong> provides high-level functionality for identifying, monitoring,
-configuring readers and process card selection scenarios.&lt;/p>
-&lt;br>
-&lt;h2 id="java-implementation">Java implementation&lt;/h2>
-&lt;div class="alert alert-note">
-&lt;div>
-Latest version &lt;strong>&lt;code>2.0.1&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-reader-java-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-reader-java-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
+&lt;h3 id="c-specific-information">C++ Specific Information&lt;/h3>
+&lt;h4 id="versioning">Versioning&lt;/h4>
+&lt;p>The Keypop C++ implementation is a transposition of the Java version. As a result, the C++ version may lag
+behind the Java version by one or more release cycles.&lt;/p>
+&lt;p>To make version correspondence explicit:&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>Java implementation&lt;/strong> follows Semantic Versioning (SemVer) with &lt;strong>three digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH&lt;/code>&lt;/li>
+&lt;li>The &lt;strong>C++ implementation&lt;/strong> uses &lt;strong>four digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH.CPP_FIX&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>In this scheme, the first three digits of the C++ version reflect the corresponding Java source version, while
+the fourth digit represents any C++-specific fixes or adjustments.&lt;/p>
 &lt;/div>
 &lt;/div>
-&lt;p>All deliverables are available directly from the &lt;a href="https://central.sonatype.com/search?q=keypop-reader-java-api" target="_blank" rel="noopener">Maven Central Repository&lt;/a> or by using one of the project resource managers below:&lt;/p>
-&lt;ul class="nav nav-tabs" id="tabs-2" role="tablist">&lt;li class="nav-item">
-&lt;a class="nav-link active tab-Gradle-Kotlin"
-id="tabs-2-0-tab" data-toggle="tab" href="#tabs-2-0" role="tab" onclick="handleClick(&amp;#34;Gradle-Kotlin&amp;#34;);"
-aria-controls="tabs-2-0" aria-selected="true">
-Gradle Kotlin
+&lt;/div>
+&lt;/div></description></item><item><title>Reader API (external)</title><link>https://keypop.org/apis/reader-layer/reader-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/reader-layer/reader-api/</guid><description>&lt;style>
+table th:nth-child(1) {
+width: 12rem;
+}
+&lt;/style>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-alt pr-1 fa-fw">&lt;/i> &lt;strong>Description&lt;/strong>&lt;/td>
+&lt;td>The &lt;strong>Reader API&lt;/strong> provides high-level functionality for identifying, monitoring, configuring readers and process card selection scenarios.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-layer-group pr-1 fa-fw">&lt;/i> &lt;strong>Specification Layer&lt;/strong>&lt;/td>
+&lt;td>Reader Layer.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-users pr-1 fa-fw">&lt;/i> &lt;strong>Intended Audience&lt;/strong>&lt;/td>
+&lt;td>Developers implementing the Reader or Card layer, or creating Keypop-based applications.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-laptop pr-1 fa-fw">&lt;/i> &lt;strong>Compatible OS&lt;/strong>&lt;/td>
+&lt;td>Windows, Linux, macOS, Android.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-code-branch pr-1 fa-fw">&lt;/i> &lt;strong>Versioning Note&lt;/strong>&lt;/td>
+&lt;td>
+The third version digit &lt;code>x.y.Z&lt;/code> refers only to documentation updates, as this component contains no implementation.
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="implementations">Implementations&lt;/h2>
+&lt;ul class="nav nav-tabs" id="tabs-6" role="tablist">&lt;li class="nav-item">
+&lt;a class="nav-link active tab-Java"
+id="tabs-6-0-tab" data-toggle="tab" href="#tabs-6-0" role="tab" onclick="handleClick(&amp;#34;Java&amp;#34;);"
+aria-controls="tabs-6-0" aria-selected="true">
+Java
 &lt;/a>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Gradle-Groovy"
-id="tabs-2-1-tab" data-toggle="tab" href="#tabs-2-1" role="tab" onclick="handleClick(&amp;#34;Gradle-Groovy&amp;#34;);"
-aria-controls="tabs-2-1" aria-selected="false">
-Gradle Groovy
-&lt;/a>
-&lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Maven"
-id="tabs-2-2-tab" data-toggle="tab" href="#tabs-2-2" role="tab" onclick="handleClick(&amp;#34;Maven&amp;#34;);"
-aria-controls="tabs-2-2" aria-selected="false">
-Maven
+&lt;a class="nav-link tab-C--"
+id="tabs-6-1-tab" data-toggle="tab" href="#tabs-6-1" role="tab" onclick="handleClick(&amp;#34;C--&amp;#34;);"
+aria-controls="tabs-6-1" aria-selected="false">
+C&amp;#43;&amp;#43;
 &lt;/a>
 &lt;/li>&lt;/ul>
-&lt;div class="bd-clipboard">&lt;button type="button" class="btn btn-clipboard btn-outline-light" title="Copy to clipboard" onClick="javascript:copyTabContentToClipboard('tabs-2', this);">Copy&lt;/button>&lt;/div>
-&lt;div class="tab-content" id="tabs-2-content">&lt;div class="tab-pane fade show active"
-id="tabs-2-0" role="tabpanel" aria-labelled-by="tabs-2-0-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;org.eclipse.keypop:keypop-reader-java-api:2.0.1&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
+&lt;div class="tab-content" id="tabs-6-content">&lt;div class="tab-pane fade show active"
+id="tabs-6-0" role="tabpanel" aria-labelled-by="tabs-6-0-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>2.0.1&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-reader-java-api/blob/main/CHANGELOG.md">Changelog&lt;/a>&lt;/td>
+&lt;td>List of changes and new features introduced in each release.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-reader-java-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and issue tracker for the Java project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/reader-layer/reader-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-reader-java-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and methods in the Java API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-reader-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-database pr-1 fa-fw">&lt;/i> &lt;a href="https://central.sonatype.com/search?q=keypop-reader-java-api">Maven Central&lt;/a>&lt;/td>
+&lt;td>Official Maven Central page to include the Java component in your project.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;/div>
 &lt;div class="tab-pane fade"
-id="tabs-2-1" role="tabpanel" aria-labelled-by="tabs-2-1-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gradle" data-lang="gradle">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span> &lt;span class="s1">&amp;#39;org.eclipse.keypop:keypop-reader-java-api:2.0.1&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane fade"
-id="tabs-2-2" role="tabpanel" aria-labelled-by="tabs-2-2-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;dependency&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;groupId&amp;gt;&lt;/span>org.eclipse.keypop&lt;span class="nt">&amp;lt;/groupId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;artifactId&amp;gt;&lt;/span>keypop-reader-java-api&lt;span class="nt">&amp;lt;/artifactId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;version&amp;gt;&lt;/span>2.0.1&lt;span class="nt">&amp;lt;/version&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/dependency&amp;gt;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;br>
-&lt;h2 id="c-implementation">C++ implementation&lt;/h2>
+id="tabs-6-1" role="tabpanel" aria-labelled-by="tabs-6-1-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>2.0.0&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-reader-cpp-api/releases/">Release History&lt;/a>&lt;/td>
+&lt;td>List of published releases and related release notes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-reader-cpp-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and documentation for the C++ project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/reader-layer/reader-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-reader-cpp-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and functions in the C++ API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-reader-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;div class="alert alert-note">
 &lt;div>
-Latest version &lt;strong>&lt;code>2.0.0&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-reader-cpp-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-reader-cpp-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div></description></item><item><title>Storage Card API (external)</title><link>https://keypop.org/apis/card-layer-storagecard/storagecard-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/card-layer-storagecard/storagecard-api/</guid><description>&lt;div class="alert alert-note">
-&lt;div>
-&lt;i class="fas fa-project-diagram pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-storagecard-uml-api/" target="_blank" rel="noopener">UML class diagram&lt;/a>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/card-layer-storagecard/storagecard-api/" target="_blank" rel="noopener">Design guide&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-storagecard-java-api/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;p>As part of the &lt;strong>Card Layer&lt;/strong>, the &lt;strong>Storage Card API&lt;/strong> provides high-level functionality for selecting and performing
-transactions with storage cards (NXP Mifare Ultralight, ST Microelectronics ST25 / SRT512, etc.).&lt;/p>
-&lt;br>
-&lt;h2 id="java-implementation">Java implementation&lt;/h2>
-&lt;div class="alert alert-note">
-&lt;div>
-Latest version &lt;strong>&lt;code>0.3.0&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-storagecard-java-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-storagecard-java-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
+&lt;h3 id="c-specific-information">C++ Specific Information&lt;/h3>
+&lt;h4 id="versioning">Versioning&lt;/h4>
+&lt;p>The Keypop C++ implementation is a transposition of the Java version. As a result, the C++ version may lag
+behind the Java version by one or more release cycles.&lt;/p>
+&lt;p>To make version correspondence explicit:&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>Java implementation&lt;/strong> follows Semantic Versioning (SemVer) with &lt;strong>three digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH&lt;/code>&lt;/li>
+&lt;li>The &lt;strong>C++ implementation&lt;/strong> uses &lt;strong>four digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH.CPP_FIX&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>In this scheme, the first three digits of the C++ version reflect the corresponding Java source version, while
+the fourth digit represents any C++-specific fixes or adjustments.&lt;/p>
 &lt;/div>
 &lt;/div>
-&lt;p>All deliverables are available directly from the &lt;a href="https://central.sonatype.com/search?q=keypop-storagecard-java-api" target="_blank" rel="noopener">Maven Central Repository&lt;/a> or by using one of the project resource managers below:&lt;/p>
-&lt;ul class="nav nav-tabs" id="tabs-2" role="tablist">&lt;li class="nav-item">
-&lt;a class="nav-link active tab-Gradle-Kotlin"
-id="tabs-2-0-tab" data-toggle="tab" href="#tabs-2-0" role="tab" onclick="handleClick(&amp;#34;Gradle-Kotlin&amp;#34;);"
-aria-controls="tabs-2-0" aria-selected="true">
-Gradle Kotlin
-&lt;/a>
-&lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Gradle-Groovy"
-id="tabs-2-1-tab" data-toggle="tab" href="#tabs-2-1" role="tab" onclick="handleClick(&amp;#34;Gradle-Groovy&amp;#34;);"
-aria-controls="tabs-2-1" aria-selected="false">
-Gradle Groovy
-&lt;/a>
-&lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Maven"
-id="tabs-2-2-tab" data-toggle="tab" href="#tabs-2-2" role="tab" onclick="handleClick(&amp;#34;Maven&amp;#34;);"
-aria-controls="tabs-2-2" aria-selected="false">
-Maven
+&lt;/div>
+&lt;/div></description></item><item><title>Storage Card API (external)</title><link>https://keypop.org/apis/card-layer-storagecard/storagecard-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/card-layer-storagecard/storagecard-api/</guid><description>&lt;style>
+table th:nth-child(1) {
+width: 12rem;
+}
+&lt;/style>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-alt pr-1 fa-fw">&lt;/i> &lt;strong>Description&lt;/strong>&lt;/td>
+&lt;td>The &lt;strong>Storage Card API&lt;/strong> provides high-level functionality for selecting and performing transactions with storage cards (NXP Mifare Ultralight, ST Microelectronics ST25 / SRT512, etc.).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-layer-group pr-1 fa-fw">&lt;/i> &lt;strong>Specification Layer&lt;/strong>&lt;/td>
+&lt;td>Card Layer.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-users pr-1 fa-fw">&lt;/i> &lt;strong>Intended Audience&lt;/strong>&lt;/td>
+&lt;td>Developers implementing a Storage Card extension or creating Keypop-based applications targeting storage cards.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-laptop pr-1 fa-fw">&lt;/i> &lt;strong>Compatible OS&lt;/strong>&lt;/td>
+&lt;td>Windows, Linux, macOS, Android.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-code-branch pr-1 fa-fw">&lt;/i> &lt;strong>Versioning Note&lt;/strong>&lt;/td>
+&lt;td>
+The third version digit &lt;code>x.y.Z&lt;/code> refers only to documentation updates, as this component contains no implementation.
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="implementations">Implementations&lt;/h2>
+&lt;ul class="nav nav-tabs" id="tabs-6" role="tablist">&lt;li class="nav-item">
+&lt;a class="nav-link active tab-Java"
+id="tabs-6-0-tab" data-toggle="tab" href="#tabs-6-0" role="tab" onclick="handleClick(&amp;#34;Java&amp;#34;);"
+aria-controls="tabs-6-0" aria-selected="true">
+Java
 &lt;/a>
 &lt;/li>&lt;/ul>
-&lt;div class="bd-clipboard">&lt;button type="button" class="btn btn-clipboard btn-outline-light" title="Copy to clipboard" onClick="javascript:copyTabContentToClipboard('tabs-2', this);">Copy&lt;/button>&lt;/div>
-&lt;div class="tab-content" id="tabs-2-content">&lt;div class="tab-pane fade show active"
-id="tabs-2-0" role="tabpanel" aria-labelled-by="tabs-2-0-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;org.eclipse.keypop:keypop-storagecard-java-api:0.3.0&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="tab-content" id="tabs-6-content">&lt;div class="tab-pane fade show active"
+id="tabs-6-0" role="tabpanel" aria-labelled-by="tabs-6-0-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>0.3.0&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-storagecard-java-api/blob/main/CHANGELOG.md">Changelog&lt;/a>&lt;/td>
+&lt;td>List of changes and new features introduced in each release.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-storagecard-java-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and issue tracker for the Java project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/card-layer-storagecard/storagecard-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-storagecard-java-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and methods in the Java API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-storagecard-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-database pr-1 fa-fw">&lt;/i> &lt;a href="https://central.sonatype.com/search?q=keypop-storagecard-java-api">Maven Central&lt;/a>&lt;/td>
+&lt;td>Official Maven Central page to include the Java component in your project.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane fade"
-id="tabs-2-1" role="tabpanel" aria-labelled-by="tabs-2-1-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gradle" data-lang="gradle">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span> &lt;span class="s1">&amp;#39;org.eclipse.keypop:keypop-storagecard-java-api:0.3.0&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane fade"
-id="tabs-2-2" role="tabpanel" aria-labelled-by="tabs-2-2-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;dependency&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;groupId&amp;gt;&lt;/span>org.eclipse.keypop&lt;span class="nt">&amp;lt;/groupId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;artifactId&amp;gt;&lt;/span>keypop-storagecard-java-api&lt;span class="nt">&amp;lt;/artifactId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;version&amp;gt;&lt;/span>0.3.0&lt;span class="nt">&amp;lt;/version&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/dependency&amp;gt;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;br>
-&lt;h2 id="c-implementation">C++ implementation&lt;/h2>
-&lt;div class="alert alert-note">
-&lt;div>
-Coming soon
-&lt;/div>
-&lt;/div></description></item><item><title>Card API (internal)</title><link>https://keypop.org/apis/reader-layer/card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/reader-layer/card-api/</guid><description>&lt;div class="alert alert-note">
-&lt;div>
-&lt;i class="fas fa-project-diagram pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-card-uml-api/" target="_blank" rel="noopener">UML class diagram&lt;/a>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/reader-layer/card-api/" target="_blank" rel="noopener">Design guide&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-card-java-api/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;p>As part of the &lt;strong>Reader Layer&lt;/strong>, the &lt;strong>Card API&lt;/strong> defines the internal elements shared by the
-reader layer to implement specific card layers (like the Calypso Card Layer).&lt;/p>
-&lt;br>
-&lt;h2 id="java-implementation">Java implementation&lt;/h2>
-&lt;div class="alert alert-note">
-&lt;div>
-Latest version &lt;strong>&lt;code>2.0.1&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-card-java-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-card-java-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;p>All deliverables are available directly from the &lt;a href="https://central.sonatype.com/search?q=keypop-card-java-api" target="_blank" rel="noopener">Maven Central Repository&lt;/a> or by using one of the project resource managers below:&lt;/p>
-&lt;ul class="nav nav-tabs" id="tabs-2" role="tablist">&lt;li class="nav-item">
-&lt;a class="nav-link active tab-Gradle-Kotlin"
-id="tabs-2-0-tab" data-toggle="tab" href="#tabs-2-0" role="tab" onclick="handleClick(&amp;#34;Gradle-Kotlin&amp;#34;);"
-aria-controls="tabs-2-0" aria-selected="true">
-Gradle Kotlin
+&lt;/div></description></item><item><title>Card API (internal)</title><link>https://keypop.org/apis/reader-layer/card-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/reader-layer/card-api/</guid><description>&lt;style>
+table th:nth-child(1) {
+width: 12rem;
+}
+&lt;/style>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-alt pr-1 fa-fw">&lt;/i> &lt;strong>Description&lt;/strong>&lt;/td>
+&lt;td>The &lt;strong>Card API&lt;/strong> defines the internal elements shared by the reader layer to implement specific card layers (like the Calypso Card Layer).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-layer-group pr-1 fa-fw">&lt;/i> &lt;strong>Specification Layer&lt;/strong>&lt;/td>
+&lt;td>Reader Layer.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-users pr-1 fa-fw">&lt;/i> &lt;strong>Intended Audience&lt;/strong>&lt;/td>
+&lt;td>Developers implementing the Reader or Card layer.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-laptop pr-1 fa-fw">&lt;/i> &lt;strong>Compatible OS&lt;/strong>&lt;/td>
+&lt;td>Windows, Linux, macOS, Android.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-code-branch pr-1 fa-fw">&lt;/i> &lt;strong>Versioning Note&lt;/strong>&lt;/td>
+&lt;td>
+The third version digit &lt;code>x.y.Z&lt;/code> refers only to documentation updates, as this component contains no implementation.
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="implementations">Implementations&lt;/h2>
+&lt;ul class="nav nav-tabs" id="tabs-6" role="tablist">&lt;li class="nav-item">
+&lt;a class="nav-link active tab-Java"
+id="tabs-6-0-tab" data-toggle="tab" href="#tabs-6-0" role="tab" onclick="handleClick(&amp;#34;Java&amp;#34;);"
+aria-controls="tabs-6-0" aria-selected="true">
+Java
 &lt;/a>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Gradle-Groovy"
-id="tabs-2-1-tab" data-toggle="tab" href="#tabs-2-1" role="tab" onclick="handleClick(&amp;#34;Gradle-Groovy&amp;#34;);"
-aria-controls="tabs-2-1" aria-selected="false">
-Gradle Groovy
-&lt;/a>
-&lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Maven"
-id="tabs-2-2-tab" data-toggle="tab" href="#tabs-2-2" role="tab" onclick="handleClick(&amp;#34;Maven&amp;#34;);"
-aria-controls="tabs-2-2" aria-selected="false">
-Maven
+&lt;a class="nav-link tab-C--"
+id="tabs-6-1-tab" data-toggle="tab" href="#tabs-6-1" role="tab" onclick="handleClick(&amp;#34;C--&amp;#34;);"
+aria-controls="tabs-6-1" aria-selected="false">
+C&amp;#43;&amp;#43;
 &lt;/a>
 &lt;/li>&lt;/ul>
-&lt;div class="bd-clipboard">&lt;button type="button" class="btn btn-clipboard btn-outline-light" title="Copy to clipboard" onClick="javascript:copyTabContentToClipboard('tabs-2', this);">Copy&lt;/button>&lt;/div>
-&lt;div class="tab-content" id="tabs-2-content">&lt;div class="tab-pane fade show active"
-id="tabs-2-0" role="tabpanel" aria-labelled-by="tabs-2-0-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;org.eclipse.keypop:keypop-card-java-api:2.0.1&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
+&lt;div class="tab-content" id="tabs-6-content">&lt;div class="tab-pane fade show active"
+id="tabs-6-0" role="tabpanel" aria-labelled-by="tabs-6-0-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>2.0.1&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-card-java-api/blob/main/CHANGELOG.md">Changelog&lt;/a>&lt;/td>
+&lt;td>List of changes and new features introduced in each release.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-card-java-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and issue tracker for the Java project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/reader-layer/card-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-card-java-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and methods in the Java API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-card-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-database pr-1 fa-fw">&lt;/i> &lt;a href="https://central.sonatype.com/search?q=keypop-card-java-api">Maven Central&lt;/a>&lt;/td>
+&lt;td>Official Maven Central page to include the Java component in your project.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;/div>
 &lt;div class="tab-pane fade"
-id="tabs-2-1" role="tabpanel" aria-labelled-by="tabs-2-1-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gradle" data-lang="gradle">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span> &lt;span class="s1">&amp;#39;org.eclipse.keypop:keypop-card-java-api:2.0.1&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane fade"
-id="tabs-2-2" role="tabpanel" aria-labelled-by="tabs-2-2-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;dependency&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;groupId&amp;gt;&lt;/span>org.eclipse.keypop&lt;span class="nt">&amp;lt;/groupId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;artifactId&amp;gt;&lt;/span>keypop-card-java-api&lt;span class="nt">&amp;lt;/artifactId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;version&amp;gt;&lt;/span>2.0.1&lt;span class="nt">&amp;lt;/version&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/dependency&amp;gt;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;br>
-&lt;h2 id="c-implementation">C++ implementation&lt;/h2>
+id="tabs-6-1" role="tabpanel" aria-labelled-by="tabs-6-1-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>2.0.0&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-card-cpp-api/releases/">Release History&lt;/a>&lt;/td>
+&lt;td>List of published releases and related release notes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-card-cpp-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and documentation for the C++ project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/reader-layer/card-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-card-cpp-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and functions in the C++ API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-card-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;div class="alert alert-note">
 &lt;div>
-Latest version &lt;strong>&lt;code>2.0.0&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-card-cpp-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-card-cpp-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div></description></item><item><title>Calypso Legacy SAM API (external)</title><link>https://keypop.org/apis/calypso-layer/calypso-legacysam-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/calypso-layer/calypso-legacysam-api/</guid><description>&lt;div class="alert alert-note">
-&lt;div>
-&lt;i class="fas fa-project-diagram pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-legacysam-uml-api/" target="_blank" rel="noopener">UML class diagram&lt;/a>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-legacysam-api/" target="_blank" rel="noopener">Design guide&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;p>As part of the &lt;strong>Card Layer&lt;/strong>, the &lt;strong>Calypso Crypto Legacy SAM API&lt;/strong> provides high-level functionality for selecting
-and performing transactions with Calypso Legacy SAMs and can also be coupled with the &lt;strong>Calypso Card API&lt;/strong> to handle the
-cryptographic calculations required for Calypso card transactions secured by symmetric keys.&lt;/p>
-&lt;br>
-&lt;h2 id="java-implementation">Java implementation&lt;/h2>
-&lt;div class="alert alert-note">
-&lt;div>
-Latest version &lt;strong>&lt;code>0.7.0&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-legacysam-java-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
+&lt;h3 id="c-specific-information">C++ Specific Information&lt;/h3>
+&lt;h4 id="versioning">Versioning&lt;/h4>
+&lt;p>The Keypop C++ implementation is a transposition of the Java version. As a result, the C++ version may lag
+behind the Java version by one or more release cycles.&lt;/p>
+&lt;p>To make version correspondence explicit:&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>Java implementation&lt;/strong> follows Semantic Versioning (SemVer) with &lt;strong>three digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH&lt;/code>&lt;/li>
+&lt;li>The &lt;strong>C++ implementation&lt;/strong> uses &lt;strong>four digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH.CPP_FIX&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>In this scheme, the first three digits of the C++ version reflect the corresponding Java source version, while
+the fourth digit represents any C++-specific fixes or adjustments.&lt;/p>
 &lt;/div>
 &lt;/div>
-&lt;p>All deliverables are available directly from the &lt;a href="https://central.sonatype.com/search?q=keypop-calypso-crypto-legacysam-java-api" target="_blank" rel="noopener">Maven Central Repository&lt;/a> or by using one of the project resource managers below:&lt;/p>
-&lt;ul class="nav nav-tabs" id="tabs-2" role="tablist">&lt;li class="nav-item">
-&lt;a class="nav-link active tab-Gradle-Kotlin"
-id="tabs-2-0-tab" data-toggle="tab" href="#tabs-2-0" role="tab" onclick="handleClick(&amp;#34;Gradle-Kotlin&amp;#34;);"
-aria-controls="tabs-2-0" aria-selected="true">
-Gradle Kotlin
+&lt;/div>
+&lt;/div></description></item><item><title>Calypso Legacy SAM API (external)</title><link>https://keypop.org/apis/calypso-layer/calypso-legacysam-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/calypso-layer/calypso-legacysam-api/</guid><description>&lt;style>
+table th:nth-child(1) {
+width: 12rem;
+}
+&lt;/style>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-alt pr-1 fa-fw">&lt;/i> &lt;strong>Description&lt;/strong>&lt;/td>
+&lt;td>The &lt;strong>Calypso Crypto Legacy SAM API&lt;/strong> provides high-level functionality for selecting and performing transactions with Calypso Legacy SAMs and can also be coupled with the &lt;strong>Calypso Card API&lt;/strong> to handle the cryptographic calculations required for Calypso card transactions secured by symmetric keys.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-layer-group pr-1 fa-fw">&lt;/i> &lt;strong>Specification Layer&lt;/strong>&lt;/td>
+&lt;td>Card Layer.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-users pr-1 fa-fw">&lt;/i> &lt;strong>Intended Audience&lt;/strong>&lt;/td>
+&lt;td>Developers implementing the Calypso Card layer or creating Keypop-based applications targeting Calypso cards managed by legacy SAMs.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-laptop pr-1 fa-fw">&lt;/i> &lt;strong>Compatible OS&lt;/strong>&lt;/td>
+&lt;td>Windows, Linux, macOS, Android.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-code-branch pr-1 fa-fw">&lt;/i> &lt;strong>Versioning Note&lt;/strong>&lt;/td>
+&lt;td>
+The third version digit &lt;code>x.y.Z&lt;/code> refers only to documentation updates, as this component contains no implementation.
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="implementations">Implementations&lt;/h2>
+&lt;ul class="nav nav-tabs" id="tabs-6" role="tablist">&lt;li class="nav-item">
+&lt;a class="nav-link active tab-Java"
+id="tabs-6-0-tab" data-toggle="tab" href="#tabs-6-0" role="tab" onclick="handleClick(&amp;#34;Java&amp;#34;);"
+aria-controls="tabs-6-0" aria-selected="true">
+Java
 &lt;/a>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Gradle-Groovy"
-id="tabs-2-1-tab" data-toggle="tab" href="#tabs-2-1" role="tab" onclick="handleClick(&amp;#34;Gradle-Groovy&amp;#34;);"
-aria-controls="tabs-2-1" aria-selected="false">
-Gradle Groovy
-&lt;/a>
-&lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Maven"
-id="tabs-2-2-tab" data-toggle="tab" href="#tabs-2-2" role="tab" onclick="handleClick(&amp;#34;Maven&amp;#34;);"
-aria-controls="tabs-2-2" aria-selected="false">
-Maven
+&lt;a class="nav-link tab-C--"
+id="tabs-6-1-tab" data-toggle="tab" href="#tabs-6-1" role="tab" onclick="handleClick(&amp;#34;C--&amp;#34;);"
+aria-controls="tabs-6-1" aria-selected="false">
+C&amp;#43;&amp;#43;
 &lt;/a>
 &lt;/li>&lt;/ul>
-&lt;div class="bd-clipboard">&lt;button type="button" class="btn btn-clipboard btn-outline-light" title="Copy to clipboard" onClick="javascript:copyTabContentToClipboard('tabs-2', this);">Copy&lt;/button>&lt;/div>
-&lt;div class="tab-content" id="tabs-2-content">&lt;div class="tab-pane fade show active"
-id="tabs-2-0" role="tabpanel" aria-labelled-by="tabs-2-0-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;org.eclipse.keypop:keypop-calypso-crypto-legacysam-java-api:0.7.0&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
+&lt;div class="tab-content" id="tabs-6-content">&lt;div class="tab-pane fade show active"
+id="tabs-6-0" role="tabpanel" aria-labelled-by="tabs-6-0-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>0.7.0&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/blob/main/CHANGELOG.md">Changelog&lt;/a>&lt;/td>
+&lt;td>List of changes and new features introduced in each release.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-java-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and issue tracker for the Java project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-legacysam-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-legacysam-java-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and methods in the Java API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-legacysam-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-database pr-1 fa-fw">&lt;/i> &lt;a href="https://central.sonatype.com/search?q=keypop-calypso-crypto-legacysam-java-api">Maven Central&lt;/a>&lt;/td>
+&lt;td>Official Maven Central page to include the Java component in your project.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;/div>
 &lt;div class="tab-pane fade"
-id="tabs-2-1" role="tabpanel" aria-labelled-by="tabs-2-1-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gradle" data-lang="gradle">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span> &lt;span class="s1">&amp;#39;org.eclipse.keypop:keypop-calypso-crypto-legacysam-java-api:0.7.0&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane fade"
-id="tabs-2-2" role="tabpanel" aria-labelled-by="tabs-2-2-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;dependency&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;groupId&amp;gt;&lt;/span>org.eclipse.keypop&lt;span class="nt">&amp;lt;/groupId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;artifactId&amp;gt;&lt;/span>keypop-calypso-crypto-legacysam-java-api&lt;span class="nt">&amp;lt;/artifactId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;version&amp;gt;&lt;/span>0.7.0&lt;span class="nt">&amp;lt;/version&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/dependency&amp;gt;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;br>
-&lt;h2 id="c-implementation">C++ implementation&lt;/h2>
+id="tabs-6-1" role="tabpanel" aria-labelled-by="tabs-6-1-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>0.6.0&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-cpp-api/releases/">Release History&lt;/a>&lt;/td>
+&lt;td>List of published releases and related release notes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-cpp-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and documentation for the C++ project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-legacysam-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-legacysam-cpp-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and functions in the C++ API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-legacysam-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;div class="alert alert-note">
 &lt;div>
-Latest version &lt;strong>&lt;code>0.6.0&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-legacysam-cpp-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-legacysam-cpp-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div></description></item><item><title>Calypso Symmetric Crypto API (internal)</title><link>https://keypop.org/apis/calypso-layer/calypso-symmetric-crypto-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/calypso-layer/calypso-symmetric-crypto-api/</guid><description>&lt;div class="alert alert-note">
-&lt;div>
-&lt;i class="fas fa-project-diagram pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/" target="_blank" rel="noopener">UML class diagram&lt;/a>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-symmetric-crypto-api/" target="_blank" rel="noopener">Design guide&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-java-api/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;p>The &lt;strong>Calypso Crypto Symmetric API&lt;/strong> is the communication interface between the &lt;strong>Calypso Card&lt;/strong> and the
-&lt;strong>Calypso Symmetric Crypto&lt;/strong> libraries.&lt;/p>
-&lt;br>
-&lt;h2 id="java-implementation">Java implementation&lt;/h2>
-&lt;div class="alert alert-note">
-&lt;div>
-Latest version &lt;strong>&lt;code>0.1.1&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-symmetric-java-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-java-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
+&lt;h3 id="c-specific-information">C++ Specific Information&lt;/h3>
+&lt;h4 id="versioning">Versioning&lt;/h4>
+&lt;p>The Keypop C++ implementation is a transposition of the Java version. As a result, the C++ version may lag
+behind the Java version by one or more release cycles.&lt;/p>
+&lt;p>To make version correspondence explicit:&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>Java implementation&lt;/strong> follows Semantic Versioning (SemVer) with &lt;strong>three digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH&lt;/code>&lt;/li>
+&lt;li>The &lt;strong>C++ implementation&lt;/strong> uses &lt;strong>four digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH.CPP_FIX&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>In this scheme, the first three digits of the C++ version reflect the corresponding Java source version, while
+the fourth digit represents any C++-specific fixes or adjustments.&lt;/p>
 &lt;/div>
 &lt;/div>
-&lt;p>All deliverables are available directly from the &lt;a href="https://central.sonatype.com/search?q=keypop-calypso-crypto-symmetric-java-api" target="_blank" rel="noopener">Maven Central Repository&lt;/a> or by using one of the project resource managers below:&lt;/p>
-&lt;ul class="nav nav-tabs" id="tabs-2" role="tablist">&lt;li class="nav-item">
-&lt;a class="nav-link active tab-Gradle-Kotlin"
-id="tabs-2-0-tab" data-toggle="tab" href="#tabs-2-0" role="tab" onclick="handleClick(&amp;#34;Gradle-Kotlin&amp;#34;);"
-aria-controls="tabs-2-0" aria-selected="true">
-Gradle Kotlin
+&lt;/div>
+&lt;/div></description></item><item><title>Calypso Crypto Symmetric API (internal)</title><link>https://keypop.org/apis/calypso-layer/calypso-symmetric-crypto-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/calypso-layer/calypso-symmetric-crypto-api/</guid><description>&lt;style>
+table th:nth-child(1) {
+width: 12rem;
+}
+&lt;/style>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-alt pr-1 fa-fw">&lt;/i> &lt;strong>Description&lt;/strong>&lt;/td>
+&lt;td>The &lt;strong>Calypso Crypto Symmetric API&lt;/strong> specifies the interface enabling communication between the &lt;strong>Calypso Card&lt;/strong> and the &lt;strong>Calypso Crypto Symmetric&lt;/strong> libraries.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-layer-group pr-1 fa-fw">&lt;/i> &lt;strong>Specification Layer&lt;/strong>&lt;/td>
+&lt;td>Card Layer.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-users pr-1 fa-fw">&lt;/i> &lt;strong>Intended Audience&lt;/strong>&lt;/td>
+&lt;td>Developers implementing the Calypso Card layer using symmetric cryptographic operations (e.g. SAM).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-laptop pr-1 fa-fw">&lt;/i> &lt;strong>Compatible OS&lt;/strong>&lt;/td>
+&lt;td>Windows, Linux, macOS, Android.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-code-branch pr-1 fa-fw">&lt;/i> &lt;strong>Versioning Note&lt;/strong>&lt;/td>
+&lt;td>
+The third version digit &lt;code>x.y.Z&lt;/code> refers only to documentation updates, as this component contains no implementation.
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="implementations">Implementations&lt;/h2>
+&lt;ul class="nav nav-tabs" id="tabs-6" role="tablist">&lt;li class="nav-item">
+&lt;a class="nav-link active tab-Java"
+id="tabs-6-0-tab" data-toggle="tab" href="#tabs-6-0" role="tab" onclick="handleClick(&amp;#34;Java&amp;#34;);"
+aria-controls="tabs-6-0" aria-selected="true">
+Java
 &lt;/a>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Gradle-Groovy"
-id="tabs-2-1-tab" data-toggle="tab" href="#tabs-2-1" role="tab" onclick="handleClick(&amp;#34;Gradle-Groovy&amp;#34;);"
-aria-controls="tabs-2-1" aria-selected="false">
-Gradle Groovy
-&lt;/a>
-&lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Maven"
-id="tabs-2-2-tab" data-toggle="tab" href="#tabs-2-2" role="tab" onclick="handleClick(&amp;#34;Maven&amp;#34;);"
-aria-controls="tabs-2-2" aria-selected="false">
-Maven
+&lt;a class="nav-link tab-C--"
+id="tabs-6-1-tab" data-toggle="tab" href="#tabs-6-1" role="tab" onclick="handleClick(&amp;#34;C--&amp;#34;);"
+aria-controls="tabs-6-1" aria-selected="false">
+C&amp;#43;&amp;#43;
 &lt;/a>
 &lt;/li>&lt;/ul>
-&lt;div class="bd-clipboard">&lt;button type="button" class="btn btn-clipboard btn-outline-light" title="Copy to clipboard" onClick="javascript:copyTabContentToClipboard('tabs-2', this);">Copy&lt;/button>&lt;/div>
-&lt;div class="tab-content" id="tabs-2-content">&lt;div class="tab-pane fade show active"
-id="tabs-2-0" role="tabpanel" aria-labelled-by="tabs-2-0-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;org.eclipse.keypop:keypop-calypso-crypto-symmetric-java-api:0.1.1&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
+&lt;div class="tab-content" id="tabs-6-content">&lt;div class="tab-pane fade show active"
+id="tabs-6-0" role="tabpanel" aria-labelled-by="tabs-6-0-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>0.1.1&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-java-api/blob/main/CHANGELOG.md">Changelog&lt;/a>&lt;/td>
+&lt;td>List of changes and new features introduced in each release.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-java-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and issue tracker for the Java project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-symmetric-crypto-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-symmetric-java-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and methods in the Java API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-database pr-1 fa-fw">&lt;/i> &lt;a href="https://central.sonatype.com/search?q=keypop-calypso-crypto-symmetric-java-api">Maven Central&lt;/a>&lt;/td>
+&lt;td>Official Maven Central page to include the Java component in your project.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;/div>
 &lt;div class="tab-pane fade"
-id="tabs-2-1" role="tabpanel" aria-labelled-by="tabs-2-1-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gradle" data-lang="gradle">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span> &lt;span class="s1">&amp;#39;org.eclipse.keypop:keypop-calypso-crypto-symmetric-java-api:0.1.1&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane fade"
-id="tabs-2-2" role="tabpanel" aria-labelled-by="tabs-2-2-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;dependency&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;groupId&amp;gt;&lt;/span>org.eclipse.keypop&lt;span class="nt">&amp;lt;/groupId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;artifactId&amp;gt;&lt;/span>keypop-calypso-crypto-symmetric-java-api&lt;span class="nt">&amp;lt;/artifactId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;version&amp;gt;&lt;/span>0.1.1&lt;span class="nt">&amp;lt;/version&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/dependency&amp;gt;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;br>
-&lt;h2 id="c-implementation">C++ implementation&lt;/h2>
+id="tabs-6-1" role="tabpanel" aria-labelled-by="tabs-6-1-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>0.1.0&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-cpp-api/releases/">Release History&lt;/a>&lt;/td>
+&lt;td>List of published releases and related release notes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-cpp-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and documentation for the C++ project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-symmetric-crypto-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-symmetric-cpp-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and functions in the C++ API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-symmetric-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;div class="alert alert-note">
 &lt;div>
-Latest version &lt;strong>&lt;code>0.1.0&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-symmetric-cpp-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-symmetric-cpp-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div></description></item><item><title>Calypso Asymmetric Crypto API (internal)</title><link>https://keypop.org/apis/calypso-layer/calypso-asymmetric-crypto-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/calypso-layer/calypso-asymmetric-crypto-api/</guid><description>&lt;div class="alert alert-note">
-&lt;div>
-&lt;i class="fas fa-project-diagram pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-asymmetric-uml-api/" target="_blank" rel="noopener">UML class diagram&lt;/a>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-asymmetric-crypto-api/" target="_blank" rel="noopener">Design guide&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;p>The &lt;strong>Calypso Crypto Asymmetric API&lt;/strong> is the communication interface between the &lt;strong>Calypso Card&lt;/strong> and the
-&lt;strong>Calypso Asymmetric Crypto&lt;/strong> libraries.&lt;/p>
-&lt;br>
-&lt;h2 id="java-implementation">Java implementation&lt;/h2>
-&lt;div class="alert alert-note">
-&lt;div>
-Latest version &lt;strong>&lt;code>0.2.0&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-asymmetric-java-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
+&lt;h3 id="c-specific-information">C++ Specific Information&lt;/h3>
+&lt;h4 id="versioning">Versioning&lt;/h4>
+&lt;p>The Keypop C++ implementation is a transposition of the Java version. As a result, the C++ version may lag
+behind the Java version by one or more release cycles.&lt;/p>
+&lt;p>To make version correspondence explicit:&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>Java implementation&lt;/strong> follows Semantic Versioning (SemVer) with &lt;strong>three digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH&lt;/code>&lt;/li>
+&lt;li>The &lt;strong>C++ implementation&lt;/strong> uses &lt;strong>four digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH.CPP_FIX&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>In this scheme, the first three digits of the C++ version reflect the corresponding Java source version, while
+the fourth digit represents any C++-specific fixes or adjustments.&lt;/p>
 &lt;/div>
 &lt;/div>
-&lt;p>All deliverables are available directly from the &lt;a href="https://central.sonatype.com/search?q=keypop-calypso-crypto-asymmetric-java-api" target="_blank" rel="noopener">Maven Central Repository&lt;/a> or by using one of the project resource managers below:&lt;/p>
-&lt;ul class="nav nav-tabs" id="tabs-2" role="tablist">&lt;li class="nav-item">
-&lt;a class="nav-link active tab-Gradle-Kotlin"
-id="tabs-2-0-tab" data-toggle="tab" href="#tabs-2-0" role="tab" onclick="handleClick(&amp;#34;Gradle-Kotlin&amp;#34;);"
-aria-controls="tabs-2-0" aria-selected="true">
-Gradle Kotlin
+&lt;/div>
+&lt;/div></description></item><item><title>Calypso Crypto Asymmetric API (internal)</title><link>https://keypop.org/apis/calypso-layer/calypso-asymmetric-crypto-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/calypso-layer/calypso-asymmetric-crypto-api/</guid><description>&lt;style>
+table th:nth-child(1) {
+width: 12rem;
+}
+&lt;/style>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-alt pr-1 fa-fw">&lt;/i> &lt;strong>Description&lt;/strong>&lt;/td>
+&lt;td>The &lt;strong>Calypso Crypto Asymmetric API&lt;/strong> specifies the interface enabling communication between the &lt;strong>Calypso Card&lt;/strong> and the &lt;strong>Calypso Crypto Asymmetric&lt;/strong> libraries.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-layer-group pr-1 fa-fw">&lt;/i> &lt;strong>Specification Layer&lt;/strong>&lt;/td>
+&lt;td>Card Layer.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-users pr-1 fa-fw">&lt;/i> &lt;strong>Intended Audience&lt;/strong>&lt;/td>
+&lt;td>Developers implementing the Calypso Card layer using asymmetric cryptographic operations (e.g. PKI).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-laptop pr-1 fa-fw">&lt;/i> &lt;strong>Compatible OS&lt;/strong>&lt;/td>
+&lt;td>Windows, Linux, macOS, Android.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-code-branch pr-1 fa-fw">&lt;/i> &lt;strong>Versioning Note&lt;/strong>&lt;/td>
+&lt;td>
+The third version digit &lt;code>x.y.Z&lt;/code> refers only to documentation updates, as this component contains no implementation.
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="implementations">Implementations&lt;/h2>
+&lt;ul class="nav nav-tabs" id="tabs-6" role="tablist">&lt;li class="nav-item">
+&lt;a class="nav-link active tab-Java"
+id="tabs-6-0-tab" data-toggle="tab" href="#tabs-6-0" role="tab" onclick="handleClick(&amp;#34;Java&amp;#34;);"
+aria-controls="tabs-6-0" aria-selected="true">
+Java
 &lt;/a>
 &lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Gradle-Groovy"
-id="tabs-2-1-tab" data-toggle="tab" href="#tabs-2-1" role="tab" onclick="handleClick(&amp;#34;Gradle-Groovy&amp;#34;);"
-aria-controls="tabs-2-1" aria-selected="false">
-Gradle Groovy
-&lt;/a>
-&lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Maven"
-id="tabs-2-2-tab" data-toggle="tab" href="#tabs-2-2" role="tab" onclick="handleClick(&amp;#34;Maven&amp;#34;);"
-aria-controls="tabs-2-2" aria-selected="false">
-Maven
+&lt;a class="nav-link tab-C--"
+id="tabs-6-1-tab" data-toggle="tab" href="#tabs-6-1" role="tab" onclick="handleClick(&amp;#34;C--&amp;#34;);"
+aria-controls="tabs-6-1" aria-selected="false">
+C&amp;#43;&amp;#43;
 &lt;/a>
 &lt;/li>&lt;/ul>
-&lt;div class="bd-clipboard">&lt;button type="button" class="btn btn-clipboard btn-outline-light" title="Copy to clipboard" onClick="javascript:copyTabContentToClipboard('tabs-2', this);">Copy&lt;/button>&lt;/div>
-&lt;div class="tab-content" id="tabs-2-content">&lt;div class="tab-pane fade show active"
-id="tabs-2-0" role="tabpanel" aria-labelled-by="tabs-2-0-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;org.eclipse.keypop:keypop-calypso-crypto-asymmetric-java-api:0.2.0&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
+&lt;div class="tab-content" id="tabs-6-content">&lt;div class="tab-pane fade show active"
+id="tabs-6-0" role="tabpanel" aria-labelled-by="tabs-6-0-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>0.2.0&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/blob/main/CHANGELOG.md">Changelog&lt;/a>&lt;/td>
+&lt;td>List of changes and new features introduced in each release.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-asymmetric-java-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and issue tracker for the Java project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-asymmetric-crypto-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-asymmetric-java-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and methods in the Java API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-asymmetric-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-database pr-1 fa-fw">&lt;/i> &lt;a href="https://central.sonatype.com/search?q=keypop-calypso-crypto-asymmetric-java-api">Maven Central&lt;/a>&lt;/td>
+&lt;td>Official Maven Central page to include the Java component in your project.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;/div>
 &lt;div class="tab-pane fade"
-id="tabs-2-1" role="tabpanel" aria-labelled-by="tabs-2-1-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gradle" data-lang="gradle">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span> &lt;span class="s1">&amp;#39;org.eclipse.keypop:keypop-calypso-crypto-asymmetric-java-api:0.2.0&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane fade"
-id="tabs-2-2" role="tabpanel" aria-labelled-by="tabs-2-2-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;dependency&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;groupId&amp;gt;&lt;/span>org.eclipse.keypop&lt;span class="nt">&amp;lt;/groupId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;artifactId&amp;gt;&lt;/span>keypop-calypso-crypto-asymmetric-java-api&lt;span class="nt">&amp;lt;/artifactId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;version&amp;gt;&lt;/span>0.2.0&lt;span class="nt">&amp;lt;/version&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/dependency&amp;gt;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;br>
-&lt;h2 id="c-implementation">C++ implementation&lt;/h2>
+id="tabs-6-1" role="tabpanel" aria-labelled-by="tabs-6-1-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>0.2.0&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-asymmetric-cpp-api/releases/">Release History&lt;/a>&lt;/td>
+&lt;td>List of published releases and related release notes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-asymmetric-cpp-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and documentation for the C++ project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/calypso-layer/calypso-asymmetric-crypto-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-asymmetric-cpp-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and functions in the C++ API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-calypso-crypto-asymmetric-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;div class="alert alert-note">
 &lt;div>
-Latest version &lt;strong>&lt;code>0.2.0&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-calypso-crypto-asymmetric-cpp-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-calypso-crypto-asymmetric-cpp-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
+&lt;h3 id="c-specific-information">C++ Specific Information&lt;/h3>
+&lt;h4 id="versioning">Versioning&lt;/h4>
+&lt;p>The Keypop C++ implementation is a transposition of the Java version. As a result, the C++ version may lag
+behind the Java version by one or more release cycles.&lt;/p>
+&lt;p>To make version correspondence explicit:&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>Java implementation&lt;/strong> follows Semantic Versioning (SemVer) with &lt;strong>three digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH&lt;/code>&lt;/li>
+&lt;li>The &lt;strong>C++ implementation&lt;/strong> uses &lt;strong>four digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH.CPP_FIX&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>In this scheme, the first three digits of the C++ version reflect the corresponding Java source version, while
+the fourth digit represents any C++-specific fixes or adjustments.&lt;/p>
+&lt;/div>
+&lt;/div>
 &lt;/div>
 &lt;/div></description></item></channel></rss>

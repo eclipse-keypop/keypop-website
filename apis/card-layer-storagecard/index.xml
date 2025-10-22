@@ -1,76 +1,95 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Card Layer - Storage Card APIs | Eclipse Keypop</title><link>https://keypop.org/apis/card-layer-storagecard/</link><atom:link href="https://keypop.org/apis/card-layer-storagecard/index.xml" rel="self" type="application/rss+xml"/><description>Card Layer - Storage Card APIs</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keypop.org/media/logo.svg</url><title>Card Layer - Storage Card APIs</title><link>https://keypop.org/apis/card-layer-storagecard/</link></image><item><title>Storage Card API (external)</title><link>https://keypop.org/apis/card-layer-storagecard/storagecard-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/card-layer-storagecard/storagecard-api/</guid><description>&lt;div class="alert alert-note">
-&lt;div>
-&lt;i class="fas fa-project-diagram pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-storagecard-uml-api/" target="_blank" rel="noopener">UML class diagram&lt;/a>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/card-layer-storagecard/storagecard-api/" target="_blank" rel="noopener">Design guide&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-storagecard-java-api/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;p>As part of the &lt;strong>Card Layer&lt;/strong>, the &lt;strong>Storage Card API&lt;/strong> provides high-level functionality for selecting and performing
-transactions with storage cards (NXP Mifare Ultralight, ST Microelectronics ST25 / SRT512, etc.).&lt;/p>
-&lt;br>
-&lt;h2 id="java-implementation">Java implementation&lt;/h2>
-&lt;div class="alert alert-note">
-&lt;div>
-Latest version &lt;strong>&lt;code>0.3.0&lt;/code>&lt;/strong>
-&lt;span class="component-metadata">
-&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-storagecard-java-api/" target="_blank" rel="noopener">API documentation&lt;/a>&lt;/span>
-&lt;span class="component-metadata">
-&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-storagecard-java-api/" target="_blank" rel="noopener">GitHub repository&lt;/a>&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;p>All deliverables are available directly from the &lt;a href="https://central.sonatype.com/search?q=keypop-storagecard-java-api" target="_blank" rel="noopener">Maven Central Repository&lt;/a> or by using one of the project resource managers below:&lt;/p>
-&lt;ul class="nav nav-tabs" id="tabs-2" role="tablist">&lt;li class="nav-item">
-&lt;a class="nav-link active tab-Gradle-Kotlin"
-id="tabs-2-0-tab" data-toggle="tab" href="#tabs-2-0" role="tab" onclick="handleClick(&amp;#34;Gradle-Kotlin&amp;#34;);"
-aria-controls="tabs-2-0" aria-selected="true">
-Gradle Kotlin
-&lt;/a>
-&lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Gradle-Groovy"
-id="tabs-2-1-tab" data-toggle="tab" href="#tabs-2-1" role="tab" onclick="handleClick(&amp;#34;Gradle-Groovy&amp;#34;);"
-aria-controls="tabs-2-1" aria-selected="false">
-Gradle Groovy
-&lt;/a>
-&lt;/li>&lt;li class="nav-item">
-&lt;a class="nav-link tab-Maven"
-id="tabs-2-2-tab" data-toggle="tab" href="#tabs-2-2" role="tab" onclick="handleClick(&amp;#34;Maven&amp;#34;);"
-aria-controls="tabs-2-2" aria-selected="false">
-Maven
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Card Layer - Storage Card APIs | Eclipse Keypop</title><link>https://keypop.org/apis/card-layer-storagecard/</link><atom:link href="https://keypop.org/apis/card-layer-storagecard/index.xml" rel="self" type="application/rss+xml"/><description>Card Layer - Storage Card APIs</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://keypop.org/media/logo.svg</url><title>Card Layer - Storage Card APIs</title><link>https://keypop.org/apis/card-layer-storagecard/</link></image><item><title>Storage Card API (external)</title><link>https://keypop.org/apis/card-layer-storagecard/storagecard-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://keypop.org/apis/card-layer-storagecard/storagecard-api/</guid><description>&lt;style>
+table th:nth-child(1) {
+width: 12rem;
+}
+&lt;/style>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-alt pr-1 fa-fw">&lt;/i> &lt;strong>Description&lt;/strong>&lt;/td>
+&lt;td>The &lt;strong>Storage Card API&lt;/strong> provides high-level functionality for selecting and performing transactions with storage cards (NXP Mifare Ultralight, ST Microelectronics ST25 / SRT512, etc.).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-layer-group pr-1 fa-fw">&lt;/i> &lt;strong>Specification Layer&lt;/strong>&lt;/td>
+&lt;td>Card Layer.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-users pr-1 fa-fw">&lt;/i> &lt;strong>Intended Audience&lt;/strong>&lt;/td>
+&lt;td>Developers implementing a Storage Card extension or creating Keypop-based applications targeting storage cards.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-laptop pr-1 fa-fw">&lt;/i> &lt;strong>Compatible OS&lt;/strong>&lt;/td>
+&lt;td>Windows, Linux, macOS, Android.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-code-branch pr-1 fa-fw">&lt;/i> &lt;strong>Versioning Note&lt;/strong>&lt;/td>
+&lt;td>
+The third version digit &lt;code>x.y.Z&lt;/code> refers only to documentation updates, as this component contains no implementation.
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="implementations">Implementations&lt;/h2>
+&lt;ul class="nav nav-tabs" id="tabs-6" role="tablist">&lt;li class="nav-item">
+&lt;a class="nav-link active tab-Java"
+id="tabs-6-0-tab" data-toggle="tab" href="#tabs-6-0" role="tab" onclick="handleClick(&amp;#34;Java&amp;#34;);"
+aria-controls="tabs-6-0" aria-selected="true">
+Java
 &lt;/a>
 &lt;/li>&lt;/ul>
-&lt;div class="bd-clipboard">&lt;button type="button" class="btn btn-clipboard btn-outline-light" title="Copy to clipboard" onClick="javascript:copyTabContentToClipboard('tabs-2', this);">Copy&lt;/button>&lt;/div>
-&lt;div class="tab-content" id="tabs-2-content">&lt;div class="tab-pane fade show active"
-id="tabs-2-0" role="tabpanel" aria-labelled-by="tabs-2-0-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;org.eclipse.keypop:keypop-storagecard-java-api:0.3.0&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane fade"
-id="tabs-2-1" role="tabpanel" aria-labelled-by="tabs-2-1-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gradle" data-lang="gradle">&lt;span class="line">&lt;span class="cl">&lt;span class="n">implementation&lt;/span> &lt;span class="s1">&amp;#39;org.eclipse.keypop:keypop-storagecard-java-api:0.3.0&amp;#39;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane fade"
-id="tabs-2-2" role="tabpanel" aria-labelled-by="tabs-2-2-tab">
-&lt;div class="code relative" id="">
-&lt;div class="code-copy-content nt3">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;dependency&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;groupId&amp;gt;&lt;/span>org.eclipse.keypop&lt;span class="nt">&amp;lt;/groupId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;artifactId&amp;gt;&lt;/span>keypop-storagecard-java-api&lt;span class="nt">&amp;lt;/artifactId&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;version&amp;gt;&lt;/span>0.3.0&lt;span class="nt">&amp;lt;/version&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/dependency&amp;gt;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;br>
-&lt;h2 id="c-implementation">C++ implementation&lt;/h2>
-&lt;div class="alert alert-note">
-&lt;div>
-Coming soon
+&lt;div class="tab-content" id="tabs-6-content">&lt;div class="tab-pane fade show active"
+id="tabs-6-0" role="tabpanel" aria-labelled-by="tabs-6-0-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>0.3.0&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-storagecard-java-api/blob/main/CHANGELOG.md">Changelog&lt;/a>&lt;/td>
+&lt;td>List of changes and new features introduced in each release.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-storagecard-java-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and issue tracker for the Java project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/card-layer-storagecard/storagecard-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-storagecard-java-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and methods in the Java API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-storagecard-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-database pr-1 fa-fw">&lt;/i> &lt;a href="https://central.sonatype.com/search?q=keypop-storagecard-java-api">Maven Central&lt;/a>&lt;/td>
+&lt;td>Official Maven Central page to include the Java component in your project.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;/div>
 &lt;/div></description></item></channel></rss>
