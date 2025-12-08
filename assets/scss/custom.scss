@@ -279,6 +279,10 @@ table {
 }
 
 // Changelog table
+#changelog-table {
+  display: block;
+  word-break: break-word;
+}
 #changelog-table th {
   font-size: 1rem;
 }
@@ -318,6 +322,24 @@ table {
   margin-bottom: 0;
   background: #ddd;
 }
+#changelog-table table {
+  width: auto;
+}
+#changelog-table table th,
+#changelog-table table td {
+  font-size: .8rem !important;
+  padding: 0 .5rem 0 .5rem;
+  vertical-align: middle;
+}
+#changelog-table table th:nth-child(1) {
+  width: 22rem;
+}
+#changelog-table table th:nth-child(2),
+#changelog-table table th:nth-child(3),
+#changelog-table table th:nth-child(4) {
+  width: auto;
+}
+
 // button color
 .btn-primary {
   background-color: #eb6608;
