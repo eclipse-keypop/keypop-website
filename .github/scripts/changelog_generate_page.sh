@@ -23,6 +23,11 @@ for md_file in $(ls ./*.md | sort -r); do
   cat "$md_file" >> changelog
 done
 
+# Insert changelog into the destination page
 echo "Inserting changelog text into destination page..."
-awk -v replacement="$(cat ./changelog)" '{gsub("<!-- CHANGELOG_CONTENT -->", replacement)}1' $CHANGELOG_PAGE > temp.md
-mv temp.md $CHANGELOG_PAGE
+sed '/<!-- CHANGELOG_CONTENT -->/{
+    r changelog
+    d
+}' "$CHANGELOG_PAGE" > temp.md
+mv temp.md "$CHANGELOG_PAGE"
+cat "$CHANGELOG_PAGE"
