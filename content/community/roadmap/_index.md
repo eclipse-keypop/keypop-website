@@ -10,7 +10,9 @@ weight: 3
 Keypop developments follow the definitions of [ticketing terminal API](https://terminal-api.calypsonet.org/) issued by [CNA](https://calypsonet.org/): , starting with an initial development in Java for each interface evolution, followed by a porting in C++.
 
 ## Current work and future developments
-- During 2025, a new interface dedicated to the administration of a Calypso security module of the 'OpenSAM' type should be developed.
+- Starting in 2026, we plan to offer high-level APIs for operating secure channels that comply with the GlobalPlatform standard (for managing applets on Java Card platforms).
+- At the end of 2026, we plan to extend the Calypso APIs to support the integration of new security module solutions based on the Calypso 'OpenSAM' specification.
+- The Storage Card APIs will also soon be ported to C++.
 
 ## History of developments
 The information on functional evolutions for each Keypop API version matches precisely those indicated in the [ticketing terminal API development history](https://terminal-api.calypsonet.org/community/roadmap/#history-of-developments).
@@ -31,36 +33,48 @@ Here's the development integration history for each interface by programming lan
 </thead>
 <tbody>
   <tr>
-    <td>Reader</td>
+    <td rowspan="2">Reader</td>
+    <td>2.1</td>
+    <td>simplification & harmonisation of channel closure</td>
+    <td>2025/11</td>
+    <td>in progress</td>
+  </tr>
+  <tr>
     <td>2.0</td>
-    <td>first stable release</td>
+    <td>1st stable release</td>
     <td>2023/11</td>
-    <td>2024/12</td>
+    <td>2025/09</td>
   </tr>
   <tr>
     <td>Card</td>
     <td>2.0</td>
-    <td>first stable release</td>
+    <td>1st stable release</td>
     <td>2023/11</td>
-    <td>2024/12</td>
+    <td>2025/09</td>
   </tr>
   <tr>
-    <td rowspan="2">Calypso Card</td>
-    <td>2.1</td>
-    <td>PKI-based card secure session added</td>
+    <td rowspan="3">Calypso Card</td>
+    <td>2.2</td>
+    <td>simplification & harmonisation of channel closure</td>
     <td>2024/04</td>
     <td>in progress</td>    
   </tr>
   <tr>
+    <td>2.1</td>
+    <td>PKI-based card secure session added</td>
+    <td>2024/04</td>
+    <td>2025/09</td>    
+  </tr>
+  <tr>
     <td>2.0</td>
-    <td>first stable release</td>
+    <td>1st stable release</td>
     <td>2023/11</td>
     <td>2024/12</td>
   </tr>
   <tr>
     <td>Calypso Crypto Symmetric</td>
     <td>0.1</td>
-    <td>first stable release</td>
+    <td>1st stable release</td>
     <td>2023/11</td>
     <td>2024/12</td>
   </tr>
@@ -73,12 +87,18 @@ Here's the development integration history for each interface by programming lan
   </tr>
   <tr>
     <td>0.1</td>
-    <td>first architectural attempt</td>
+    <td>1st architectural attempt</td>
     <td>2023/11</td>
     <td>skipped</td>
   </tr>
   <tr>
-    <td rowspan="4">Calypso Legacy SAM</td>
+    <td rowspan="5">Calypso Legacy SAM</td>
+    <td>1.0</td>
+    <td>simplification & harmonisation of channel closure</td>
+    <td>2025/11</td>
+    <td>in progress</td>
+  </tr>
+  <tr>
     <td>0.6</td>
     <td>Get Data support on selection</td>
     <td>2024/04</td>
@@ -98,7 +118,7 @@ Here's the development integration history for each interface by programming lan
   </tr>
   <tr>
     <td>0.3</td>
-    <td>first stable release</td>
+    <td>1st stable release</td>
     <td>2023/11</td>
     <td>skipped</td>
   </tr>  
