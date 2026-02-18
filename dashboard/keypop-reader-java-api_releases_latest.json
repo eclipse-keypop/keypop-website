@@ -1,44 +1,5 @@
 {
-  "url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/releases/264263169",
-  "assets_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/releases/264263169/assets",
-  "upload_url": "https://uploads.github.com/repos/eclipse-keypop/keypop-reader-java-api/releases/264263169/assets{?name,label}",
-  "html_url": "https://github.com/eclipse-keypop/keypop-reader-java-api/releases/tag/2.1.0",
-  "id": 264263169,
-  "author": {
-    "login": "andrei-cristea",
-    "id": 26622621,
-    "node_id": "MDQ6VXNlcjI2NjIyNjIx",
-    "avatar_url": "https://avatars.githubusercontent.com/u/26622621?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/andrei-cristea",
-    "html_url": "https://github.com/andrei-cristea",
-    "followers_url": "https://api.github.com/users/andrei-cristea/followers",
-    "following_url": "https://api.github.com/users/andrei-cristea/following{/other_user}",
-    "gists_url": "https://api.github.com/users/andrei-cristea/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/andrei-cristea/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/andrei-cristea/subscriptions",
-    "organizations_url": "https://api.github.com/users/andrei-cristea/orgs",
-    "repos_url": "https://api.github.com/users/andrei-cristea/repos",
-    "events_url": "https://api.github.com/users/andrei-cristea/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/andrei-cristea/received_events",
-    "type": "User",
-    "user_view_type": "public",
-    "site_admin": false
-  },
-  "node_id": "RE_kwDOJ299fc4PwFYB",
-  "tag_name": "2.1.0",
-  "target_commitish": "main",
-  "name": "2.1.0",
-  "draft": false,
-  "immutable": false,
-  "prerelease": false,
-  "created_at": "2025-11-21T09:25:20Z",
-  "updated_at": "2025-11-21T09:26:46Z",
-  "published_at": "2025-11-21T09:26:46Z",
-  "assets": [
-
-  ],
-  "tarball_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/tarball/2.1.0",
-  "zipball_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-java-api/zipball/2.1.0",
-  "body": "### Added\r\n- Added `CardTransactionManager`: New interface providing common operations for all card transactions.\r\n- Added `ChannelControl` enumeration: Defines the post-execution behavior of the physical channel.\r\n- Added `InvalidCardResponseException`: Thrown when a card returns an invalid response during command processing.\r\n### Fixed\r\n- Fixed JUnit configuration.\r\n### Changed\r\n- Migrated the CI pipeline from Jenkins to GitHub Actions."
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
 }
