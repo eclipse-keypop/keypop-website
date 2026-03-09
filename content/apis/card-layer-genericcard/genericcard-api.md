@@ -1,6 +1,6 @@
 ---
 title: Generic Card API (external)
-linktitle: 🟢 Storage Card
+linktitle: 🟢 Generic Card
 summary: Public high-level API which standardizes the way to interact with storage cards (NXP Mifare Ultralight, ST Microelectronics ST25 / SRT512, etc.).
 type: book
 weight: 1
