@@ -123,7 +123,7 @@ Here's the development integration history for each interface by programming lan
     <td>skipped</td>
   </tr>
   <tr>
-    <td rowspan="5">Storage Card</td>
+    <td rowspan="2">Storage Card</td>
     <td>1.1</td>
     <td>Mifare Classic support & ST25 system block specialization</td>
     <td>2026/02</td>
@@ -131,26 +131,8 @@ Here's the development integration history for each interface by programming lan
   </tr>
   <tr>
     <td>1.0</td>
-    <td>simplification & harmonisation of channel closure</td>
-    <td>2025/11</td>
-    <td>Skipped</td>
-  </tr>
-  <tr>
-    <td>0.3</td>
-    <td>exception hierarchy & write acknowledgment support</td>
-    <td>2025/07</td>
-    <td>Skipped</td>
-  </tr>
-  <tr>
-    <td>0.2</td>
-    <td>system block management & parameter naming consistency</td>
-    <td>2025/06</td>
-    <td>Skipped</td>
-  </tr>
-  <tr>
-    <td>0.1</td>
     <td>1st stable release</td>
-    <td>2025/06</td>
+    <td>2025/11</td>
     <td>Skipped</td>
   </tr>
   <tr>
