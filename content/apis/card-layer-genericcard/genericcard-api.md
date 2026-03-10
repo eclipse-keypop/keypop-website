@@ -1,7 +1,7 @@
 ---
 title: Generic Card API (external)
 linktitle: 🟢 Generic Card
-summary: Public high-level API which standardizes the way to interact with any type of card.
+summary: Public low-level API which standardizes the way to interact with any ISO/IEC 7816 cards.
 type: book
 weight: 1
 toc: true
@@ -14,13 +14,13 @@ table th:nth-child(1) {
 
 ## Overview
 
-|                                                                    |                                                                                                                                                  |
-|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| {{< icon name="file-alt" pack="fas" >}} **Description**            | The **Generic Card API** provides low-level functionality for selecting and performing transactions with any type of card (add exemples here ?). |
-| {{< icon name="layer-group" pack="fas" >}} **Specification Layer** | Card Layer.                                                                                                                                      |
-| {{< icon name="users" pack="fas" >}} **Intended Audience**         | Developers implementing a Generic Card extension or creating Keypop-based applications targeting generic cards.                                  |
-| {{< icon name="laptop" pack="fas" >}} **Compatible OS**            | Windows, Linux, macOS, Android.                                                                                                                  |
-| {{< icon name="code-branch" pack="fas" >}} **Versioning Note**     | {{< content-include file="api-versioning-note" >}}                                                                                               |
+|                                                                    |                                                                                                                                  |
+|--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| {{< icon name="file-alt" pack="fas" >}} **Description**            | The **Generic Card API** provides low-level functionality for selecting and performing transactions with any ISO/IEC 7816 cards. |
+| {{< icon name="layer-group" pack="fas" >}} **Specification Layer** | Card Layer.                                                                                                                      |
+| {{< icon name="users" pack="fas" >}} **Intended Audience**         | Developers implementing a Generic Card extension or creating Keypop-based applications targeting generic cards.                  |
+| {{< icon name="laptop" pack="fas" >}} **Compatible OS**            | Windows, Linux, macOS, Android.                                                                                                  |
+| {{< icon name="code-branch" pack="fas" >}} **Versioning Note**     | {{< content-include file="api-versioning-note" >}}                                                                               |
 
 ## Implementations
 
