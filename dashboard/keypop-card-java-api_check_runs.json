@@ -2,27 +2,27 @@
   "total_count": 2,
   "check_runs": [
     {
-      "id": 65685462865,
+      "id": 66637814067,
       "name": "SonarCloud Code Analysis",
-      "node_id": "CR_kwDOJ29-9c8AAAAPSyifUQ",
-      "head_sha": "b6e7acbd7c90737475acbd0dbe7eecbfdb223828",
+      "node_id": "CR_kwDOJ29-9c8AAAAPg-xZMw",
+      "head_sha": "23109032f1474c7021c245163ca996500db87eec",
       "external_id": "",
-      "url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/check-runs/65685462865",
-      "html_url": "https://github.com/eclipse-keypop/keypop-card-java-api/runs/65685462865",
+      "url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/check-runs/66637814067",
+      "html_url": "https://github.com/eclipse-keypop/keypop-card-java-api/runs/66637814067",
       "details_url": "https://sonarcloud.io",
       "status": "completed",
-      "conclusion": "neutral",
-      "started_at": "2026-03-04T09:02:31Z",
-      "completed_at": "2026-03-04T09:02:50Z",
+      "conclusion": "success",
+      "started_at": "2026-03-11T14:22:13Z",
+      "completed_at": "2026-03-11T14:22:31Z",
       "output": {
-        "title": "Quality Gate not computed",
-        "summary": "  \n[See analysis details on SonarQube Cloud](https://sonarcloud.io/dashboard?id=eclipse-keypop_keypop-card-java-api&branch=main)\n\n",
+        "title": "Quality Gate passed",
+        "summary": "Issues  \n![](https://sonarsource.github.io/sonarcloud-github-static-resources/v2/common/passed.svg '') [3 New issues](https://sonarcloud.io/project/issues?id=eclipse-keypop_keypop-card-java-api&branch=main&issueStatuses=OPEN,CONFIRMED&sinceLeakPeriod=true)  \n![](https://sonarsource.github.io/sonarcloud-github-static-resources/v2/common/accepted.svg '') [0 Accepted issues](https://sonarcloud.io/project/issues?id=eclipse-keypop_keypop-card-java-api&pullRequest=main&issueStatuses=ACCEPTED)\n\nMeasures  \n![](https://sonarsource.github.io/sonarcloud-github-static-resources/v2/common/passed.svg '') [0 Security Hotspots](https://sonarcloud.io/project/security_hotspots?id=eclipse-keypop_keypop-card-java-api&branch=main&issueStatuses=OPEN,CONFIRMED&sinceLeakPeriod=true)  \n![](https://sonarsource.github.io/sonarcloud-github-static-resources/v2/common/passed.svg '') [0.0% Coverage on New Code](https://sonarcloud.io/component_measures?id=eclipse-keypop_keypop-card-java-api&branch=main&metric=new_coverage&view=list)  \n![](https://sonarsource.github.io/sonarcloud-github-static-resources/v2/common/passed.svg '') [0.0% Duplication on New Code](https://sonarcloud.io/component_measures?id=eclipse-keypop_keypop-card-java-api&branch=main&metric=new_duplicated_lines_density&view=list)  \n  \n[See analysis details on SonarQube Cloud](https://sonarcloud.io/dashboard?id=eclipse-keypop_keypop-card-java-api&branch=main)\n\n",
         "text": null,
         "annotations_count": 0,
-        "annotations_url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/check-runs/65685462865/annotations"
+        "annotations_url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/check-runs/66637814067/annotations"
       },
       "check_suite": {
-        "id": 59293647782
+        "id": 60182308063
       },
       "app": {
         "id": 12526,
@@ -80,27 +80,27 @@
       ]
     },
     {
-      "id": 65685413126,
+      "id": 66637754496,
       "name": "publish-snapshot / reusable-publish-snapshot",
-      "node_id": "CR_kwDOJ29-9c8AAAAPSyfdBg",
-      "head_sha": "b6e7acbd7c90737475acbd0dbe7eecbfdb223828",
-      "external_id": "9851bcf6-837c-5ffc-9a07-985b8c54c2e9",
-      "url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/check-runs/65685413126",
-      "html_url": "https://github.com/eclipse-keypop/keypop-card-java-api/actions/runs/22662340867/job/65685413126",
-      "details_url": "https://github.com/eclipse-keypop/keypop-card-java-api/actions/runs/22662340867/job/65685413126",
+      "node_id": "CR_kwDOJ29-9c8AAAAPg-twgA",
+      "head_sha": "23109032f1474c7021c245163ca996500db87eec",
+      "external_id": "9ef4f9b5-8800-5739-9587-01eac8aca718",
+      "url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/check-runs/66637754496",
+      "html_url": "https://github.com/eclipse-keypop/keypop-card-java-api/actions/runs/22957348305/job/66637754496",
+      "details_url": "https://github.com/eclipse-keypop/keypop-card-java-api/actions/runs/22957348305/job/66637754496",
       "status": "completed",
       "conclusion": "success",
-      "started_at": "2026-03-04T09:02:28Z",
-      "completed_at": "2026-03-04T09:03:41Z",
+      "started_at": "2026-03-11T14:22:13Z",
+      "completed_at": "2026-03-11T14:23:31Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
-        "annotations_count": 0,
-        "annotations_url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/check-runs/65685413126/annotations"
+        "annotations_count": 1,
+        "annotations_url": "https://api.github.com/repos/eclipse-keypop/keypop-card-java-api/check-runs/66637754496/annotations"
       },
       "check_suite": {
-        "id": 59293649275
+        "id": 60182313718
       },
       "app": {
         "id": 15368,
