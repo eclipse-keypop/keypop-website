@@ -123,7 +123,13 @@ Here's the development integration history for each interface by programming lan
     <td>skipped</td>
   </tr>
   <tr>
-    <td rowspan="2">Storage Card</td>
+    <td rowspan="3">Storage Card</td>
+    <td>1.2</td>
+    <td>Added method to read ST25 system blocks during selection</td>
+    <td>2026/03</td>
+    <td>Skipped</td>
+  </tr>
+  <tr>
     <td>1.1</td>
     <td>Mifare Classic support & ST25 system block specialization</td>
     <td>2026/02</td>
