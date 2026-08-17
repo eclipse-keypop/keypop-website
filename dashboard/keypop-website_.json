@@ -67,7 +67,7 @@
   "deployments_url": "https://api.github.com/repos/eclipse-keypop/keypop-website/deployments",
   "created_at": "2023-07-03T09:15:18Z",
   "updated_at": "2026-03-18T14:15:16Z",
-  "pushed_at": "2026-08-17T15:09:15Z",
+  "pushed_at": "2026-08-17T16:08:43Z",
   "git_url": "git://github.com/eclipse-keypop/keypop-website.git",
   "ssh_url": "git@github.com:eclipse-keypop/keypop-website.git",
   "clone_url": "https://github.com/eclipse-keypop/keypop-website.git",
@@ -117,6 +117,17 @@
     "pull": false
   },
   "temp_clone_token": "",
+  "allow_squash_merge": true,
+  "allow_merge_commit": true,
+  "allow_rebase_merge": true,
+  "allow_auto_merge": false,
+  "delete_branch_on_merge": true,
+  "allow_update_branch": false,
+  "use_squash_pr_title_as_default": false,
+  "squash_merge_commit_message": "COMMIT_MESSAGES",
+  "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+  "merge_commit_message": "PR_TITLE",
+  "merge_commit_title": "MERGE_MESSAGE",
   "custom_properties": {
     "eclipse_project": "iot.keypop"
   },
