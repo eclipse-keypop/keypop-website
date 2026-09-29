@@ -48,6 +48,12 @@ id="tabs-6-0-tab" data-toggle="tab" href="#tabs-6-0" role="tab" onclick="handleC
 aria-controls="tabs-6-0" aria-selected="true">
 Java
 &lt;/a>
+&lt;/li>&lt;li class="nav-item">
+&lt;a class="nav-link tab-C--"
+id="tabs-6-1-tab" data-toggle="tab" href="#tabs-6-1" role="tab" onclick="handleClick(&amp;#34;C--&amp;#34;);"
+aria-controls="tabs-6-1" aria-selected="false">
+C&amp;#43;&amp;#43;
+&lt;/a>
 &lt;/li>&lt;/ul>
 &lt;div class="tab-content" id="tabs-6-content">&lt;div class="tab-pane fade show active"
 id="tabs-6-0" role="tabpanel" aria-labelled-by="tabs-6-0-tab">
@@ -91,5 +97,60 @@ id="tabs-6-0" role="tabpanel" aria-labelled-by="tabs-6-0-tab">
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;/div>
+&lt;div class="tab-pane fade"
+id="tabs-6-1" role="tabpanel" aria-labelled-by="tabs-6-1-tab">
+&lt;table>
+&lt;thead>&lt;tr>&lt;th>&lt;/th>&lt;th>&lt;/th>&lt;/tr>&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-tag pr-1 fa-fw">&lt;/i> &lt;strong>Latest Version&lt;/strong>&lt;/td>
+&lt;td>&lt;strong>&lt;code>1.0.0&lt;/code>&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-exchange-alt pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-genericcard-cpp-api/releases/">Release History&lt;/a>&lt;/td>
+&lt;td>List of published releases and related release notes.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> &lt;a href="https://github.com/eclipse-keypop/keypop-genericcard-cpp-api/">GitHub&lt;/a>&lt;/td>
+&lt;td>Source code repository and documentation for the C++ project.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-book pr-1 fa-fw">&lt;/i> &lt;a href="https://terminal-api.calypsonet.org/specifications/card-layer-genericcard/genericcard-api/">Design Guide&lt;/a>&lt;/td>
+&lt;td>CNA guide describing the design principles and intended usage of the current Terminal API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-file-code pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.keypop.org/keypop-genericcard-cpp-api/">API Reference&lt;/a>&lt;/td>
+&lt;td>Complete documentation of all classes and functions in the C++ API.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>
+&lt;i class="fas fa-sitemap pr-1 fa-fw">&lt;/i> &lt;a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-genericcard-uml-api/">UML Class Diagram&lt;/a>&lt;/td>
+&lt;td>CNA UML diagram showing the structure and relationships between classes.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;h3 id="c-specific-information">C++ Specific Information&lt;/h3>
+&lt;h4 id="versioning">Versioning&lt;/h4>
+&lt;p>The Keypop C++ implementation is a transposition of the Java version. As a result, the C++ version may lag
+behind the Java version by one or more release cycles.&lt;/p>
+&lt;p>To make version correspondence explicit:&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>Java implementation&lt;/strong> follows Semantic Versioning (SemVer) with &lt;strong>three digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH&lt;/code>&lt;/li>
+&lt;li>The &lt;strong>C++ implementation&lt;/strong> uses &lt;strong>four digits&lt;/strong>:&lt;br>
+&lt;code>MAJOR.MINOR.PATCH.CPP_FIX&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>In this scheme, the first three digits of the C++ version reflect the corresponding Java source version, while
+the fourth digit represents any C++-specific fixes or adjustments.&lt;/p>
+&lt;/div>
+&lt;/div>
 &lt;/div>
 &lt;/div></description></item></channel></rss>
