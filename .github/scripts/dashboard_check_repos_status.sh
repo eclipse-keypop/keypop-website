@@ -61,6 +61,10 @@ fi
 if [ $? -eq 0 ]; then
   exit 0
 fi
+./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-genericcard-cpp-api
+if [ $? -eq 0 ]; then
+  exit 0
+fi
 ./.github/scripts/dashboard_check_repos_status_curl.sh $token keypop-website
 if [ $? -eq 0 ]; then
   exit 0

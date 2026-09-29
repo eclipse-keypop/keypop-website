@@ -64,4 +64,40 @@ table th:nth-child(1) {
 
 {{< /tab >}}
 
+{{< tab header="C++" >}}
+
+<table>
+<thead><tr><th></th><th></th></tr></thead>
+<tbody>
+  <tr>
+    <td>{{< icon name="tag" pack="fas" >}} <strong>Latest Version</strong></td>
+    <td><strong><code>{{% keypop-genericcard-cpp-api-version %}}</code></strong></td>
+  </tr>
+  <tr>
+    <td>{{< icon name="exchange-alt" pack="fas" >}} <a href="https://github.com/eclipse-keypop/keypop-genericcard-cpp-api/releases/">Release History</a></td>
+    <td>List of published releases and related release notes.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="github" pack="fab" >}} <a href="https://github.com/eclipse-keypop/keypop-genericcard-cpp-api/">GitHub</a></td>
+    <td>Source code repository and documentation for the C++ project.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="book" pack="fas" >}} <a href="https://terminal-api.calypsonet.org/specifications/card-layer-genericcard/genericcard-api/">Design Guide</a></td>
+    <td>CNA guide describing the design principles and intended usage of the current Terminal API.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="file-code" pack="fas" >}} <a href="https://docs.keypop.org/keypop-genericcard-cpp-api/">API Reference</a></td>
+    <td>Complete documentation of all classes and functions in the C++ API.</td>
+  </tr>
+  <tr>
+    <td>{{< icon name="sitemap" pack="fas" >}} <a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-genericcard-uml-api/">UML Class Diagram</a></td>
+    <td>CNA UML diagram showing the structure and relationships between classes.</td>
+  </tr>
+</tbody>
+</table>
+
+{{< content-include file="note-about-cpp" >}}
+
+{{< /tab >}}
+
 {{< /tabpane >}}
