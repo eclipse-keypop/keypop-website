@@ -1,4 +1,4 @@
-# Notices for Eclipse Keypop website
+# Notices for 'Eclipse Keypop' website
 
 This content is produced and maintained by the Eclipse Keypop project.
 
@@ -12,15 +12,15 @@ This content is produced and maintained by the Eclipse Keypop project.
 
 ## Copyright
 
-All content is the property of the respective authors or their employers. For
-more information regarding authorship of content, please consult the listed
-source code repository logs.
+All content is the property of the respective authors or their employers.
+For more information regarding authorship of content, please consult the
+listed source code repository logs.
 
 ## Declared Project Licenses
 
 This program and the accompanying materials are made available under the terms
 of the MIT License which is available at
-http://opensource.org/licenses/MIT.
+https://opensource.org/license/mit/
 
 SPDX-License-Identifier: MIT
 
@@ -28,7 +28,7 @@ SPDX-License-Identifier: MIT
 
 ### Font-Awesome (^4.7.0)
 
-* The Font Awesome font is licensed under the SIL OFL 1.1: http://scripts.sil.org/OFL 
+* The Font Awesome font is licensed under the SIL OFL 1.1: http://scripts.sil.org/OFL
 
 * Font Awesome CSS, LESS, and Sass files are licensed under the MIT License: https://opensource.org/licenses/mit-license.html
 * The Font Awesome documentation is licensed under the CC BY 3.0 License: https://creativecommons.org/licenses/by/3.0/
