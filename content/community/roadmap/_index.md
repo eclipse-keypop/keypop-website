@@ -7,12 +7,16 @@ toc: true
 weight: 3
 ---
 
-Keypop developments follow the definitions of [ticketing terminal API](https://terminal-api.calypsonet.org/) issued by [CNA](https://calypsonet.org/): , starting with an initial development in Java for each interface evolution, followed by a porting in C++.
+Keypop developments follow the definitions of [ticketing terminal API](https://terminal-api.calypsonet.org/) issued by [CNA](https://calypsonet.org/): starting with an initial development in Java for each interface evolution, followed by a porting in C++.
 
-## Current work and future developments
-- Starting in 2026, we plan to offer high-level APIs for operating secure channels that comply with the GlobalPlatform standard (for managing applets on Java Card platforms).
-- At the end of 2026, we plan to extend the Calypso APIs to support the integration of new security module solutions based on the Calypso 'OpenSAM' specification.
-- The Storage Card APIs will also soon be ported to C++.
+## Current work and
+- The Storage Card API is currently being ported to C++.
+- A port of the new Terminals 3.0 APIs is currently underway: the KMP (Kotlin MultiPlatform) language will replace “Java” to expand the range of supported platforms. A JVM (Java Runtime Machine) target will be defined to maintain Java compatibility.
+
+## Future developments
+- In order to further expand the range of supported platforms, it is likely that the new Terminals 3.0 APIs will be ported to the “Rust” programming language, replacing the native C++ language. The Rust implementation will ensure continued compatibility with C++ integration.
+- Starting in 2027, we plan to offer high-level APIs for operating secure channels that comply with the GlobalPlatform standard (for managing applets on Java Card platforms).
+- At the end of 2027, we plan to extend the Calypso APIs to support the integration of new security module solutions based on the Calypso 'OpenSAM' specification.
 
 ## History of developments
 The information on functional evolutions for each Keypop API version matches precisely those indicated in the [ticketing terminal API development history](https://terminal-api.calypsonet.org/community/roadmap/#history-of-developments).
@@ -37,7 +41,7 @@ Here's the development integration history for each interface by programming lan
     <td>2.1</td>
     <td>simplification & harmonisation of channel closure</td>
     <td>2025/11</td>
-    <td>in progress</td>
+    <td>2026/08</td>
   </tr>
   <tr>
     <td>2.0</td>
@@ -57,7 +61,7 @@ Here's the development integration history for each interface by programming lan
     <td>2.2</td>
     <td>simplification & harmonisation of channel closure</td>
     <td>2024/04</td>
-    <td>in progress</td>    
+    <td>2026/09</td>    
   </tr>
   <tr>
     <td>2.1</td>
@@ -76,14 +80,14 @@ Here's the development integration history for each interface by programming lan
     <td>0.1</td>
     <td>1st stable release</td>
     <td>2023/11</td>
-    <td>2024/12</td>
+    <td>2026/09</td>
   </tr>
   <tr>
     <td rowspan="2">Calypso Crypto Asymmetric</td>
     <td>0.2</td>
     <td>stable redesign</td>
     <td>2024/04</td>
-    <td>2024/12</td>
+    <td>2026/09</td>
   </tr>
   <tr>
     <td>0.1</td>
@@ -96,7 +100,7 @@ Here's the development integration history for each interface by programming lan
     <td>1.0</td>
     <td>simplification & harmonisation of channel closure</td>
     <td>2025/11</td>
-    <td>in progress</td>
+    <td>2026/09</td>
   </tr>
   <tr>
     <td>0.6</td>
@@ -127,7 +131,7 @@ Here's the development integration history for each interface by programming lan
     <td>1.2</td>
     <td>Added method to read ST25 system blocks during selection</td>
     <td>2026/03</td>
-    <td>Skipped</td>
+    <td>in progress</td>
   </tr>
   <tr>
     <td>1.1</td>
@@ -146,7 +150,7 @@ Here's the development integration history for each interface by programming lan
     <td>1.0</td>
     <td>1st stable release</td>
     <td>2026/03</td>
-    <td>Skipped</td>
+    <td>2026/09</td>
   </tr>
 </tbody>
 </table>
