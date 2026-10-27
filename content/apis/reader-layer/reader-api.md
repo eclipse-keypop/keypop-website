@@ -52,7 +52,7 @@ table th:nth-child(1) {
     <td>Complete documentation of all classes and methods in the Java API.</td>
   </tr>
   <tr>
-    <td>{{< icon name="sitemap" pack="fas" >}} <a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-reader-uml-api/">UML Class Diagram</a></td>
+    <td>{{< icon name="sitemap" pack="fas" >}} <a href="https://docs.terminal-api.calypsonet.org/reader/">UML Class Diagram</a></td>
     <td>CNA UML diagram showing the structure and relationships between classes.</td>
   </tr>
   <tr>
@@ -90,7 +90,7 @@ table th:nth-child(1) {
     <td>Complete documentation of all classes and functions in the C++ API.</td>
   </tr>
   <tr>
-    <td>{{< icon name="sitemap" pack="fas" >}} <a href="https://docs.terminal-api.calypsonet.org/calypsonet-terminal-reader-uml-api/">UML Class Diagram</a></td>
+    <td>{{< icon name="sitemap" pack="fas" >}} <a href="https://docs.terminal-api.calypsonet.org/reader/">UML Class Diagram</a></td>
     <td>CNA UML diagram showing the structure and relationships between classes.</td>
   </tr>
 </tbody>
