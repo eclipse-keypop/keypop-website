@@ -127,15 +127,15 @@
       "url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-cpp-api/check-runs/138012253965",
       "html_url": "https://github.com/eclipse-keypop/keypop-reader-cpp-api/actions/runs/45265802918/job/138012253965",
       "details_url": "https://github.com/eclipse-keypop/keypop-reader-cpp-api/actions/runs/45265802918/job/138012253965",
-      "status": "queued",
-      "conclusion": null,
-      "started_at": "2026-11-23T21:04:00Z",
-      "completed_at": null,
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-23T21:08:37Z",
+      "completed_at": "2026-11-23T21:09:50Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
-        "annotations_count": 0,
+        "annotations_count": 2,
         "annotations_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-cpp-api/check-runs/138012253965/annotations"
       },
       "check_suite": {
@@ -478,15 +478,15 @@
       "url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-cpp-api/check-runs/138012253121",
       "html_url": "https://github.com/eclipse-keypop/keypop-reader-cpp-api/actions/runs/45265802918/job/138012253121",
       "details_url": "https://github.com/eclipse-keypop/keypop-reader-cpp-api/actions/runs/45265802918/job/138012253121",
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "started_at": "2026-11-23T21:04:02Z",
-      "completed_at": null,
+      "completed_at": "2026-11-23T21:05:26Z",
       "output": {
         "title": null,
         "summary": null,
         "text": null,
-        "annotations_count": 0,
+        "annotations_count": 1,
         "annotations_url": "https://api.github.com/repos/eclipse-keypop/keypop-reader-cpp-api/check-runs/138012253121/annotations"
       },
       "check_suite": {
